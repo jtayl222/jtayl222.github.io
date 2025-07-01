@@ -3,205 +3,246 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-site-verification" content="google536468655cb3ecfb" />
-    <title>Jeffrey Taylor | MLOps Engineering Portfolio</title>
-    <meta name="description" content="Jeffrey Taylor, MLOps Engineer, specializes in scalable ML pipelines using Kubernetes, MLflow, and Argo Workflows for enterprise-grade solutions.">
-    <meta name="keywords" content="MLOps engineering, scalable ML pipelines, Kubernetes, MLflow, Argo Workflows, deep learning, NLP pipelines">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="google-site-verification" content="IuzR3G0jMUOLDaZNkV0GzWEE1k_NWywIUyyI3J7MGwQ" />
+    <title>MLOps Engineer | DevOps to MLOps Specialist</title>
+    <meta name="description" content="MLOps Engineer specializing in Fortune 500 MLOps stacks, MLflow, Argo Workflows, and scalable machine learning infrastructure.">
+    
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
+
         body {
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             color: #333;
-            background: #f5f6f5;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
         }
+
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
         }
+
         header {
-            background: #ffffff;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
             padding: 1rem 0;
             position: fixed;
             width: 100%;
             top: 0;
             z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
         }
+
         nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
+
         .logo {
             font-size: 1.5rem;
-            font-weight: 700;
-            color: #005b96;
+            font-weight: bold;
+            color: #667eea;
         }
+
         .nav-links {
             display: flex;
             list-style: none;
             gap: 2rem;
         }
+
         .nav-links a {
             text-decoration: none;
             color: #333;
             font-weight: 500;
             transition: color 0.3s ease;
         }
+
         .nav-links a:hover {
-            color: #005b96;
+            color: #667eea;
         }
+
         main {
             margin-top: 80px;
         }
+
         .hero {
             text-align: center;
             padding: 4rem 0;
-            background: #e6f0fa;
+            color: white;
         }
+
         .hero h1 {
-            font-size: 2.8rem;
+            font-size: 3rem;
             margin-bottom: 1rem;
-            color: #003087;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
         }
+
         .hero p {
             font-size: 1.2rem;
             margin-bottom: 2rem;
-            color: #333;
+            opacity: 0.9;
         }
+
         .cta-button {
             display: inline-block;
-            background: #005b96;
-            color: #ffffff;
+            background: #ff6b6b;
+            color: white;
             padding: 12px 30px;
             text-decoration: none;
-            border-radius: 5px;
-            font-weight: 700;
-            transition: background 0.3s ease;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
+
         .cta-button:hover {
-            background: #003087;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4);
         }
+
         .section {
             padding: 4rem 0;
         }
+
         .section-white {
-            background: #ffffff;
+            background: white;
         }
+
         .section-gray {
-            background: #f5f6f5;
+            background: #f8f9fa;
         }
+
         .section h2 {
             text-align: center;
-            font-size: 2.2rem;
-            margin-bottom: 2rem;
-            color: #003087;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #333;
         }
+
         .articles-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
+            margin-top: 2rem;
         }
+
         .article-card {
-            background: #ffffff;
-            border-radius: 8px;
-            padding: 1.5rem;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
+
         .article-card:hover {
-            transform: translateY(-3px);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
         }
+
         .article-card h3 {
-            color: #005b96;
-            margin-bottom: 0.8rem;
-            font-size: 1.3rem;
-        }
-        .article-card p {
-            color: #555;
+            color: #667eea;
             margin-bottom: 1rem;
-            font-size: 1rem;
         }
+
+        .article-card p {
+            color: #666;
+            margin-bottom: 1rem;
+        }
+
         .article-link {
-            color: #005b96;
+            display: inline-block;
+            color: #ff6b6b;
             text-decoration: none;
-            font-weight: 600;
+            font-weight: bold;
             transition: color 0.3s ease;
         }
+
         .article-link:hover {
-            color: #003087;
+            color: #ff5252;
         }
+
         .skills {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 2rem;
+            margin-top: 2rem;
         }
+
         .skill-category {
-            background: #ffffff;
-            padding: 1.5rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         }
+
         .skill-category h3 {
-            color: #005b96;
+            color: #667eea;
             margin-bottom: 1rem;
         }
+
         .skill-tags {
             display: flex;
             flex-wrap: wrap;
             gap: 0.5rem;
         }
+
         .skill-tag {
-            background: #e6f0fa;
-            color: #005b96;
+            background: #f0f2ff;
+            color: #667eea;
             padding: 0.3rem 0.8rem;
-            border-radius: 12px;
+            border-radius: 15px;
             font-size: 0.9rem;
             font-weight: 500;
         }
+
         footer {
-            background: #003087;
-            color: #ffffff;
+            background: #333;
+            color: white;
             text-align: center;
             padding: 2rem 0;
         }
+
         .social-links {
             display: flex;
             justify-content: center;
             gap: 1rem;
             margin-bottom: 1rem;
         }
+
         .social-links a {
-            color: #ffffff;
+            color: white;
             text-decoration: none;
             padding: 0.5rem 1rem;
             border-radius: 5px;
-            background: #005b96;
+            background: #667eea;
             transition: background 0.3s ease;
         }
+
         .social-links a:hover {
-            background: #004080;
+            background: #5a6fd8;
         }
+
         @media (max-width: 768px) {
             .nav-links {
                 display: none;
             }
+
             .hero h1 {
                 font-size: 2rem;
             }
+
             .hero p {
                 font-size: 1rem;
             }
+
             .section h2 {
-                font-size: 1.8rem;
+                font-size: 2rem;
             }
         }
     </style>
@@ -209,149 +250,311 @@
 <body>
     <header>
         <nav class="container">
-            <div class="logo">Jeffrey Taylor | MLOps Engineer</div>
+            <div class="logo">MLOps Engineer</div>
             <ul class="nav-links">
+                <li><a href="#articles">Articles</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#skills">Experience</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
         <section class="hero">
             <div class="container">
-                <h1>MLOps Engineering Portfolio</h1>
-                <p>Expertise in building scalable ML pipelines for enterprise-grade systems using Kubernetes, MLflow, and Argo Workflows.</p>
-                <a href="#projects" class="cta-button">View My Projects</a>
+                <h1>Jeffrey Taylor</h1>
+                <h2 style="font-size: 1.8rem; margin-bottom: 1rem; font-weight: 400;">AI & DevOps Engineer</h2>
+                <p>Results-driven AI & DevOps Engineer with hands-on expertise in MLOps. Proven experience building end-to-end ML pipelines, deploying full-stack ML platforms with MLflow, MinIO, Argo Workflows, and Kubernetes using Ansible. Strong background in real-time systems, DevSecOps, and infrastructure automation. <strong>Currently available for new opportunities.</strong></p>
+                <div style="margin: 1.5rem 0;">
+                    <span style="background: rgba(255,255,255,0.2); padding: 0.5rem 1rem; border-radius: 20px; margin: 0 0.5rem; font-weight: bold;">🔒 DoD Secret Clearance</span>
+                    <span style="background: rgba(255,255,255,0.2); padding: 0.5rem 1rem; border-radius: 20px; margin: 0 0.5rem; font-weight: bold;">🎓 Carnegie Mellon</span>
+                    <span style="background: rgba(255,255,255,0.2); padding: 0.5rem 1rem; border-radius: 20px; margin: 0 0.5rem; font-weight: bold;">☁️ AWS Certified</span>
+                    <span style="background: rgba(255,255,255,0.2); padding: 0.5rem 1rem; border-radius: 20px; margin: 0 0.5rem; font-weight: bold;">🚀 AI/ML Expert</span>
+                </div>
+                <a href="#contact" class="cta-button">Contact Me for Opportunities</a>
             </div>
         </section>
-        <section id="projects" class="section section-white">
+
+        <section id="articles" class="section section-white">
             <div class="container">
-                <h2>MLOps Projects</h2>
+                <h2>Featured Articles</h2>
                 <div class="articles-grid">
                     <div class="article-card">
-                        <h3>Production MLOps with MLflow, Argo and kustomize</h3>
-                        <p>Integrated MLflow, Argo Workflows, and Kustomize for robust, production-ready ML operations.</p>
-                        <a href="https://jeftaylo.medium.com/mlflow-argo-workflows-and-kustomize-the-production-mlops-trinity-5bdb45d93f41" class="article-link" target="_blank">Read More</a>
-                    </div>
-                    <div class="article-card">
-                        <h3>CNNs: From Training to Deployment</h3>
-                        <p>Implemented end-to-end ML pipelines for convolutional neural networks, from training to production deployment.</p>
-                        <a href="https://jeftaylo.medium.com/using-convolutional-neural-networks-for-classification-from-training-to-deployment-08dd9480dd87" class="article-link" target="_blank">Read More</a>
+                        <h3>From DevOps to MLOps: Why Employers Care</h3>
+                        <p>How I built a Fortune 500 stack in my spare bedroom and why the transition from DevOps to MLOps is crucial for modern organizations.</p>
+                        <a href="https://jeftaylo.medium.com/from-devops-to-mlops-why-employers-care-and-how-i-built-a-fortune-500-stack-in-my-spare-bedroom-ce0d06dd3c61" class="article-link" target="_blank">Read Article →</a>
                     </div>
 
                     <div class="article-card">
-                        <h3>Scale MLOps with MLflow</h3>
-                        <p>Streamlined experiment tracking and model management with MLflow for efficient, scalable ML workflows.</p>
-                        <a href="https://jeftaylo.medium.com/accelerate-your-teams-mlops-capabilities-how-mlflow-fuels-scalable-and-efficient-machine-learning-b3349b2f2404" class="article-link" target="_blank">Read More</a>
+                        <h3>Accelerate Your Team's MLOps Capabilities</h3>
+                        <p>How MLflow fuels scalable and efficient machine learning operations, enabling teams to deploy and manage models at enterprise scale.</p>
+                        <a href="https://jeftaylo.medium.com/accelerate-your-teams-mlops-capabilities-how-mlflow-fuels-scalable-and-efficient-machine-learning-b3349b2f2404" class="article-link" target="_blank">Read Article →</a>
                     </div>
+
                     <div class="article-card">
-                        <h3>Automating MLOps: Scalable ML Pipelines</h3>
-                        <p>Automated ML pipelines with Ansible, MLflow, and Argo Workflows, enabling seamless deployment from notebook to production.</p>
-                        <a href="https://jeftaylo.medium.com/from-notebook-to-model-server-automating-mlops-with-ansible-mlflow-and-argo-workflows-bb54c440fc36" class="article-link" target="_blank">Read More</a>
+                        <h3>From Notebook to Model Server</h3>
+                        <p>Automating MLOps with Ansible, MLflow, and Argo Workflows to create seamless deployment pipelines from development to production.</p>
+                        <a href="https://jeftaylo.medium.com/from-notebook-to-model-server-automating-mlops-with-ansible-mlflow-and-argo-workflows-bb54c440fc36" class="article-link" target="_blank">Read Article →</a>
                     </div>
+
                     <div class="article-card">
-                        <h3>MLOps Engineering: Production-Ready ML</h3>
-                        <p>Built a Fortune 500-grade MLOps stack with Kubernetes, addressing model versioning and deployment challenges.</p>
-                        <a href="https://jeftaylo.medium.com/from-devops-to-mlops-why-employers-care-and-how-i-built-a-fortune-500-stack-in-my-spare-bedroom-ce0d06dd3c61" class="article-link" target="_blank">Read More</a>
+                        <h3>Building an MLOps Homelab</h3>
+                        <p>Architecture and tools for creating a Fortune 500 MLOps stack at home, complete with enterprise-grade infrastructure and workflows.</p>
+                        <a href="https://jeftaylo.medium.com/building-an-mlops-homelab-architecture-and-tools-for-a-fortune-500-stack-08c5d5afa058" class="article-link" target="_blank">Read Article →</a>
                     </div>
+
                     <div class="article-card">
-                        <h3>Building Scalable ML Systems</h3>
-                        <p>Designed a Kubernetes-based MLOps architecture for scalable, enterprise-grade ML pipelines.</p>
-                        <a href="https://jeftaylo.medium.com/building-an-mlops-homelab-architecture-and-tools-for-a-fortune-500-stack-08c5d5afa058" class="article-link" target="_blank">Read More</a>
+                        <h3>The Production MLOps Trinity</h3>
+                        <p>MLflow, Argo Workflows, and Kustomize working together to create robust, scalable machine learning operations in production environments.</p>
+                        <a href="https://jeftaylo.medium.com/mlflow-argo-workflows-and-kustomize-the-production-mlops-trinity-5bdb45d93f41" class="article-link" target="_blank">Read Article →</a>
                     </div>
+
                     <div class="article-card">
-                        <h3>7x Speedup: PyTorch on Apple M1 Pro</h3>
-                        <p>Achieved a 7x speedup in PyTorch training on Apple M1 Pro, optimized for MLOps workflows with MLflow.</p>
-                        <a href="https://jeftaylo.medium.com/7x-speedup-pytorch-on-apple-m1-pro-for-mlops-fa1c10482c65" class="article-link" target="_blank">Read More</a>
+                        <h3>MLOps Engineering Portfolio</h3>
+                        <p>Comprehensive showcase of MLOps engineering projects, tools, and methodologies for building scalable machine learning operations.</p>
+                        <a href="https://jeftaylo.medium.com/mlops-engineering-portfolio-3946a461efda" class="article-link" target="_blank">Read Article →</a>
                     </div>
+
                     <div class="article-card">
-                        <h3>Intelligent Search with Vector Databases</h3>
-                        <p>Supercharged NLP pipelines with vector databases for scalable similarity search and recommendations.</p>
-                        <a href="https://jeftaylo.medium.com/building-intelligent-search-recommendations-how-vector-databases-supercharge-your-nlp-pipelines-e7b12928961e" class="article-link" target="_blank">Read More</a>
+                        <h3>7x Speedup: PyTorch on Apple M1 Pro for MLOps</h3>
+                        <p>Optimizing PyTorch performance on Apple Silicon for MLOps workflows, achieving significant performance improvements for model training and inference.</p>
+                        <a href="https://jeftaylo.medium.com/7x-speedup-pytorch-on-apple-m1-pro-for-mlops-fa1c10482c65" class="article-link" target="_blank">Read Article →</a>
                     </div>
+
                     <div class="article-card">
-                        <h3>CI/CD for Software-Defined Vehicles</h3>
-                        <p>Built CI/CD pipelines for SDVs with MLflow, enabling scalable ML for automotive applications.</p>
-                        <a href="https://jeftaylo.medium.com/ci-cd-pipelines-for-software-defined-vehicles-sdvs-incorporating-mlflow-97c2914a26bb" class="article-link" target="_blank">Read More</a>
+                        <h3>CI/CD Pipelines for Software-Defined Vehicles</h3>
+                        <p>MLOps-driven approach for continuous integration of ML models in automotive platforms, bridging traditional CI/CD with ML model lifecycle management.</p>
+                        <a href="https://jeftaylo.medium.com/97c2914a26bb" class="article-link" target="_blank">Read Article →</a>
+                    </div>
+
+                    <div class="article-card">
+                        <h3>Building Interactive Data Apps with FastAPI</h3>
+                        <p>Comprehensive guide to building real-time data applications using FastAPI, Pydantic, and Streamlit for MLOps data validation and visualization.</p>
+                        <a href="https://jeftaylo.medium.com/b27c68646a5f" class="article-link" target="_blank">Read Article →</a>
+                    </div>
+
+                    <div class="article-card">
+                        <h3>LangGraph Agentic Workflows</h3>
+                        <p>Advanced AI workflow automation with LangGraph StateGraph, exploring conversation history management and structured chatbot development.</p>
+                        <a href="https://jeftaylo.medium.com/27162f79faa5" class="article-link" target="_blank">Read Article →</a>
                     </div>
                 </div>
             </div>
         </section>
+
+        <section id="projects" class="section section-white">
+            <div class="container">
+                <h2>Projects & Code</h2>
+                <div class="articles-grid">
+                    <div class="article-card">
+                        <h3>🏗️ ML Platform Infrastructure</h3>
+                        <p>Complete MLOps platform infrastructure with Kubernetes, MLflow, and monitoring. Production-ready foundation for enterprise ML operations.</p>
+                        <a href="https://github.com/jtayl222/ml-platform" class="article-link" target="_blank">View Repository →</a>
+                    </div>
+
+                    <div class="article-card">
+                        <h3>💰 Financial MLOps with PyTorch</h3>
+                        <p>End-to-end financial ML application using PyTorch with complete MLOps pipeline including model training, deployment, and monitoring.</p>
+                        <a href="https://github.com/jtayl222/financial-mlops-pytorch" class="article-link" target="_blank">View Repository →</a>
+                    </div>
+
+                    <div class="article-card">
+                        <h3>🏠 Homelab MLOPs Demo</h3>
+                        <p>Demonstration of Fortune 500-grade MLOps stack running in homelab environment. Showcases enterprise patterns at scale.</p>
+                        <a href="https://github.com/jtayl222/homelab-mlops-demo" class="article-link" target="_blank">View Repository →</a>
+                    </div>
+
+                    <div class="article-card">
+                        <h3>📊 Churn Prediction with Argo Workflows</h3>
+                        <p>Customer churn prediction pipeline built with Argo Workflows, demonstrating Kubernetes-native ML workflow orchestration.</p>
+                        <a href="https://github.com/jtayl222/churn-prediction-pipeline-ArgoWF" class="article-link" target="_blank">View Repository →</a>
+                    </div>
+
+                    <div class="article-card">
+                        <h3>🔄 Churn Prediction Pipeline</h3>
+                        <p>Traditional ML pipeline for customer churn prediction with comprehensive data processing and model evaluation components.</p>
+                        <a href="https://github.com/jtayl222/churn-prediction-pipeline" class="article-link" target="_blank">View Repository →</a>
+                    </div>
+
+                    <div class="article-card">
+                        <h3>🎓 AI Programming Nanodegree Project</h3>
+                        <p>Foundational AI/ML project demonstrating core machine learning concepts and implementation best practices.</p>
+                        <a href="https://github.com/jtayl222/aipnd-project" class="article-link" target="_blank">View Repository →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="certifications" class="section section-white">
+            <div class="container">
+                <h2>Certifications & Continuous Learning</h2>
+                <div class="articles-grid">
+                    <div class="article-card">
+                        <h3>🚀 Latest Certifications (2024-2025)</h3>
+                        <p><a href="https://learn.microsoft.com/api/credentials/share/en-us/JeffreyTaylor-4553/D8CBAE6507DD4607?sharingId" target="_blank" class="article-link"><strong>Microsoft Azure AI Engineer</strong></a> (Jan 2025)<br>
+                        <a href="https://www.udacity.com/certificate/e/9c84ee96-5040-11ef-bd82-6b0b7a6eac96" target="_blank" class="article-link"><strong>Udacity AI Programming with Python</strong></a> (Nov 2024)<br>
+                        <a href="https://www.credly.com/badges/4b17c6d6-62b5-4125-9268-2b9e8e4229d2/linked_in_profile" target="_blank" class="article-link"><strong>AWS AI Practitioner Early Adopter</strong></a> (Sep 2024)<br>
+                        Cutting-edge AI and cloud certifications demonstrating commitment to staying current with rapidly evolving technologies.</p>
+                    </div>
+
+                    <div class="article-card">
+                        <h3>🧠 Deep Learning Specialization</h3>
+                        <p><a href="https://www.coursera.org/account/accomplishments/specialization/49VF6359XN76" target="_blank" class="article-link"><strong>DeepLearning.AI Complete Specialization</strong></a> (2024)<br>
+                        <a href="https://www.coursera.org/account/accomplishments/records/BZFW7Q3TZQU3" target="_blank" class="article-link">Generative AI with Large Language Models</a> | 
+                        <a href="https://www.coursera.org/account/accomplishments/records/ZV2PB7O82ZZ7" target="_blank" class="article-link">Sequence Models</a> | 
+                        <a href="https://www.coursera.org/account/accomplishments/records/ZAPE2MU39SNX" target="_blank" class="article-link">Convolutional Neural Networks</a><br>
+                        <a href="https://www.coursera.org/account/accomplishments/records/TWCJ74UT733Y" target="_blank" class="article-link">Structuring ML Projects</a> | 
+                        <a href="https://www.coursera.org/account/accomplishments/records/EWKL7V4R3LNH" target="_blank" class="article-link">Hyperparameter Tuning & Optimization</a> | 
+                        <a href="https://www.coursera.org/account/accomplishments/records/ACEK8L3MAQGZ" target="_blank" class="article-link">Neural Networks & Deep Learning</a><br>
+                        Comprehensive foundation in modern AI and deep learning techniques.</p>
+                    </div>
+
+                    <div class="article-card">
+                        <h3>🏢 Enterprise & Production MLOps</h3>
+                        <p><a href="https://www.redhat.com/rhtapps/certification/verify/?certId=190-015-669" target="_blank" class="article-link"><strong>Red Hat Certified Specialist</strong></a> - Business Rules & Process Design<br>
+                        <strong>MLOps Production Lifecycle</strong> - DeepLearning.AI<br>
+                        Enterprise-focused certifications for production-ready ML systems and business process automation.</p>
+                    </div>
+
+                    <div class="article-card">
+                        <h3>📈 Continuous Learning Journey</h3>
+                        <p><strong>Modern AI/ML Focus</strong><br>
+                        From foundational ML to cutting-edge Generative AI. Continuous upskilling in latest technologies including LLMs, Azure AI, and AWS AI services. Demonstrates commitment to staying current with rapidly evolving field.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section id="skills" class="section section-gray">
             <div class="container">
-                <h2>Technical Expertise</h2>
+                <h2>Professional Experience & Expertise</h2>
                 <div class="skills">
+                    <div class="skill-category">
+                        <h3>Recent Experience</h3>
+                        <p><strong>Principal Software Engineer, Leidos</strong> (2023-2025)<br>
+                        Enhanced MEDUSA command-and-control system for U.S. Air Force drone threat mitigation. Built Java microservices with Spring Boot and gRPC, architected CI/CD pipelines with Jenkins and Docker on AWS. <em>Currently seeking new opportunities in MLOps and AI engineering.</em></p>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Enterprise Consulting</h3>
+                        <p><strong>Senior Consultant, Red Hat</strong><br>
+                        Delivered MLOps solutions for Fortune 500 clients including Citibank and Verizon. Built AI-assisted expert systems for DoD projects and OpenShift Kubernetes deployments.</p>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Certifications</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">AWS AI Practitioner</span>
+                            <span class="skill-tag">Azure AI Engineer</span>
+                            <span class="skill-tag">Deep Learning Specialization</span>
+                            <span class="skill-tag">Generative AI Development</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Security & Clearance</h3>
+                        <p><strong>Active DoD Secret Clearance</strong><br>
+                        Extensive experience with air-gapped environments, secure cloud-native architectures, and mission-critical systems for defense applications.</p>
+                    </div>
+                </div>
+
+                <h2 style="margin-top: 3rem;">Technical Skills</h2>
+                <div class="skills">
+                    <div class="skill-category">
+                        <h3>Programming & Development</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">TypeScript</span>
+                            <span class="skill-tag">C/C++</span>
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">gRPC</span>
+                        </div>
+                    </div>
+
                     <div class="skill-category">
                         <h3>MLOps Platforms</h3>
                         <div class="skill-tags">
                             <span class="skill-tag">MLflow</span>
                             <span class="skill-tag">Kubeflow</span>
                             <span class="skill-tag">Argo Workflows</span>
-                            <span class="skill-tag">Airflow</span>
+                            <span class="skill-tag">Apache Airflow</span>
                         </div>
                     </div>
+
                     <div class="skill-category">
                         <h3>Container & Orchestration</h3>
                         <div class="skill-tags">
                             <span class="skill-tag">Kubernetes</span>
+                            <span class="skill-tag">OpenShift</span>
                             <span class="skill-tag">Docker</span>
                             <span class="skill-tag">Kustomize</span>
                             <span class="skill-tag">Helm</span>
                         </div>
                     </div>
+
                     <div class="skill-category">
-                        <h3>Infrastructure as Code</h3>
+                        <h3>DevSecOps & Security</h3>
                         <div class="skill-tags">
-                            <span class="skill-tag">Ansible</span>
-                            <span class="skill-tag">Terraform</span>
-                            <span class="skill-tag">GitOps</span>
-                            <span class="skill-tag">CI/CD</span>
+                            <span class="skill-tag">Jenkins CI/CD</span>
+                            <span class="skill-tag">Fortify</span>
+                            <span class="skill-tag">SonarQube</span>
+                            <span class="skill-tag">Dependency Tracker</span>
+                            <span class="skill-tag">Protocol Buffers</span>
+                            <span class="skill-tag">OpenTelemetry</span>
                         </div>
                     </div>
+
                     <div class="skill-category">
-                        <h3>Machine Learning</h3>
+                        <h3>Cloud & Infrastructure</h3>
                         <div class="skill-tags">
-                            <span class="skill-tag">Python</span>
-                            <span class="skill-tag">PyTorch (7x speedup)</span>
-                            <span class="skill-tag">CNN Deployment</span>
-                            <span class="skill-tag">NLP Pipelines</span>
+                            <span class="skill-tag">AWS</span>
+                            <span class="skill-tag">Ansible</span>
+                            <span class="skill-tag">Terraform</span>
+                            <span class="skill-tag">Gradle</span>
+                            <span class="skill-tag">Maven</span>
+                            <span class="skill-tag">GitOps</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Machine Learning & AI</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">PyTorch</span>
+                            <span class="skill-tag">TensorFlow</span>
+                            <span class="skill-tag">RADAR Signal Processing</span>
+                            <span class="skill-tag">Expert Systems</span>
+                            <span class="skill-tag">DRL (Drools)</span>
+                            <span class="skill-tag">Model Serving</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
+
     <footer id="contact">
         <div class="container">
+            <h2 style="color: white; margin-bottom: 1rem;">Let's Connect</h2>
+            <p style="margin-bottom: 1.5rem; font-size: 1.1rem;">Open to new opportunities in MLOps, AI Engineering, and DevOps roles</p>
+            <div style="margin-bottom: 1.5rem;">
+                <p style="margin-bottom: 0.5rem;"><strong>Email:</strong> Jeff.Taylor22@gmail.com</p>
+                <p><strong>Location:</strong> Open to Relocation | <strong>Clearance:</strong> Active DoD Secret</p>
+            </div>
             <div class="social-links">
+                <a href="mailto:Jeff.Taylor22@gmail.com">Email</a>
+                <a href="https://linkedin.com/in/jefftaylor22" target="_blank">LinkedIn</a>
                 <a href="https://medium.com/@jeftaylo" target="_blank">Medium</a>
-                <a href="https://linkedin.com/in/jeffreytaylor-mlops" target="_blank">LinkedIn</a>
                 <a href="https://github.com/jtayl222" target="_blank">GitHub</a>
             </div>
-            <p>© 2025 Jeffrey Taylor. MLOps engineering solutions for enterprise-grade ML.</p>
+            <p>&copy; 2025 Jeffrey Taylor - MLOps Engineer Portfolio. Available for immediate opportunities.</p>
         </div>
     </footer>
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Jeffrey Taylor",
-        "jobTitle": "MLOps Engineer",
-        "url": "https://jtayl222.github.io/",
-        "sameAs": [
-            "https://medium.com/@jeftaylo",
-            "https://linkedin.com/in/jeffreytaylor-mlops",
-            "https://github.com/jtayl222"
-        ],
-        "worksFor": {
-            "@type": "Organization",
-            "name": "Freelance MLOps Engineer"
-        },
-        "description": "Specializing in scalable ML pipelines with Kubernetes, MLflow, and Argo Workflows."
-    }
-    </script>
+
     <script>
+        // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -364,9 +567,15 @@
                 }
             });
         });
+
+        // Add scroll effect to header
         window.addEventListener('scroll', function() {
             const header = document.querySelector('header');
-            header.style.background = window.scrollY > 100 ? '#ffffff' : '#ffffff';
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(255, 255, 255, 0.98)';
+            } else {
+                header.style.background = 'rgba(255, 255, 255, 0.95)';
+            }
         });
     </script>
 </body>
