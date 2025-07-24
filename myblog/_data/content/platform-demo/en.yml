@@ -1,0 +1,609 @@
+# you can move this content to front matter of [language]/tabs/platform-demo.md
+###########################################################
+#                Platform Demo Page Data
+###########################################################
+page_data:
+  main:
+    header: "🚀 Live MLOps Platform - Built From Scratch"
+    info: "🏗️ CUSTOM-BUILT | 🖥️ ON-PREMISES | ⚡ ANSIBLE AUTOMATED | 📖 FULLY DOCUMENTED | 🔄 RAPIDLY DEPLOYABLE"
+    text_color: "white"
+    # if you don't want to use background image, comment it. back_color will be activated.
+    img: "/assets/img/projects/projects-heading.jpg"
+    back_color: "#1a1a2e"
+    github_link: "https://github.com/jtayl222/ml-platform"
+    github_text: "🔗 View Complete Source & Documentation"
+
+  category:
+    - title: "Foundation"
+      type: id_foundation
+      color: "#607D8B"
+    - title: "Core Infrastructure"
+      type: id_core
+      color: "#2196F3"
+    - title: "ML Workflows"
+      type: id_workflows  
+      color: "#FF6B35"
+    - title: "Production Apps"
+      type: id_production
+      color: "#4CAF50"
+    - title: "Storage & Data"
+      type: id_storage
+      color: "#795548"
+    - title: "GitOps & CI/CD"
+      type: id_gitops
+      color: "#E91E63"
+    - title: "Monitoring & Ops"
+      type: id_monitoring
+      color: "#9C27B0"
+
+  list:
+    # Foundation
+    - type: id_foundation
+      component_name: "⚙️ K3s Kubernetes Distribution"
+      component_excerpt: "🐳 Lightweight Kubernetes | 🏗️ Custom cluster setup | ⚡ Production-ready"
+      ansible_role_url: "https://github.com/jtayl222/ml-platform/tree/main/infrastructure/cluster/roles/foundation/k3s"
+      post: |
+        # ⚙️ K3s Kubernetes Distribution
+
+        **✅ STATUS: RUNNING (15 days uptime)**
+        
+        ## 🛠️ **FOUNDATION LAYER** - Custom K3s deployment from scratch
+        
+        **🏗️ CUSTOM K3S DEPLOYMENT:**
+        - ✨ **Lightweight Kubernetes** - Optimized for edge and IoT
+        - 🔧 **Custom control plane** - Hand-configured master nodes
+        - 📖 **Full automation** - Ansible-driven deployment
+        - ⚡ **High availability** - Multi-master setup capability
+        - 🖥️ **Bare-metal optimized** - Perfect for on-premises
+
+        ## Cluster Architecture
+        ```bash
+        # K3s cluster components
+        ✅ k3s-server           # Control plane
+        ✅ k3s-agent            # Worker nodes  
+        ✅ containerd           # Container runtime
+        ✅ CoreDNS              # Cluster DNS
+        ✅ Traefik              # Default ingress
+        ```
+
+        ## 🚀 **ANSIBLE AUTOMATION** - Infrastructure as Code
+        - **Idempotent deployment** - Safe to run repeatedly
+        - **Node management** - Control plane and worker setup
+        - **Configuration drift prevention** - Declarative state management
+        - **Scaling capability** - Add/remove nodes programmatically
+
+        **[🔗 View K3s Ansible Role](https://github.com/jtayl222/ml-platform/tree/main/infrastructure/cluster/roles/foundation/k3s)**
+
+    - type: id_foundation
+      component_name: "🌐 Cilium Container Network Interface"
+      component_excerpt: "🔒 eBPF-powered networking | 🛡️ Network security | 📊 Observability"
+      ansible_role_url: "https://github.com/jtayl222/ml-platform/tree/main/infrastructure/cluster/roles/foundation/cilium"
+      post: |
+        # 🌐 Cilium Container Network Interface
+
+        **✅ STATUS: NETWORKING ACTIVE**
+        
+        ## 🔒 **eBPF-POWERED NETWORKING** - Next-generation container networking
+        
+        **🌐 ADVANCED NETWORKING FEATURES:**
+        - ✨ **eBPF-based** - Kernel-level networking performance
+        - 🔒 **Network policies** - Microsegmentation and security
+        - 📊 **Deep observability** - Traffic flow monitoring
+        - ⚡ **High performance** - Bypass iptables overhead
+        - 🌍 **Service mesh ready** - Native service mesh capabilities
+
+        ## Network Capabilities
+        ```bash
+        # Cilium components active
+        ✅ cilium-agent         # Node networking agent
+        ✅ cilium-operator      # Cluster-wide operations
+        ✅ hubble-relay         # Network observability
+        ✅ hubble-ui           # Web-based network monitoring
+        ```
+
+        ## 🛡️ **SECURITY FEATURES** - Zero-trust networking
+        - **Network policies** - L3/L4 and L7 traffic control
+        - **Identity-based security** - Workload identity enforcement
+        - **Encryption** - Transparent network encryption
+        - **Threat detection** - Real-time security monitoring
+
+        **[🔗 View Cilium Ansible Role](https://github.com/jtayl222/ml-platform/tree/main/infrastructure/cluster/roles/foundation/cilium)**
+
+    - type: id_foundation
+      component_name: "⚖️ MetalLB Load Balancer"
+      component_excerpt: "🏠 Bare-metal LoadBalancer | 🌐 External IP assignment | ⚡ High availability"
+      ansible_role_url: "https://github.com/jtayl222/ml-platform/tree/main/infrastructure/cluster/roles/foundation/metallb"
+      post: |
+        # ⚖️ MetalLB Load Balancer
+
+        **✅ STATUS: LOAD BALANCING ACTIVE**
+        
+        ## 🏠 **BARE-METAL LOAD BALANCING** - Cloud-like services on-premises
+        
+        **⚖️ METALLB FEATURES:**
+        - ✨ **External IP assignment** - LoadBalancer services on bare-metal
+        - 🌐 **BGP & Layer 2 modes** - Flexible networking options
+        - 📊 **IP address management** - Automatic IP pool allocation
+        - ⚡ **High availability** - Multiple speaker instances
+        - 🔧 **Kubernetes native** - Standard LoadBalancer API
+
+        ## Load Balancer Configuration
+        ```bash
+        # MetalLB components
+        ✅ controller           # IP address assignment
+        ✅ speaker             # Traffic announcement
+        ✅ IP address pool     # Available external IPs
+        ✅ BGP configuration   # Network routing
+        ```
+
+        ## 🌐 **NETWORKING INTEGRATION** - Seamless service exposure
+        - **LoadBalancer services** - External access to cluster services
+        - **Ingress integration** - Works with ingress controllers
+        - **Multi-protocol support** - TCP, UDP, SCTP traffic
+        - **Production-grade** - Battle-tested in enterprise environments
+
+        **[🔗 View MetalLB Ansible Role](https://github.com/jtayl222/ml-platform/tree/main/infrastructure/cluster/roles/foundation/metallb)**
+
+    - type: id_foundation
+      component_name: "🔐 Sealed Secrets Management"
+      component_excerpt: "🛡️ GitOps-safe secrets | 🔒 Encrypted at rest | 🔑 Automatic decryption"
+      ansible_role_url: "https://github.com/jtayl222/ml-platform/tree/main/infrastructure/cluster/roles/foundation/sealed_secrets"
+      post: |
+        # 🔐 Sealed Secrets Management
+
+        **✅ STATUS: SECURING SECRETS**
+        
+        ## 🛡️ **GITOPS-SAFE SECRETS** - Encrypted secrets in version control
+        
+        **🔐 SEALED SECRETS FEATURES:**
+        - ✨ **Encryption at rest** - Safe to store in Git repositories
+        - 🔑 **Automatic decryption** - Controller decrypts to regular secrets
+        - 📊 **Scope control** - Namespace and cluster-wide secrets
+        - ⚡ **GitOps compatible** - Fits perfectly in GitOps workflows
+        - 🔧 **Kubernetes native** - Standard Secret API compatibility
+
+        ## Security Architecture
+        ```bash
+        # Sealed Secrets components
+        ✅ sealed-secrets-controller  # Decryption service
+        ✅ kubeseal                  # CLI encryption tool
+        ✅ Private key               # Cluster-specific decryption
+        ✅ Public key                # Encryption for this cluster
+        ```
+
+        ## 🔒 **SECURITY BENEFITS** - Production-grade secret management
+        - **GitOps safe** - Encrypted secrets can be stored in Git
+        - **Principle of least privilege** - Scoped secret access
+        - **Audit trail** - All secret changes tracked in Git
+        - **Disaster recovery** - Backup and restore capabilities
+
+        **[🔗 View Sealed Secrets Ansible Role](https://github.com/jtayl222/ml-platform/tree/main/infrastructure/cluster/roles/foundation/sealed_secrets)**
+
+    # Core Infrastructure
+    - type: id_core
+      component_name: "☸️ Kubernetes Platform Overview"
+      component_excerpt: "📊 27 active namespaces | 🏃‍♂️ 15-day uptime | 🔧 Full observability"
+      post: |
+        # 🎯 Custom-Built Kubernetes Platform
+
+        **✅ STATUS: RUNNING (15 days uptime)**
+        
+        ## 🛠️ **BUILT FROM SCRATCH** - No managed services, pure custom engineering
+        
+        **🏗️ CUSTOM DEVELOPMENT HIGHLIGHTS:**
+        - ✨ **Zero managed services** - Every component hand-configured
+        - 🔧 **Custom Ansible playbooks** - Complete infrastructure automation
+        - 📖 **Fully documented** - Every deployment step reproducible
+        - ⚡ **Rapid rebuild** - Tear down and rebuild in minutes with Ansible
+        - 🖥️ **On-premises deployment** - Running on dedicated hardware
+
+        ## Active Infrastructure
+        ```bash
+        # Current cluster state - ALL CUSTOM DEPLOYED
+        $ kubectl get ns | wc -l
+        27 namespaces active
+        
+        # Core system namespaces (all custom configured)
+        ✅ kube-system          # Kubernetes core
+        ✅ kube-public          # Public cluster resources  
+        ✅ metallb-system       # Load balancer
+        ✅ cilium-secrets       # Network security
+        ✅ cert-manager         # TLS certificate management
+        ✅ ingress-nginx        # Ingress controller
+        ```
+
+        ## 🚀 **ANSIBLE AUTOMATION** - Complete Infrastructure as Code
+        - **One-command deployment** - `ansible-playbook site.yml`
+        - **Idempotent operations** - Safe to run repeatedly
+        - **Environment consistency** - Identical deployments every time
+        - **Disaster recovery ready** - Complete rebuild capability
+
+        ## Platform Capabilities
+        - **Multi-tenant isolation** with namespace-based separation
+        - **Service mesh** with Istio for advanced networking
+        - **Automatic TLS** certificate management
+        - **Load balancing** with MetalLB for bare-metal
+        - **Container networking** with Cilium CNI
+
+        **[🔗 View Complete Source & Documentation](https://github.com/jtayl222/ml-platform)**
+
+    - type: id_core
+      component_name: "🕸️ Istio Service Mesh"
+      component_excerpt: "🔒 mTLS security | 🌐 Traffic management | 📊 Distributed tracing"
+      ansible_role_url: "https://github.com/jtayl222/ml-platform/tree/main/infrastructure/cluster/roles/platform/istio"
+      post: |
+        # 🕸️ Istio Service Mesh
+
+        **✅ STATUS: ACTIVE**
+
+        ## Service Mesh Components
+        ```bash
+        # Istio system components
+        ✅ istio-system         # Core Istio components
+        ✅ istio-gateway        # Ingress/egress gateways
+        ✅ knative-serving      # Serverless workloads
+        ```
+
+        ## Advanced Features
+        - **Traffic management** - Advanced routing, load balancing
+        - **Security policies** - mTLS, RBAC, authorization
+        - **Observability** - Distributed tracing, metrics
+        - **Gateway management** - Ingress/egress traffic control
+        - **Knative integration** - Serverless ML inference
+
+    # ML Workflows  
+    - type: id_workflows
+      component_name: "📊 MLflow Experiment Tracking"
+      component_excerpt: "🧪 ML experiments | 📦 Model registry | 🚀 Model deployment"
+      ansible_role_url: "https://github.com/jtayl222/ml-platform/tree/main/infrastructure/cluster/roles/mlops/mlflow"
+      post: |
+        # 📊 MLflow Platform
+
+        **✅ STATUS: RUNNING**
+
+        ## MLflow Services
+        ```bash
+        # MLflow namespace active
+        ✅ mlflow               # Experiment tracking server
+        ✅ minio                # Artifact storage backend
+        ```
+
+        ## Capabilities
+        - **Experiment tracking** - Metrics, parameters, artifacts
+        - **Model registry** - Versioning, staging, production promotion
+        - **Artifact storage** - MinIO-backed object storage
+        - **Web UI** - Interactive experiment management
+        - **API access** - Programmatic model management
+
+        **Models tracked**: Production fraud detection, financial ML models
+
+    - type: id_workflows
+      component_name: "⚡ Argo Workflows"
+      component_excerpt: "🔄 ML pipeline orchestration | 📊 DAG execution | 🎯 Event-driven"
+      ansible_role_url: "https://github.com/jtayl222/ml-platform/tree/main/infrastructure/cluster/roles/platform/argo_workflows"
+      post: |
+        # ⚡ Argo Workflows Engine
+
+        **✅ STATUS: ORCHESTRATING**
+
+        ## Workflow Infrastructure
+        ```bash
+        # Argo components running
+        ✅ argowf               # Workflow engine
+        ✅ argo-events          # Event-driven workflows
+        ✅ argocd               # GitOps continuous deployment
+        ```
+
+        ## Pipeline Capabilities
+        - **ML pipeline orchestration** - Training, validation, deployment
+        - **Event-driven workflows** - Automated triggers
+        - **GitOps deployment** - Declarative infrastructure
+        - **Workflow templates** - Reusable pipeline components
+        - **Artifact passing** - Seamless data flow between steps
+
+        **Active workflows**: Fraud detection training, financial model updates
+
+    - type: id_workflows
+      component_name: "📓 JupyterHub"
+      component_excerpt: "👥 Multi-user notebooks | 🖥️ GPU acceleration | 💾 Persistent storage"
+      ansible_role_url: "https://github.com/jtayl222/ml-platform/tree/main/infrastructure/cluster/roles/platform/jupyterhub"
+      post: |
+        # 📓 JupyterHub Platform
+
+        **✅ STATUS: SERVING**
+
+        ## Data Science Environment
+        ```bash
+        # JupyterHub active
+        ✅ jupyterhub           # Multi-user Jupyter server
+        ```
+
+        ## Features
+        - **Multi-user notebooks** - Isolated user environments
+        - **GPU acceleration** - ML model training support
+        - **Persistent storage** - User workspace persistence
+        - **Custom kernels** - Python, R, Scala environments
+        - **Integration** - Direct MLflow and platform access
+
+    # Production Apps
+    - type: id_production
+      component_name: "🎯 Seldon Core Model Serving"
+      component_excerpt: "🚀 High-performance inference | 🔄 A/B testing | 📊 Model monitoring"
+      ansible_role_url: "https://github.com/jtayl222/ml-platform/tree/main/infrastructure/cluster/roles/platform/seldon"
+      post: |
+        # 🎯 Seldon Core Model Serving
+
+        **✅ STATUS: SERVING ML MODELS**
+        
+        ## 🚀 **KUBERNETES-NATIVE MODEL SERVING** - Enterprise-grade ML inference
+        
+        **🎯 SELDON CORE FEATURES:**
+        - ✨ **Multi-framework support** - TensorFlow, PyTorch, Scikit-learn, XGBoost
+        - 🔄 **A/B testing** - Traffic splitting for safe model rollouts
+        - 📊 **Model monitoring** - Performance metrics and drift detection
+        - ⚡ **Auto-scaling** - Dynamic resource allocation
+        - 🔧 **Kubernetes native** - CRD-based model deployments
+
+        ## Model Serving Architecture
+        ```bash
+        # Seldon Core components
+        ✅ seldon-controller    # Model deployment controller
+        ✅ ambassador          # Ingress and routing
+        ✅ seldon-core-operator # Custom resource management
+        ✅ model-servers        # Individual model instances
+        ```
+
+        ## 🚀 **PRODUCTION CAPABILITIES** - Enterprise model serving
+        - **Canary deployments** - Gradual model rollout strategies
+        - **Shadow deployments** - Test models with production traffic
+        - **Explainability** - Model prediction explanations
+        - **Performance monitoring** - Latency, throughput, accuracy metrics
+
+        **[🔗 View Seldon Core Ansible Role](https://github.com/jtayl222/ml-platform/tree/main/infrastructure/cluster/roles/platform/seldon)**
+
+    - type: id_production
+      component_name: "⚡ KServe Serverless Serving"
+      component_excerpt: "🌐 Serverless ML inference | 📈 Auto-scaling | 🔄 GitOps deployment"
+      ansible_role_url: "https://github.com/jtayl222/ml-platform/tree/main/infrastructure/cluster/roles/mlops/kserve"
+      post: |
+        # ⚡ KServe Serverless Serving
+
+        **✅ STATUS: SERVERLESS ML INFERENCE**
+        
+        ## 🌐 **SERVERLESS MODEL SERVING** - Next-generation ML inference platform
+        
+        **⚡ KSERVE FEATURES:**
+        - ✨ **Serverless architecture** - Scale-to-zero capabilities
+        - 🌐 **Standard protocols** - REST and gRPC inference APIs
+        - 📈 **Auto-scaling** - Request-based horizontal scaling
+        - 🔄 **GitOps integration** - Declarative model deployments
+        - 🔧 **Knative-based** - Built on Knative Serving primitives
+
+        ## Serverless Architecture
+        ```bash
+        # KServe components
+        ✅ kserve-controller    # Serverless model controller
+        ✅ knative-serving      # Serverless runtime platform
+        ✅ inference-services   # Model serving endpoints
+        ✅ model-registry       # Model artifact management
+        ```
+
+        ## 🚀 **SERVERLESS BENEFITS** - Cost-efficient ML serving
+        - **Scale-to-zero** - No idle resource consumption
+        - **Rapid scaling** - Handle traffic spikes automatically
+        - **Standard interfaces** - Compatible with existing ML workflows
+        - **Cost optimization** - Pay only for active inference time
+
+        **[🔗 View KServe Ansible Role](https://github.com/jtayl222/ml-platform/tree/main/infrastructure/cluster/roles/mlops/kserve)**
+
+    # Storage & Data
+    - type: id_storage
+      component_name: "🗄️ MinIO Object Storage"
+      component_excerpt: "📦 S3-compatible storage | 🔒 Enterprise security | ⚡ High performance"
+      ansible_role_url: "https://github.com/jtayl222/ml-platform/tree/main/infrastructure/cluster/roles/storage/minio"
+      post: |
+        # 🗄️ MinIO Object Storage
+
+        **✅ STATUS: STORING DATA**
+        
+        ## 📦 **S3-COMPATIBLE OBJECT STORAGE** - Enterprise-grade data storage
+        
+        **🗄️ MINIO FEATURES:**
+        - ✨ **S3 compatibility** - Drop-in replacement for AWS S3
+        - 🔒 **Enterprise security** - Encryption, IAM, and audit logging
+        - 📊 **High availability** - Distributed and erasure-coded storage
+        - ⚡ **Performance** - NVMe and SSD optimized
+        - 🔧 **Kubernetes native** - Operator-managed deployment
+
+        ## Storage Architecture
+        ```bash
+        # MinIO components
+        ✅ minio-server         # Object storage service
+        ✅ minio-console        # Web-based management UI
+        ✅ distributed-setup    # Multi-node configuration
+        ✅ encryption          # At-rest and in-transit encryption
+        ```
+
+        ## 🚀 **ML/AI INTEGRATION** - Purpose-built for machine learning
+        - **Artifact storage** - MLflow model and experiment artifacts
+        - **Dataset management** - Large dataset storage and versioning
+        - **Model serving** - Direct model loading from storage
+        - **Backup and restore** - Automated data protection
+
+        **[🔗 View MinIO Ansible Role](https://github.com/jtayl222/ml-platform/tree/main/infrastructure/cluster/roles/storage/minio)**
+
+    - type: id_storage
+      component_name: "💾 NFS Persistent Storage"
+      component_excerpt: "📁 Shared file system | 🔄 Dynamic provisioning | 💽 Persistent volumes"
+      ansible_role_url: "https://github.com/jtayl222/ml-platform/tree/main/infrastructure/cluster/roles/foundation/nfs_server"
+      post: |
+        # 💾 NFS Persistent Storage
+
+        **✅ STATUS: PROVIDING PERSISTENT STORAGE**
+        
+        ## 📁 **SHARED FILE SYSTEM** - Network-attached storage for Kubernetes
+        
+        **💾 NFS STORAGE FEATURES:**
+        - ✨ **Shared access** - Multiple pods can access same data
+        - 🔄 **Dynamic provisioning** - Automatic PVC provisioning
+        - 📊 **Storage classes** - Different performance tiers
+        - ⚡ **High availability** - Redundant storage backend
+        - 🔧 **Kubernetes integration** - Native PV/PVC support
+
+        ## Storage Components
+        ```bash
+        # NFS storage stack
+        ✅ nfs-server           # Network file system server
+        ✅ nfs-provisioner      # Dynamic volume provisioner
+        ✅ storage-classes      # Different storage tiers
+        ✅ persistent-volumes   # Available storage pools
+        ```
+
+        ## 🚀 **USE CASES** - Persistent data for stateful applications
+        - **Database storage** - Persistent volumes for databases
+        - **User data** - JupyterHub user notebooks and data
+        - **Shared datasets** - Common datasets accessible by all pods
+        - **Log storage** - Centralized log file storage
+
+        **[🔗 View NFS Ansible Role](https://github.com/jtayl222/ml-platform/tree/main/infrastructure/cluster/roles/foundation/nfs_server)**
+
+    # GitOps & CI/CD
+    - type: id_gitops
+      component_name: "🔄 Argo CD GitOps"
+      component_excerpt: "📦 Declarative deployments | 🔄 Git-based workflows | 🎯 Automated sync"
+      ansible_role_url: "https://github.com/jtayl222/ml-platform/tree/main/infrastructure/cluster/roles/platform/argo_cd"
+      post: |
+        # 🔄 Argo CD GitOps
+
+        **✅ STATUS: MANAGING DEPLOYMENTS**
+        
+        ## 📦 **DECLARATIVE GITOPS** - Git as the source of truth
+        
+        **🔄 ARGO CD FEATURES:**
+        - ✨ **Git-based deployments** - All changes tracked in version control
+        - 🎯 **Automated synchronization** - Continuous deployment from Git
+        - 📊 **Drift detection** - Identify and correct configuration drift
+        - ⚡ **Multi-cluster support** - Manage multiple Kubernetes clusters
+        - 🔧 **Application health** - Real-time application health monitoring
+
+        ## GitOps Architecture
+        ```bash
+        # Argo CD components
+        ✅ argocd-server        # Web UI and API server
+        ✅ argocd-controller    # Application controller
+        ✅ argocd-repo-server   # Repository server
+        ✅ application-sets     # Multi-app deployments
+        ```
+
+        ## 🚀 **DEPLOYMENT BENEFITS** - Production-grade deployment practices
+        - **Rollback capability** - Easy rollback to previous versions
+        - **Progressive delivery** - Canary and blue-green deployments
+        - **Security** - RBAC and SSO integration
+        - **Audit trail** - Complete deployment history
+
+        **[🔗 View Argo CD Ansible Role](https://github.com/jtayl222/ml-platform/tree/main/infrastructure/cluster/roles/platform/argo_cd)**
+
+    - type: id_gitops
+      component_name: "⚡ Argo Events"
+      component_excerpt: "🎯 Event-driven automation | 📡 Webhook triggers | 🔄 Pipeline automation"
+      ansible_role_url: "https://github.com/jtayl222/ml-platform/tree/main/infrastructure/cluster/roles/platform/argo_events"
+      post: |
+        # ⚡ Argo Events
+
+        **✅ STATUS: AUTOMATING EVENTS**
+        
+        ## 🎯 **EVENT-DRIVEN AUTOMATION** - Reactive infrastructure automation
+        
+        **⚡ ARGO EVENTS FEATURES:**
+        - ✨ **Event sources** - Git, webhooks, messaging, and more
+        - 🎯 **Event triggers** - Automated workflow execution
+        - 📊 **Event filtering** - Conditional event processing
+        - ⚡ **Scalable processing** - High-throughput event handling
+        - 🔧 **Kubernetes native** - Custom resource definitions
+
+        ## Event Processing
+        ```bash
+        # Argo Events components
+        ✅ event-sources        # External event ingestion
+        ✅ event-bus           # Event routing and filtering
+        ✅ sensors             # Event processing logic
+        ✅ triggers            # Action execution
+        ```
+
+        ## 🚀 **AUTOMATION USE CASES** - Reactive MLOps workflows
+        - **CI/CD triggers** - Automated builds and deployments
+        - **Model retraining** - Data-driven model updates
+        - **Alert handling** - Automated incident response
+        - **Scaling events** - Dynamic resource management
+
+        **[🔗 View Argo Events Ansible Role](https://github.com/jtayl222/ml-platform/tree/main/infrastructure/cluster/roles/platform/argo_events)**
+
+    # Monitoring & Ops
+    - type: id_monitoring
+      component_name: "🔥 Prometheus Monitoring"
+      component_excerpt: "📊 Infrastructure metrics | 📈 Custom dashboards | 🚨 Real-time alerts"
+      ansible_role_url: "https://github.com/jtayl222/ml-platform/tree/main/infrastructure/cluster/roles/monitoring/prometheus_stack"
+      post: |
+        # 📊 Monitoring & Observability
+
+        **✅ STATUS: MONITORING ALL SYSTEMS**
+
+        ## Monitoring Stack
+        ```bash
+        # Observability components
+        ✅ monitoring           # Prometheus + Grafana stack
+        ✅ kubernetes-dashboard # K8s native dashboard
+        ```
+
+        ## Monitoring Capabilities
+        - **Infrastructure metrics** - CPU, memory, disk, network
+        - **ML model metrics** - Latency, throughput, accuracy drift
+        - **Custom dashboards** - Business and technical KPIs
+        - **Alerting** - Proactive issue detection
+        - **Log aggregation** - Centralized logging
+
+        **Tracked metrics**: 100+ infrastructure and ML model metrics
+
+    - type: id_monitoring
+      component_name: "🏗️ Harbor Container Registry"
+      component_excerpt: "🔒 Secure image registry | 🛡️ Vulnerability scanning | 📦 OCI compliance"
+      post: |
+        # 🏗️ Harbor Container Registry
+
+        **✅ STATUS: SECURING IMAGES**
+
+        ## Registry Services
+        ```bash
+        # Container registry active
+        ✅ harbor               # Secure image registry (14h uptime)
+        ```
+
+        ## Security Features
+        - **Vulnerability scanning** - Automated image security analysis
+        - **Image signing** - Content trust and verification
+        - **RBAC** - Role-based access control
+        - **Policy enforcement** - Deployment security policies
+        - **Audit logging** - Complete image lifecycle tracking
+
+    - type: id_monitoring
+      component_name: "📡 Apache Kafka Streaming"
+      component_excerpt: "⚡ Real-time data streams | 🔄 Event-driven ML | 📊 High-throughput messaging"
+      post: |
+        # 📡 Apache Kafka Streaming
+
+        **✅ STATUS: STREAMING DATA**
+
+        ## Streaming Infrastructure
+        ```bash
+        # Kafka platform active
+        ✅ kafka                # Event streaming (14h uptime)
+        ```
+
+        ## Streaming Capabilities
+        - **Real-time data ingestion** - High-throughput event processing
+        - **ML model features** - Real-time feature streaming
+        - **Event-driven ML** - Trigger models from data events
+        - **Data pipelines** - Connect ML workflows to data sources
+        - **Monitoring integration** - Stream processing metrics
+
+        **Active streams**: Financial data feeds, fraud detection events, model predictions

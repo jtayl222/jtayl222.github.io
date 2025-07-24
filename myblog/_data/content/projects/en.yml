@@ -1,0 +1,166 @@
+# you can move this content to front matter of [language]/tabs/projects.md
+###########################################################
+#                Projects Page Data
+###########################################################
+page_data:
+  main:
+    header: "MLOps Engineering Portfolio"
+    info: "🏗️ CUSTOM-BUILT | 📖 FULLY DOCUMENTED | ⭐ PRODUCTION-READY | 🔓 OPEN SOURCE"
+    text_color: "white"
+    # if you don't want to use background image, comment it. back_color will be activated.
+    img: ":projects-heading.jpg"
+    back_color: "#2196F3"
+    github_profile: "https://github.com/jtayl222"
+    github_text: "🔗 View All Repositories on GitHub"
+
+  category:
+    - title: "Infrastructure"
+      type: id_infrastructure
+      color: "#2196F3"
+    - title: "Production Apps"
+      type: id_production
+      color: "#FF6B35"
+    - title: "Cloud & ML"
+      type: id_cloud
+      color: "#4CAF50"
+
+  list:
+    # Infrastructure
+    - type: id_infrastructure
+      project_name: "ML Platform - Enterprise MLOps on Kubernetes"
+      project_excerpt: "Complete Production-Ready MLOps Platform"
+      github_url: "https://github.com/jtayl222/ml-platform"
+      date: "2025-07-24"
+      post: |
+        # ML Platform - Enterprise MLOps on Kubernetes
+
+        Complete, production-ready MLOps platform built on Kubernetes (K3s) for high-performance deployment. Features comprehensive experiment tracking, model serving, pipeline orchestration, GitOps workflows, and integrated monitoring.
+
+        **Key Components:**
+        - Kubernetes orchestration
+        - MLflow tracking
+        - Argo Workflows
+        - Seldon Core serving
+        - Prometheus/Grafana monitoring
+        - GitOps deployment patterns
+
+        **[View Source →](https://github.com/jtayl222/ml-platform)**
+
+    # Production Applications
+    - type: id_production
+      project_name: "Fraud Detection with Safe Model Rollout"
+      project_excerpt: "Advanced MLOps for Financial Fraud Detection"
+      github_url: "https://github.com/jtayl222/fraud-model-rollout-demo"
+      date: "2025-07-24"
+      post: |
+        # Fraud Detection with Safe Model Rollout
+
+        **🆕 LATEST PROJECT**
+
+        Demonstrates advanced MLOps practices for financial fraud detection, including A/B testing for safe model deployment, concept drift detection, and automated model retraining. Built on Kubernetes with comprehensive monitoring and rollback capabilities.
+
+        **Key Features:**
+        - TensorFlow fraud detection models
+        - Seldon Core A/B testing
+        - Concept drift simulation
+        - Production safety patterns
+        - Automated model retraining
+
+        **[View Source →](https://github.com/jtayl222/fraud-model-rollout-demo)**
+
+    - type: id_production
+      project_name: "Financial MLOps Platform"
+      project_excerpt: "Enterprise-Grade MLOps for Financial ML"
+      github_url: "https://github.com/jtayl222/financial-mlops-pytorch"
+      date: "2025-07-23"
+      post: |
+        # Financial MLOps Platform
+
+        **⚠️ Work in Progress**
+
+        Enterprise-grade MLOps platform for financial machine learning models featuring advanced A/B testing, multi-model deployment, and robust monitoring using PyTorch and Seldon Core on Kubernetes.
+
+        **Technologies:**
+        - PyTorch
+        - Seldon Core
+        - Kubernetes
+        - Multi-model serving
+        - Financial data pipelines
+
+        **[View Source →](https://github.com/jtayl222/financial-mlops-pytorch)**
+
+    - type: id_production
+      project_name: "Automated Churn Prediction Pipeline"
+      project_excerpt: "End-to-End MLOps Automation"
+      github_url: "https://github.com/jtayl222/churn-prediction-argo-workflows"
+      date: "2025-07-22"
+      post: |
+        # Automated Churn Prediction Pipeline
+
+        End-to-end automated MLOps pipeline leveraging Argo Workflows for orchestration on Kubernetes, with MLflow for experiment tracking and model management, culminating in Seldon Core deployment.
+
+        **Workflow:**
+        - Automated data preprocessing
+        - Model training
+        - Validation
+        - Registration
+        - Deployment
+
+        **[View Source →](https://github.com/jtayl222/churn-prediction-argo-workflows)**
+
+    # Cloud & ML
+    - type: id_cloud
+      project_name: "AWS SageMaker MLOps Pipeline"
+      project_excerpt: "Cloud-Native MLOps Implementation"
+      github_url: "https://github.com/jtayl222/churn-prediction-sagemaker"
+      date: "2025-07-21"
+      post: |
+        # AWS SageMaker MLOps Pipeline
+
+        Comprehensive cloud-native MLOps implementation on AWS SageMaker, featuring automated data preprocessing, XGBoost model training with hyperparameter tuning, model registration, and serverless deployment via AWS Lambda with CloudWatch monitoring.
+
+        **AWS Services:**
+        - SageMaker
+        - Lambda
+        - CloudWatch
+        - Hyperparameter tuning
+        - Serverless deployment
+
+        **[View Source →](https://github.com/jtayl222/churn-prediction-sagemaker)**
+
+    - type: id_cloud
+      project_name: "Production ML Workflows"
+      project_excerpt: "Production-Ready MLOps Demonstration"
+      github_url: "https://github.com/jtayl222/iris-mlops-demo"
+      date: "2025-07-20"
+      post: |
+        # Production ML Workflows
+
+        Production-ready MLOps platform showcasing automated machine learning workflows from training and validation to secure container builds and Kubernetes deployment.
+
+        **Pipeline:**
+        - Automated training
+        - Validation
+        - Containerization
+        - Deployment
+        - Monitoring
+
+        **[View Source →](https://github.com/jtayl222/iris-mlops-demo)**
+
+    - type: id_cloud
+      project_name: "CNN Image Classification"
+      project_excerpt: "CNN Image Classifier with PyTorch"
+      github_url: "https://github.com/jtayl222/cnn-image-classification"
+      date: "2025-07-19"
+      post: |
+        # CNN Image Classification
+
+        Project code for Udacity's AI Programming with Python Nanodegree program, focusing on building and deploying a convolutional neural network (CNN) image classifier with PyTorch.
+
+        **Technologies:**
+        - PyTorch
+        - Convolutional Neural Networks
+        - Image Classification
+        - Model Training & Deployment
+
+        **[View Source →](https://github.com/jtayl222/cnn-image-classification)**

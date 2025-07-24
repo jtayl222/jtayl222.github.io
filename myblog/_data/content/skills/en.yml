@@ -1,0 +1,300 @@
+# you can move this content to front matter of [language]/tabs/skills.md
+###########################################################
+#                Skills Page Data
+###########################################################
+page_data:
+  main:
+    header: "💻 Technical Skills & Expertise"
+    info: "🔧 HANDS-ON EXPERIENCE | 🏭 PRODUCTION-PROVEN | 📊 PERFORMANCE-FOCUSED | 🚀 ENTERPRISE-GRADE"
+    text_color: "white"
+    # if you don't want to use background image, comment it. back_color will be activated.
+    img: "/assets/img/projects/projects-heading.jpg"
+    back_color: "#1f2937"
+    linkedin_profile: "https://linkedin.com/in/jtayl222"
+    linkedin_text: "🔗 Connect on LinkedIn"
+
+  category:
+    - title: "Programming & Development"
+      type: id_programming
+      color: "#3b82f6"
+    - title: "MLOps Platforms"
+      type: id_mlops
+      color: "#10b981"
+    - title: "Container & Cloud"
+      type: id_container
+      color: "#8b5cf6"
+    - title: "Security & DevOps"
+      type: id_security
+      color: "#f59e0b"
+    - title: "ML & AI Frameworks"
+      type: id_ml_ai
+      color: "#ef4444"
+
+  list:
+    # Programming & Development
+    - type: id_programming
+      skill_name: "Programming Languages & Development"
+      skill_excerpt: "Core programming languages and development frameworks"
+      post: |
+        # 💻 Programming & Development
+
+        ## Primary Languages
+
+        ### **Python** (Expert Level) 🐍
+        - **Primary language** for ML/AI development and data science
+        - **Frameworks**: Django, Flask, FastAPI, Streamlit
+        - **Libraries**: NumPy, Pandas, Matplotlib, Seaborn, Jupyter
+        - **Applications**: ML pipelines, data analysis, web APIs, automation scripts
+
+        ### **Java** (Advanced Level) ☕
+        - **Enterprise applications** and backend systems
+        - **Frameworks**: Spring Boot, Spring Framework, Maven, Gradle
+        - **Applications**: Microservices, distributed systems, enterprise integrations
+        - **Experience**: Large-scale production systems, API development
+
+        ### **TypeScript/JavaScript** (Proficient Level) 🌐
+        - **Full-stack development** with modern frameworks
+        - **Frontend**: React, Vue.js, Angular
+        - **Backend**: Node.js, Express, NestJS
+        - **Applications**: Web applications, APIs, real-time systems
+
+        ### **C/C++** (Intermediate Level) ⚡
+        - **Performance-critical applications** and system programming
+        - **Applications**: High-performance computing, embedded systems
+        - **Use cases**: Optimization algorithms, system-level programming
+
+        ## Communication & APIs
+
+        ### **gRPC** (Advanced) 🔗
+        - **High-performance RPC framework** for microservices
+        - **Protocol Buffers** for efficient serialization
+        - **Applications**: Service-to-service communication, distributed systems
+        - **Integration**: Kubernetes services, ML model serving
+
+    # MLOps Platforms
+    - type: id_mlops
+      skill_name: "MLOps Platforms & Tools"
+      skill_excerpt: "Machine Learning operations and workflow orchestration platforms"
+      post: |
+        # 🤖 MLOps Platforms & Tools
+
+        ## Experiment Tracking & Model Management
+
+        ### **MLflow** (Expert Level) 📊
+        - **Experiment tracking** - Metrics, parameters, artifacts
+        - **Model registry** - Versioning, staging, production promotion
+        - **Model serving** - REST API deployment, batch inference
+        - **Integration**: Kubernetes, cloud platforms, CI/CD pipelines
+        - **Production use**: Managing 10+ models across multiple projects
+
+        ### **Kubeflow** (Advanced Level) ⚙️
+        - **ML workflows** on Kubernetes platform
+        - **Kubeflow Pipelines** - DAG-based ML workflow orchestration
+        - **Jupyter Hub integration** - Multi-user notebook environments
+        - **TensorFlow Extended (TFX)** - Production ML pipelines
+        - **Applications**: End-to-end ML lifecycle on Kubernetes
+
+        ## Workflow Orchestration
+
+        ### **Argo Workflows** (Advanced Level) 🔄
+        - **Container-native workflows** for Kubernetes
+        - **DAG execution** - Complex workflow dependencies
+        - **Event-driven triggers** - Automated pipeline execution
+        - **Integration**: CI/CD, MLflow, model training pipelines
+        - **Production use**: Currently orchestrating fraud detection and financial ML workflows
+
+        ### **Apache Airflow** (Proficient Level) 🌪️
+        - **Data pipeline orchestration** and scheduling
+        - **DAG definition** - Python-based workflow creation
+        - **Monitoring & alerting** - Pipeline health and performance
+        - **Integration**: Data warehouses, cloud services, ML pipelines
+
+    # Container & Cloud
+    - type: id_container
+      skill_name: "Container Orchestration & Cloud"
+      skill_excerpt: "Kubernetes, container platforms, and cloud infrastructure"
+      post: |
+        # 🐳 Container Orchestration & Cloud
+
+        ## Container Orchestration
+
+        ### **Kubernetes** (Expert Level) ☸️
+        - **Cluster management** - Multi-node production clusters (15+ days uptime)
+        - **Workload orchestration** - Deployments, Services, ConfigMaps, Secrets
+        - **Networking** - Ingress, Service Mesh (Istio), CNI (Cilium)
+        - **Storage** - Persistent volumes, StatefulSets, storage classes
+        - **Production experience**: Running 27 active namespaces with enterprise workloads
+
+        ### **OpenShift** (Advanced Level) 🔴
+        - **Enterprise Kubernetes platform** with enhanced security
+        - **Operators** - Custom resource management and automation
+        - **Security** - Pod security policies, RBAC, service mesh
+        - **CI/CD integration** - Build configs, deployment configs
+
+        ### **Docker** (Expert Level) 🐋
+        - **Containerization** - Multi-stage builds, optimization
+        - **Image management** - Registry operations, security scanning
+        - **Compose** - Multi-container application orchestration
+        - **Production patterns**: Building secure, optimized images for ML workloads
+
+        ## Configuration Management
+
+        ### **Helm** (Advanced Level) ⛵
+        - **Package management** for Kubernetes applications
+        - **Chart development** - Complex application deployments
+        - **Templating** - Dynamic configuration management
+        - **Release management** - Versioning, rollbacks, upgrades
+
+        ### **Kustomize** (Advanced Level) 🎯
+        - **Kubernetes configuration management** without templates
+        - **Overlay patterns** - Environment-specific configurations
+        - **GitOps integration** - Declarative configuration management
+        - **Production use**: Managing configurations across dev/staging/prod environments
+
+        ## Cloud Platforms
+
+        ### **AWS** (Advanced Level) ☁️
+        - **Core Services**: EC2, S3, VPC, IAM, CloudFormation
+        - **ML Services**: SageMaker, Lambda, CloudWatch, Bedrock
+        - **Data Services**: RDS, DynamoDB, Kinesis, Glue
+        - **Production experience**: SageMaker ML pipelines, serverless inference
+
+    # Security & DevOps
+    - type: id_security
+      skill_name: "DevSecOps & Security Tools"
+      skill_excerpt: "Security tools, CI/CD platforms, and infrastructure automation"
+      post: |
+        # 🔒 DevSecOps & Security Tools
+
+        ## CI/CD & Automation
+
+        ### **Jenkins** (Advanced Level) 🏗️
+        - **Pipeline creation** - Declarative and scripted pipelines
+        - **Integration** - Git, Docker, Kubernetes, cloud platforms
+        - **Plugin ecosystem** - Custom integrations and automation
+        - **Security**: Credential management, secure build practices
+
+        ### **GitOps** (Advanced Level) 🔄
+        - **Declarative deployments** - Git as single source of truth
+        - **Argo CD** - Continuous deployment to Kubernetes
+        - **Branch strategies** - Environment promotion workflows
+        - **Production patterns**: Automated deployments across 27 namespaces
+
+        ## Security Analysis
+
+        ### **Fortify** (Proficient Level) 🛡️
+        - **Static application security testing** (SAST)
+        - **Vulnerability assessment** - Code-level security analysis
+        - **Integration**: CI/CD pipelines for automated security scanning
+        - **Remediation**: Security issue identification and resolution
+
+        ### **SonarQube** (Proficient Level) 🔍
+        - **Code quality analysis** - Technical debt, code smells
+        - **Security vulnerability detection** - OWASP compliance
+        - **Integration**: Jenkins, GitLab, GitHub Actions
+        - **Quality gates**: Automated quality and security enforcement
+
+        ### **Dependency Tracker** (Proficient Level) 📦
+        - **Software composition analysis** - Open source vulnerability tracking
+        - **License compliance** - License risk assessment
+        - **SBOM generation** - Software bill of materials
+        - **Supply chain security**: Third-party component risk management
+
+        ## Infrastructure Automation
+
+        ### **Ansible** (Advanced Level) 📜
+        - **Configuration management** - Idempotent infrastructure automation
+        - **Playbook development** - Complex multi-tier deployments
+        - **Integration**: Kubernetes, cloud platforms, CI/CD
+        - **Use cases**: Server provisioning, application deployment, configuration drift remediation
+
+        ### **Terraform** (Proficient Level) 🏗️
+        - **Infrastructure as Code** - Declarative resource management
+        - **Multi-cloud** - AWS, Azure, GCP resource provisioning
+        - **State management** - Remote state, state locking
+        - **Modules**: Reusable infrastructure components
+
+        ## Observability
+
+        ### **OpenTelemetry** (Intermediate Level) 📊
+        - **Distributed tracing** - Request flow across microservices
+        - **Metrics collection** - Custom application metrics
+        - **Integration**: Prometheus, Grafana, Jaeger
+        - **Use cases**: ML model performance monitoring, system observability
+
+    # ML & AI Frameworks
+    - type: id_ml_ai
+      skill_name: "Machine Learning & AI Frameworks"
+      skill_excerpt: "ML frameworks, model serving, and specialized AI domains"
+      post: |
+        # 🧠 Machine Learning & AI Frameworks
+
+        ## Deep Learning Frameworks
+
+        ### **PyTorch** (Expert Level) 🔥
+        - **Model development** - Neural network architectures, custom layers
+        - **Training pipelines** - Distributed training, mixed precision
+        - **Production deployment** - TorchServe, ONNX conversion
+        - **Applications**: Financial ML models, fraud detection, computer vision
+        - **Current use**: Production fraud detection and financial forecasting models
+
+        ### **TensorFlow** (Advanced Level) 📈
+        - **Model development** - Keras API, custom training loops
+        - **TensorFlow Extended (TFX)** - Production ML pipelines
+        - **Serving** - TensorFlow Serving, TensorFlow Lite
+        - **Applications**: Large-scale ML systems, computer vision, NLP
+
+        ### **Scikit-learn** (Expert Level) 🔬
+        - **Traditional ML algorithms** - Classification, regression, clustering
+        - **Feature engineering** - Preprocessing, feature selection
+        - **Model evaluation** - Cross-validation, hyperparameter tuning
+        - **Integration**: Production pipelines, model comparison frameworks
+
+        ## Model Serving & Deployment
+
+        ### **Seldon Core** (Advanced Level) 🎯
+        - **Kubernetes-native model serving** - Scalable inference
+        - **A/B testing** - Multi-model comparison and traffic splitting
+        - **Explainability** - Model interpretation and explanation
+        - **Production use**: Currently serving fraud detection and financial ML models
+        - **Monitoring**: Model drift detection, performance metrics
+
+        ### **Model Serving Platforms** (Advanced Level) 🚀
+        - **KServe** - Serverless ML inference on Kubernetes
+        - **BentoML** - Model packaging and serving framework
+        - **Ray Serve** - Scalable model serving with Ray
+        - **Applications**: High-throughput inference, multi-model serving
+
+        ## Specialized Domains
+
+        ### **RADAR Signal Processing** (Specialized Level) 📡
+        - **Signal analysis** - Digital signal processing techniques
+        - **Pattern recognition** - Signal classification and detection
+        - **Domain expertise** - Military/aerospace applications
+        - **Applications**: Specialized signal processing algorithms, detection systems
+
+        ### **Expert Systems & Business Rules** (Proficient Level) 🧩
+        - **Drools Rule Engine** - Complex business logic automation
+        - **Decision tables** - Rule modeling and optimization
+        - **Integration**: Enterprise systems, workflow automation
+        - **Applications**: Financial risk assessment, compliance automation
+
+        ## MLOps Specializations
+
+        ### **A/B Testing for ML Models** (Advanced Level) 🔄
+        - **Traffic splitting** - Canary deployments, blue-green deployments
+        - **Statistical analysis** - A/B test design, significance testing
+        - **Production safety** - Rollback mechanisms, monitoring
+        - **Current implementation**: Live A/B testing for fraud detection models
+
+        ### **Concept Drift Detection** (Advanced Level) 📊
+        - **Data drift monitoring** - Feature distribution changes
+        - **Model performance drift** - Accuracy degradation detection
+        - **Automated retraining** - Trigger-based model updates
+        - **Tools**: Evidently AI, MLflow, custom monitoring solutions
+
+        ### **Production Monitoring** (Advanced Level) 👁️
+        - **Model performance metrics** - Latency, throughput, accuracy
+        - **Infrastructure monitoring** - Resource utilization, health checks
+        - **Alerting** - Proactive issue detection and notification
+        - **Dashboards**: Grafana dashboards for ML system observability

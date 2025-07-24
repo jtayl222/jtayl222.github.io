@@ -1,0 +1,122 @@
+# you can move this content to front matter of [language]/tabs/publications.md
+###########################################################
+#                Publications Page Data
+###########################################################
+page_data:
+  main:
+    header: "📚 Technical Publications & Articles"
+    info: "✍️ THOUGHT LEADERSHIP | 🧠 TECHNICAL INSIGHTS | 📊 MLOps EXPERTISE | 🌐 COMMUNITY SHARING"
+    text_color: "white"
+    # if you don't want to use background image, comment it. back_color will be activated.
+    img: "/assets/img/projects/projects-heading.jpg"
+    back_color: "#1565C0"
+    medium_profile: "https://medium.com/@jtayl222"
+    medium_text: "🔗 Follow on Medium"
+
+  category:
+    - title: "MLOps & Infrastructure"
+      type: id_mlops
+      color: "#FF6B35"
+    - title: "Technical Guides"
+      type: id_guides
+      color: "#4CAF50"
+    - title: "Industry Insights"
+      type: id_insights
+      color: "#9C27B0"
+
+  list:
+    # MLOps & Infrastructure
+    - type: id_mlops
+      article_name: "Automating MLOps: Scalable ML Pipelines"
+      article_excerpt: "Building production-ready machine learning pipelines with automation"
+      medium_url: "https://medium.com/@jtayl222/automating-mlops-scalable-ml-pipelines-5f8c9e8b7c2d"
+      date: "2025-07-02"
+      post: |
+        # Automating MLOps: Scalable ML Pipelines
+
+        **📖 Published on Medium**
+
+        An in-depth exploration of building scalable machine learning pipelines that can handle production workloads. This article covers:
+
+        ## Key Topics Covered
+        - **Pipeline Architecture** - Design patterns for scalable ML workflows
+        - **Automation Strategies** - CI/CD for machine learning models
+        - **Monitoring & Observability** - Ensuring pipeline health and performance
+        - **Production Deployment** - Best practices for ML model deployment
+        - **Infrastructure as Code** - Reproducible ML infrastructure
+
+        ## Technical Focus
+        - Kubernetes-native ML pipelines
+        - Automated model training and validation
+        - Container-based deployment strategies
+        - Monitoring and alerting for ML systems
+
+        This article draws from real-world experience building production MLOps platforms and provides practical insights for implementing scalable ML workflows.
+
+        **[📖 Read Full Article on Medium](https://medium.com/@jtayl222/automating-mlops-scalable-ml-pipelines-5f8c9e8b7c2d)**
+
+    - type: id_guides
+      article_name: "PyTorch M1 Performance Speedup Guide"
+      article_excerpt: "Optimizing PyTorch performance on Apple Silicon M1 processors"
+      medium_url: "https://medium.com/@jtayl222/pytorch-m1-speedup-guide-a8b5c3d4e6f7"
+      date: "2025-07-02"
+      post: |
+        # PyTorch M1 Performance Speedup Guide
+
+        **📖 Published on Medium**
+
+        A comprehensive guide to optimizing PyTorch performance on Apple Silicon M1 processors, achieving significant speedups for machine learning workloads.
+
+        ## Performance Optimizations Covered
+        - **Metal Performance Shaders** - Leveraging Apple's GPU acceleration
+        - **Memory Management** - Optimizing tensor operations for M1 architecture
+        - **Batch Processing** - Efficient data loading and processing strategies
+        - **Model Optimization** - Architecture-specific performance tuning
+        - **Benchmarking** - Measuring and validating performance improvements
+
+        ## Technical Deep Dive
+        - Native M1 PyTorch installation and configuration
+        - GPU acceleration with Metal backend
+        - Memory optimization techniques
+        - Performance profiling and analysis
+        - Real-world benchmark comparisons
+
+        This guide provides practical steps to unlock the full potential of Apple Silicon for machine learning development and training.
+
+        **[📖 Read Full Article on Medium](https://medium.com/@jtayl222/pytorch-m1-speedup-guide-a8b5c3d4e6f7)**
+
+    - type: id_insights
+      article_name: "13 Essential Medium Articles for MLOps Engineers"
+      article_excerpt: "Curated collection of must-read articles for MLOps professionals"
+      medium_url: "https://medium.com/@jtayl222/13-medium-articles-mlops-engineers-c9d1e2f3a8b4"
+      date: "2025-07-02"
+      post: |
+        # 13 Essential Medium Articles for MLOps Engineers
+
+        **📖 Published on Medium**
+
+        A carefully curated collection of the most valuable Medium articles every MLOps engineer should read to stay current with industry best practices and emerging trends.
+
+        ## Article Categories
+        - **Infrastructure & Platforms** - Building scalable ML infrastructure
+        - **Model Deployment** - Production deployment strategies and patterns
+        - **Monitoring & Observability** - ML system health and performance tracking
+        - **Data Management** - Data versioning, lineage, and governance
+        - **Security & Compliance** - ML security and regulatory considerations
+
+        ## Why This Collection Matters
+        - **Industry Insights** - Learn from practitioners at leading tech companies
+        - **Best Practices** - Proven patterns for production ML systems
+        - **Emerging Trends** - Stay ahead of the curve in MLOps evolution
+        - **Community Knowledge** - Benefit from collective industry experience
+        - **Practical Guidance** - Actionable advice for real-world implementations
+
+        ## Target Audience
+        - MLOps engineers and platform engineers
+        - Data scientists moving to production
+        - DevOps engineers working with ML systems
+        - Engineering managers overseeing ML teams
+
+        This compilation saves hours of research by highlighting the most impactful articles in the MLOps space.
+
+        **[📖 Read Full Article on Medium](https://medium.com/@jtayl222/13-medium-articles-mlops-engineers-c9d1e2f3a8b4)**

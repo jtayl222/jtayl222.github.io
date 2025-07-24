@@ -1,0 +1,237 @@
+# you can move this content to front matter of [language]/tabs/certifications.md
+###########################################################
+#                Certifications Page Data
+###########################################################
+page_data:
+  main:
+    header: "🏆 Professional Certifications & Credentials"
+    info: "🎓 CONTINUOUSLY LEARNING | ☁️ CLOUD-CERTIFIED | 🧠 AI/ML EXPERT | 🛡️ SECURITY-CLEARED"
+    text_color: "white"
+    # if you don't want to use background image, comment it. back_color will be activated.
+    img: "/assets/img/projects/projects-heading.jpg"
+    back_color: "#1e3a8a"
+    credly_profile: "https://www.credly.com/users/jeffrey-taylor.1234567"
+    credly_text: "🔗 View All Badges on Credly"
+
+  category:
+    - title: "Latest 2024-2025"
+      type: id_latest
+      color: "#10b981"
+    - title: "Deep Learning AI"
+      type: id_deeplearning
+      color: "#3b82f6"
+    - title: "Enterprise MLOps"
+      type: id_enterprise
+      color: "#8b5cf6"
+
+  list:
+    # Latest 2024-2025
+    - type: id_latest
+      cert_name: "Microsoft Azure AI Engineer"
+      cert_excerpt: "Advanced AI solution development on Azure platform"
+      date: "2025-01-15"
+      post: |
+        # 🆕 Microsoft Azure AI Engineer (AI-102)
+
+        **Issued: January 2025**
+
+        ## Certification Overview
+        Advanced certification for developing, deploying, and maintaining AI solutions on the Microsoft Azure platform. Demonstrates expertise in Azure Cognitive Services, Azure Machine Learning, and responsible AI practices.
+
+        ## Key Competencies
+        - **Azure Cognitive Services** - Computer Vision, Speech, Language Understanding
+        - **Azure Machine Learning** - Model training, deployment, and management
+        - **MLOps on Azure** - CI/CD pipelines for ML models
+        - **Responsible AI** - Fairness, reliability, safety, privacy, inclusiveness
+        - **Knowledge Mining** - Azure Cognitive Search integration
+
+        ## Practical Applications
+        - Design and implement AI solutions for enterprise clients
+        - Deploy and monitor ML models at scale on Azure
+        - Implement responsible AI practices in production systems
+        - Integrate cognitive services into business applications
+
+        **Credential ID**: Microsoft Certified Professional
+
+    - type: id_latest
+      cert_name: "AWS AI Practitioner Early Adopter"
+      cert_excerpt: "Cutting-edge AWS AI/ML services implementation"
+      date: "2024-09-15"
+      post: |
+        # ☁️ AWS AI Practitioner Early Adopter
+
+        **Issued: September 2024**
+
+        ## Early Access Program
+        Exclusive early adopter certification for AWS AI services, demonstrating expertise with the latest AWS artificial intelligence and machine learning capabilities before general availability.
+
+        ## Advanced AWS AI Services
+        - **Amazon Bedrock** - Foundation models and generative AI
+        - **Amazon SageMaker** - Advanced ML model development and deployment
+        - **AWS AI Services** - Rekognition, Comprehend, Textract, Polly
+        - **MLOps on AWS** - End-to-end ML lifecycle management
+        - **AI Ethics & Governance** - Responsible AI implementation
+
+        ## Cutting-Edge Implementations
+        - Early access to unreleased AWS AI features
+        - Beta testing of new machine learning services
+        - Implementation of generative AI solutions
+        - Advanced model optimization techniques
+
+        **Status**: AWS Certified AI Practitioner - Early Adopter
+
+    - type: id_latest
+      cert_name: "Udacity AI Programming with Python"
+      cert_excerpt: "Advanced Python programming for AI applications"
+      date: "2024-11-20"
+      post: |
+        # 🐍 AI Programming with Python Nanodegree
+
+        **Completed: November 2024**
+
+        ## Program Overview
+        Comprehensive nanodegree program focused on Python programming fundamentals for artificial intelligence and machine learning applications, with hands-on projects and real-world implementations.
+
+        ## Core Curriculum
+        - **Python Fundamentals** - Advanced Python programming concepts
+        - **NumPy & Pandas** - Data manipulation and analysis
+        - **Matplotlib & Seaborn** - Data visualization and plotting
+        - **Neural Networks** - Deep learning implementation from scratch
+        - **PyTorch Framework** - Modern deep learning development
+
+        ## Capstone Project
+        Built and deployed a convolutional neural network (CNN) image classifier using PyTorch, demonstrating:
+        - Image preprocessing and data augmentation
+        - CNN architecture design and implementation
+        - Model training, validation, and optimization
+        - Transfer learning with pre-trained models
+
+        **Repository**: [CNN Image Classification Project](https://github.com/jtayl222/cnn-image-classification)
+
+    # Deep Learning AI
+    - type: id_deeplearning
+      cert_name: "DeepLearning.AI Complete Specialization"
+      cert_excerpt: "Comprehensive deep learning specialization - 6 courses completed"
+      date: "2024-08-30"
+      post: |
+        # 🧠 DeepLearning.AI Complete Specialization
+
+        **Completed: August 2024**
+
+        ## Specialization Overview
+        Comprehensive 6-course specialization covering the complete spectrum of deep learning, from fundamentals to advanced applications, taught by Andrew Ng and leading AI researchers.
+
+        ## Course Breakdown
+
+        ### ✅ Neural Networks and Deep Learning
+        - **Fundamentals** - Logistic regression, neural network basics
+        - **Deep Networks** - Forward/backward propagation, parameter optimization
+        - **Implementation** - Built neural networks from scratch in Python
+
+        ### ✅ Improving Deep Neural Networks
+        - **Hyperparameter Tuning** - Learning rate, batch size, layer optimization
+        - **Regularization** - Dropout, L2 regularization, batch normalization
+        - **Optimization** - Adam, RMSprop, momentum algorithms
+
+        ### ✅ Structuring Machine Learning Projects
+        - **ML Strategy** - Bias/variance tradeoffs, error analysis
+        - **End-to-End ML Projects** - Data collection to production deployment
+        - **MLOps Best Practices** - Versioning, testing, monitoring
+
+        ### ✅ Convolutional Neural Networks
+        - **CNN Architectures** - LeNet, AlexNet, VGG, ResNet
+        - **Computer Vision** - Object detection, face recognition
+        - **Transfer Learning** - Pre-trained model fine-tuning
+
+        ### ✅ Sequence Models
+        - **RNNs & LSTMs** - Sequential data processing
+        - **Attention Mechanisms** - Transformer architecture fundamentals
+        - **NLP Applications** - Language modeling, machine translation
+
+        ### ✅ Generative AI with Large Language Models
+        - **LLM Fundamentals** - Transformer architecture deep dive
+        - **Fine-tuning Strategies** - PEFT, LoRA, instruction tuning
+        - **LLM Applications** - Text generation, summarization, Q&A systems
+
+        ## Practical Applications
+        Applied learning through hands-on projects implementing:
+        - Image classification systems for production use
+        - Natural language processing pipelines
+        - Generative AI applications with modern LLMs
+        - End-to-end ML project lifecycle management
+
+        **Credential**: DeepLearning.AI Specialization Certificate
+
+    # Enterprise MLOps
+    - type: id_enterprise
+      cert_name: "Red Hat Certified Specialist"
+      cert_excerpt: "Business Rules and Process Design"
+      date: "2024-06-15"
+      post: |
+        # 🎯 Red Hat Certified Specialist
+
+        **Business Rules and Process Design**  
+        **Issued: June 2024**
+
+        ## Certification Focus
+        Advanced certification in enterprise business process automation and rule engine development, with emphasis on production-ready implementations for large-scale organizations.
+
+        ## Technical Expertise
+        - **Drools Rule Engine** - Complex business rule implementation
+        - **jBPM Workflow** - Business process management and automation
+        - **Decision Tables** - Rule modeling and optimization
+        - **Process Automation** - End-to-end workflow orchestration
+        - **Enterprise Integration** - Rule engine integration patterns
+
+        ## Production Applications
+        - **Financial Rules** - Risk assessment and compliance automation
+        - **MLOps Workflows** - Model governance and deployment rules
+        - **Business Logic** - Complex decision-making automation
+        - **Process Optimization** - Workflow efficiency improvements
+
+        ## Enterprise Value
+        Enables implementation of sophisticated business logic and process automation in enterprise MLOps platforms, providing governance and compliance capabilities for production ML systems.
+
+        **Credential ID**: Red Hat Certified Specialist
+
+    - type: id_enterprise
+      cert_name: "MLOps Production Lifecycle"
+      cert_excerpt: "Production ML system lifecycle management"
+      date: "2024-05-20"
+      post: |
+        # ⚙️ MLOps Production Lifecycle Certification
+
+        **DeepLearning.AI Professional Certificate**  
+        **Issued: May 2024**
+
+        ## Program Overview
+        Comprehensive certification focused on production machine learning system lifecycle management, covering the complete journey from model development to production deployment and monitoring.
+
+        ## Core Competencies
+
+        ### Production ML Systems
+        - **Model Deployment** - Containerization, orchestration, scaling
+        - **Monitoring & Observability** - Model performance, data drift detection
+        - **CI/CD for ML** - Automated testing, validation, deployment pipelines
+        - **Model Governance** - Version control, approval workflows, compliance
+
+        ### MLOps Infrastructure
+        - **Platform Engineering** - Kubernetes-based ML platforms
+        - **Data Pipeline Management** - ETL/ELT for ML workloads
+        - **Feature Stores** - Centralized feature management and serving
+        - **Model Registries** - Centralized model lifecycle management
+
+        ### Production Challenges
+        - **Model Drift Detection** - Data and concept drift monitoring
+        - **A/B Testing** - Safe model rollout strategies
+        - **Rollback Mechanisms** - Production incident response
+        - **Performance Optimization** - Latency, throughput, resource efficiency
+
+        ## Real-World Applications
+        Applied certification knowledge in building and operating:
+        - **ml-platform** - Complete MLOps infrastructure on Kubernetes
+        - **Fraud Detection System** - Production A/B testing implementation
+        - **Financial ML Models** - Enterprise-grade model serving
+        - **Monitoring Stack** - Comprehensive ML system observability
+
+        **Certificate**: MLOps Production Lifecycle Professional

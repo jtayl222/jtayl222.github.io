@@ -1,0 +1,209 @@
+# you can move this content to front matter of [language]/tabs/repositories.md
+###########################################################
+#                Repositories Page Data
+###########################################################
+page_data:
+  main:
+    header: "📂 Code Repositories - Open Source Portfolio"
+    info: "🔓 OPEN SOURCE | 🏗️ CUSTOM-BUILT | 📖 FULLY DOCUMENTED | ⭐ PRODUCTION-READY"
+    text_color: "white"
+    # if you don't want to use background image, comment it. back_color will be activated.
+    img: "/assets/img/projects/projects-heading.jpg"
+    back_color: "#24292e"
+    github_profile: "https://github.com/jtayl222"
+    github_text: "🔗 View All Repositories on GitHub"
+
+  category:
+    - title: "MLOps Infrastructure"
+      type: id_infrastructure
+      color: "#2196F3"
+    - title: "Production Applications"
+      type: id_applications
+      color: "#FF6B35"
+    - title: "Cloud & ML Projects"
+      type: id_cloud_ml
+      color: "#4CAF50"
+    - title: "Learning & Demos"
+      type: id_demos
+      color: "#9C27B0"
+
+  list:
+    # MLOps Infrastructure
+    - type: id_infrastructure
+      repo_name: "ml-platform"
+      repo_excerpt: "Complete MLOps platform on Kubernetes with MLflow, Argo, and monitoring"
+      img: ":project1_thumb.jpg"
+      img_title: "ML Platform"
+      date: "2025-07-24"
+      post: |
+        # ML Platform - Enterprise MLOps Infrastructure
+
+        **🏗️ Foundation Repository**
+
+        Complete, production-ready MLOps platform built on Kubernetes (K3s) for high-performance homelab deployment, featuring experiment tracking, model serving, pipeline orchestration, GitOps, and comprehensive monitoring.
+
+        ## Key Components
+        - **Kubernetes Orchestration** - K3s cluster setup and management
+        - **MLflow Tracking** - Experiment and model lifecycle management
+        - **Argo Workflows** - Container-native workflow orchestration
+        - **Seldon Core** - Model serving and inference
+        - **Prometheus/Grafana** - Comprehensive monitoring and alerting
+        - **GitOps Deployment** - Automated, declarative deployments
+
+        ## Technologies
+        `Kubernetes` `MLflow` `Argo Workflows` `Seldon Core` `Prometheus` `Grafana` `Helm` `Kustomize`
+
+        **[🔗 View Repository](https://github.com/jtayl222/ml-platform)**
+
+    # Production Applications
+    - type: id_applications
+      repo_name: "fraud-model-rollout-demo"
+      repo_excerpt: "Advanced A/B testing and safe model deployment for fraud detection"
+      img: ":project1_thumb.jpg"
+      img_title: "Fraud Detection"
+      date: "2025-07-24"
+      post: |
+        # Fraud Model Rollout Demo
+
+        **🆕 Latest Project - Advanced MLOps Patterns**
+
+        Demonstrates sophisticated MLOps practices for financial fraud detection, including A/B testing for safe model deployment, concept drift detection, and automated model retraining with comprehensive monitoring and rollback capabilities.
+
+        ## Advanced Features
+        - **A/B Testing Framework** - Safe model deployment with traffic splitting
+        - **Concept Drift Detection** - Automated model performance monitoring
+        - **Model Retraining Pipeline** - Automated retraining on drift detection
+        - **Production Safety Patterns** - Rollback mechanisms and safeguards
+        - **Comprehensive Monitoring** - End-to-end observability
+
+        ## Tech Stack
+        `TensorFlow` `Seldon Core` `Kubernetes` `Prometheus` `Grafana` `Python`
+
+        **[🔗 View Repository](https://github.com/jtayl222/fraud-model-rollout-demo)**
+
+    - type: id_applications
+      repo_name: "financial-mlops-pytorch"
+      repo_excerpt: "Enterprise-grade MLOps platform for financial ML models with PyTorch"
+      img: ":project1_thumb.jpg"
+      img_title: "Financial MLOps"
+      date: "2025-07-23"
+      post: |
+        # Financial MLOps with PyTorch
+
+        **⚠️ Work in Progress - Enterprise-Grade Platform**
+
+        Comprehensive MLOps platform specifically designed for financial machine learning models, demonstrating advanced A/B testing, multi-model deployment, and robust monitoring using PyTorch and Seldon Core on Kubernetes.
+
+        ## Enterprise Features
+        - **Multi-Model Serving** - Concurrent model deployment and management
+        - **Financial Data Pipelines** - Specialized financial data processing
+        - **Risk Management Integration** - Built-in risk assessment workflows
+        - **Compliance Monitoring** - Regulatory compliance tracking
+        - **Advanced A/B Testing** - Financial model comparison frameworks
+
+        ## Technologies
+        `PyTorch` `Seldon Core` `Kubernetes` `Apache Kafka` `PostgreSQL` `Redis`
+
+        **[🔗 View Repository](https://github.com/jtayl222/financial-mlops-pytorch)**
+
+    - type: id_applications
+      repo_name: "churn-prediction-argo-workflows"
+      repo_excerpt: "End-to-end churn prediction pipeline with Argo Workflows orchestration"
+      img: ":project1_thumb.jpg"
+      img_title: "Churn Prediction"
+      date: "2025-07-22"
+      post: |
+        # Churn Prediction with Argo Workflows
+
+        **📈 Production Pipeline Implementation**
+
+        Automated MLOps pipeline for customer churn prediction, leveraging Argo Workflows for end-to-end orchestration on Kubernetes, with MLflow for experiment tracking and model management.
+
+        ## Pipeline Components
+        - **Data Preprocessing** - Automated feature engineering and data validation
+        - **Model Training** - Hyperparameter optimization and cross-validation
+        - **Model Validation** - Comprehensive model evaluation and testing
+        - **Model Registration** - Automated model versioning and metadata tracking
+        - **Model Deployment** - Seamless deployment to Seldon Core
+
+        ## Workflow Features
+        `Argo Workflows` `MLflow` `Seldon Core` `Kubernetes` `Python` `Scikit-learn`
+
+        **[🔗 View Repository](https://github.com/jtayl222/churn-prediction-argo-workflows)**
+
+    # Cloud & ML Projects
+    - type: id_cloud_ml
+      repo_name: "churn-prediction-sagemaker"
+      repo_excerpt: "Cloud-native MLOps pipeline on AWS SageMaker with serverless deployment"
+      img: ":project1_thumb.jpg"
+      img_title: "SageMaker Pipeline"
+      date: "2025-07-21"
+      post: |
+        # Churn Prediction on AWS SageMaker
+
+        **☁️ Cloud-Native MLOps Implementation**
+
+        Comprehensive cloud-native MLOps implementation on AWS SageMaker, featuring automated data preprocessing, XGBoost model training with hyperparameter tuning, model registration, and serverless deployment via AWS Lambda.
+
+        ## AWS Services Integration
+        - **SageMaker Training** - Managed training with automatic scaling
+        - **Hyperparameter Tuning** - Automated optimization jobs
+        - **Model Registry** - Centralized model versioning and approval
+        - **Lambda Deployment** - Serverless inference endpoints
+        - **CloudWatch Monitoring** - Comprehensive logging and metrics
+
+        ## Cloud Architecture
+        `AWS SageMaker` `AWS Lambda` `CloudWatch` `S3` `IAM` `CloudFormation`
+
+        **[🔗 View Repository](https://github.com/jtayl222/churn-prediction-sagemaker)**
+
+    - type: id_cloud_ml
+      repo_name: "iris-mlops-demo"
+      repo_excerpt: "Production-ready MLOps workflows from training to secure deployment"
+      img: ":project1_thumb.jpg"
+      img_title: "Iris MLOps"
+      date: "2025-07-20"
+      post: |
+        # Iris MLOps Demo
+
+        **🌸 Production-Ready ML Workflows**
+
+        Comprehensive repository showcasing production-ready MLOps platform built on Kubernetes, demonstrating automated machine learning workflows from training and validation to secure container builds and deployment.
+
+        ## Production Patterns
+        - **Automated Training** - CI/CD integration for model training
+        - **Model Validation** - Comprehensive testing and validation pipelines
+        - **Secure Containerization** - Security-first container builds
+        - **Kubernetes Deployment** - Production-grade deployment patterns
+        - **Monitoring Integration** - End-to-end observability
+
+        ## Technologies
+        `Kubernetes` `Docker` `MLflow` `Prometheus` `Grafana` `Python` `Scikit-learn`
+
+        **[🔗 View Repository](https://github.com/jtayl222/iris-mlops-demo)**
+
+    # Learning & Demos
+    - type: id_demos
+      repo_name: "cnn-image-classification"
+      repo_excerpt: "CNN image classifier implementation with PyTorch for AI programming"
+      img: ":project1_thumb.jpg"
+      img_title: "CNN Classification"
+      date: "2025-07-19"
+      post: |
+        # CNN Image Classification
+
+        **🧠 Deep Learning Foundation Project**
+
+        Educational project from Udacity's AI Programming with Python Nanodegree program, focusing on building and deploying a convolutional neural network (CNN) image classifier using PyTorch with best practices.
+
+        ## Learning Objectives
+        - **CNN Architecture** - Understanding convolutional neural network design
+        - **PyTorch Implementation** - Hands-on experience with PyTorch framework
+        - **Image Classification** - Computer vision problem solving
+        - **Model Training** - Training loop implementation and optimization
+        - **Model Deployment** - Converting trained models for inference
+
+        ## Educational Focus
+        `PyTorch` `Computer Vision` `CNNs` `Image Classification` `Python`
+
+        **[🔗 View Repository](https://github.com/jtayl222/cnn-image-classification)**
