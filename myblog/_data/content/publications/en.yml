@@ -4,13 +4,13 @@
 ###########################################################
 page_data:
   main:
-    header: "📚 Technical Publications & Articles"
-    info: "✍️ THOUGHT LEADERSHIP | 🧠 TECHNICAL INSIGHTS | 📊 MLOps EXPERTISE | 🌐 COMMUNITY SHARING"
+    header: "📚 My Technical Publications"
+    info: "✍️ MY ARTICLES | 🧠 TECHNICAL INSIGHTS | 📊 MLOps EXPERTISE | 🌐 KNOWLEDGE SHARING"
     text_color: "white"
     # if you don't want to use background image, comment it. back_color will be activated.
     img: "/assets/img/projects/projects-heading.jpg"
     back_color: "#1565C0"
-    medium_profile: "https://medium.com/@jtayl222"
+    medium_profile: "https://jeftaylo.medium.com/"
     medium_text: "🔗 Follow on Medium"
 
   category:
@@ -20,103 +20,996 @@ page_data:
     - title: "Technical Guides"
       type: id_guides
       color: "#4CAF50"
-    - title: "Industry Insights"
-      type: id_insights
+    - title: "AI & LLM Development"
+      type: id_ai
       color: "#9C27B0"
 
   list:
-    # MLOps & Infrastructure
+    # Technical Demonstrations (Portfolio Projects)
     - type: id_mlops
-      article_name: "Automating MLOps: Scalable ML Pipelines"
-      article_excerpt: "Building production-ready machine learning pipelines with automation"
-      medium_url: "https://medium.com/@jtayl222/automating-mlops-scalable-ml-pipelines-5f8c9e8b7c2d"
-      date: "2025-07-02"
+      article_name: "A/B Testing in Production MLOps: Why Traditional Deployments Fail ML Models"
+      article_excerpt: "Part 1: The problem and solution framework for ML model testing in production environments"
+      medium_url: "/fraud-ab-testing-part-1.html"
+      date: "2025-07-24"
       post: |
-        # Automating MLOps: Scalable ML Pipelines
+        # A/B Testing in Production MLOps: Why Traditional Deployments Fail ML Models
 
-        **📖 Published on Medium**
+        **⚡ Production MLOps Implementation - Part 1 of 2**
 
-        An in-depth exploration of building scalable machine learning pipelines that can handle production workloads. This article covers:
+        A comprehensive exploration of why traditional software deployment strategies fall short for ML models, demonstrated through a real-world fraud detection system built with Seldon Core v2 Pattern 3 architecture.
 
-        ## Key Topics Covered
-        - **Pipeline Architecture** - Design patterns for scalable ML workflows
-        - **Automation Strategies** - CI/CD for machine learning models
-        - **Monitoring & Observability** - Ensuring pipeline health and performance
-        - **Production Deployment** - Best practices for ML model deployment
-        - **Infrastructure as Code** - Reproducible ML infrastructure
+        ## 🎯 Key Technical Challenges
+        - **Performance vs Business Impact Disconnect** - Better ML metrics don't always mean better business outcomes
+        - **Model Behavior Changes in Production** - Data drift, concept drift, and infrastructure differences
+        - **Risk Management Requirements** - Regulatory compliance, business continuity, and real-time constraints
+        - **Preprocessing Pipeline Validation** - Critical infrastructure issues that can cause complete model failure
 
-        ## Technical Focus
-        - Kubernetes-native ML pipelines
-        - Automated model training and validation
-        - Container-based deployment strategies
-        - Monitoring and alerting for ML systems
+        ## 🏗️ Real-World Implementation
+        - **Kubernetes + Seldon Core v2** - Official Pattern 3 architecture for production deployments
+        - **80/20 Traffic Splitting** - Conservative approach for financial risk models
+        - **Comprehensive Metrics Collection** - Model performance, system performance, and business impact
+        - **Automated Decision Framework** - Data-driven deployment decisions with fallback mechanisms
 
-        This article draws from real-world experience building production MLOps platforms and provides practical insights for implementing scalable ML workflows.
+        ## 📊 Production Results
+        - **Baseline Model**: 73.5% recall, 97.9% precision
+        - **Candidate Model**: 100% recall, 95.9% precision (with optimal thresholds)
+        - **Critical Discovery**: Models predicted 0.0 for all transactions due to preprocessing issues
+        - **Validation Success**: A/B testing safely identified and resolved infrastructure problems
 
-        **[📖 Read Full Article on Medium](https://medium.com/@jtayl222/automating-mlops-scalable-ml-pipelines-5f8c9e8b7c2d)**
+        ## 🚨 Mission-Critical Lessons
+        - **Offline metrics don't guarantee production success** - 100% recall became 0% due to feature pipeline issues
+        - **A/B testing validates complete production pipelines** - Discovers infrastructure failures with limited exposure
+        - **Conservative traffic splits limit business risk** - 80/20 allocation provides statistical power safely
+        - **Automated decision frameworks prevent disasters** - Real-time performance monitoring with automatic fallback
 
-    - type: id_guides
-      article_name: "PyTorch M1 Performance Speedup Guide"
-      article_excerpt: "Optimizing PyTorch performance on Apple Silicon M1 processors"
-      medium_url: "https://medium.com/@jtayl222/pytorch-m1-speedup-guide-a8b5c3d4e6f7"
-      date: "2025-07-02"
+        This technical implementation demonstrates the gap between ML theory and production reality, providing practical solutions for safely deploying fraud detection models at scale.
+
+        **[📖 Read Complete Implementation Guide](/fraud-ab-testing-part-1.html)**
+
+    - type: id_mlops
+      article_name: "Building Production A/B Testing Infrastructure for Fraud Detection Models"
+      article_excerpt: "Part 2: Technical implementation with Seldon Core v2 Pattern 3, preprocessing validation, and real-world results"
+      medium_url: "/fraud-ab-testing-part-2.html"
+      date: "2025-07-24"
       post: |
-        # PyTorch M1 Performance Speedup Guide
+        # Building Production A/B Testing Infrastructure for Fraud Detection Models
 
-        **📖 Published on Medium**
+        **🔧 Advanced MLOps Implementation - Part 2 of 2**
 
-        A comprehensive guide to optimizing PyTorch performance on Apple Silicon M1 processors, achieving significant speedups for machine learning workloads.
+        Complete technical implementation of production-ready fraud detection A/B testing infrastructure using Seldon Core v2 Pattern 3 architecture, with comprehensive preprocessing validation and automated decision making.
 
-        ## Performance Optimizations Covered
-        - **Metal Performance Shaders** - Leveraging Apple's GPU acceleration
-        - **Memory Management** - Optimizing tensor operations for M1 architecture
-        - **Batch Processing** - Efficient data loading and processing strategies
-        - **Model Optimization** - Architecture-specific performance tuning
-        - **Benchmarking** - Measuring and validating performance improvements
+        ## 🏗️ Seldon Core v2 Pattern 3 Architecture
+        - **Centralized ServerConfig** - Located in seldon-system namespace, shared across all models
+        - **seldon-mesh LoadBalancer** - External access point (192.168.1.212) with Host-based routing
+        - **Namespace Separation** - ServerConfig in seldon-system, runtime components in fraud-detection
+        - **Official Architecture** - No custom operator patches or workarounds needed
+
+        ## 🚨 Critical Infrastructure Discoveries
+        - **Feature Ordering Mismatch** - Training vs production API feature sequence differences
+        - **Missing Feature Scaling** - StandardScaler parameters not applied in production
+        - **Sub-optimal Thresholds** - Default 0.5 vs optimal 0.9 threshold for candidate model
+        - **Model Naming Issues** - MLServer internal names vs Seldon resource names confusion
+
+        ## 🧪 Production Validation Pipeline
+        ```python
+        # Production Pipeline Validation Tool
+        class FraudDetectionPipeline:
+            def preprocess_transaction(self, transaction_data):
+                # CRITICAL: Match training preprocessing exactly
+                # 1. Same feature ordering as training
+                # 2. Same StandardScaler parameters 
+                # 3. Same data types and shapes
+        ```
+
+        ## 📈 Online Validation Results
+        **Baseline (v1)**: 95.65% precision, 73.33% recall
+        **Candidate (v2)**: 96.77% precision, 100.0% recall
+        **Improvement**: +36.4% recall, +1.12% precision (exceeded expectations!)
+
+        ## 🛠️ Production Infrastructure
+        - **Prometheus Integration** - Specialized metrics for fraud detection models
+        - **Automated Alerting** - Pattern 3 specific monitoring and alerts
+        - **Business Impact Analysis** - Real-time ROI calculation with online validation
+        - **Decision Framework** - Automated deployment recommendations based on production data
+
+        This comprehensive implementation demonstrates a complete, production-ready fraud detection A/B testing pipeline that successfully validated +36.4% recall improvement with better precision than predicted.
+
+        **[📖 Read Complete Technical Implementation](/fraud-ab-testing-part-2.html)**
+
+    - type: id_mlops
+      article_name: "The MLflow Model Registry Story: A Journey Through Real-World MLOps"
+      article_excerpt: "An honest exploration of MLOps realities - from feature engineering complexities to questioning business value"
+      medium_url: "/mlflow-model-registry-story.html"
+      date: "2025-07-24"
+      post: |
+        # The MLflow Model Registry Story: A Journey Through Real-World MLOps
+
+        **🔍 Technical Narrative - Production MLOps Experience**
+
+        An honest exploration of implementing MLflow Model Registry in a financial technology environment, following Sarah's journey through the complexities, challenges, and sometimes uncomfortable truths about machine learning in production systems.
+
+        ## 🎯 Key Technical Themes
+        - **MLOps Infrastructure Implementation** - MLflow Model Registry, experiment tracking, deployment automation
+        - **Feature Engineering Complexity** - Real-world financial data pipeline challenges and feature store architecture
+        - **A/B Testing Strategy** - Statistical rigor meets engineering implementation for ML model testing
+        - **Performance Attribution Analysis** - Isolating ML impact from other system improvements
+        - **Business Value Measurement** - The gap between technical metrics and business outcomes
+
+        ## 🔧 Technical Deep Dives
+        - **Model Versioning & Lifecycle Management** - Structured approach to model governance
+        - **Production Deployment Integration** - Kubernetes, FastAPI, and automated serving pipelines
+        - **Data Drift Monitoring** - Statistical methods for detecting distribution changes
+        - **Feature Store Architecture** - Solving training-serving skew and feature consistency
+        - **Delayed Feedback Loops** - Handling fraud detection's unique temporal challenges
+
+        ## 📊 Real-World Insights
+        - **Technical Excellence ≠ Business Value** - Perfect MLOps infrastructure doesn't automatically translate to success
+        - **Attribution Problem** - Disentangling ML impact from other concurrent initiatives
+        - **Organizational Change Management** - People and process challenges trump technical ones
+        - **Decision Framework** - When NOT to use ML despite having the capability
+
+        ## 🚨 Honest Assessments
+        - **Performance Paradox** - Better ML metrics not always better business outcomes
+        - **ROI Analysis** - Total cost of ownership including maintenance and opportunity costs
+        - **The Ultimate Question** - "Are we solving the right problem with ML?"
+
+        This narrative provides practical insights for MLOps practitioners working to deliver meaningful value through machine learning systems, acknowledging both successes and uncomfortable realities.
+
+        **[📖 Read Complete Technical Narrative](/mlflow-model-registry-story.html)**
+
+    - type: id_mlops
+      article_name: "Fraud Detection System: MLOps Technical Demonstration"
+      article_excerpt: "From architecture decisions to A/B testing - a comprehensive MLOps case study"
+      medium_url: "/fraud-detection-mlops-journey.html"
+      date: "2025-07-24"
+      post: |
+        # Fraud Detection System: MLOps Technical Demonstration
+
+        **🏗️ Technical Demonstration - Open Source Project**
+
+        A comprehensive technical demonstration of building, deploying, and optimizing a fraud detection system using Kubernetes, Seldon Core v2, and MLflow. This project showcases MLOps engineering capabilities from architectural decisions to A/B testing implementation.
+
+        ## 🎯 Technical Achievements
+        - **+36.4% recall improvement** demonstrated with model v2
+        - **96.77% precision maintained** - stable false positive rate  
+        - **A/B testing framework** with 80/20 traffic split capability
+        - **Architecture decision analysis** - Seldon Core v2 patterns
+        - **Network routing solutions** - Istio Gateway optimization
+        - **V2 Inference Protocol** - JSON format compatibility
+        - **Systematic debugging** - NetworkPolicy troubleshooting
+        - **MLOps best practices** - Infrastructure as Code, monitoring
+
+        ## 🛠️ Technical Stack
+        - **Kubernetes** - Container orchestration platform
+        - **Seldon Core v2** - ML model serving and A/B testing
+        - **MLflow** - Experiment tracking and model registry
+        - **Istio** - Service mesh and traffic management  
+        - **Helm** - Kubernetes package management
+
+        This technical demonstration provides practical insights and hands-on experience with MLOps infrastructure suitable for engineering interviews.
+
+        **[📖 Read Complete Technical Analysis](/fraud-detection-mlops-journey.html)**
+
+    - type: id_mlops
+      article_name: "Kubernetes CNI Evolution in MLOps: From Flannel to Cilium"
+      article_excerpt: "Comprehensive technical demonstration of three CNI implementations with systematic analysis"
+      medium_url: "/kubernetes-cni-evolution-production-mlops.html"
+      date: "2025-07-24"
+      post: |
+        # Kubernetes CNI Evolution in MLOps: From Flannel to Cilium
+
+        **🔧 Deep Technical Demonstration - Lab Environment**
+
+        A comprehensive technical demonstration documenting CNI evolution across three Container Network Interface implementations: Flannel → Calico → Cilium. This hands-on project covers systematic analysis of networking challenges, performance optimization, and migration strategies for MLOps infrastructure.
+
+        ## 🎯 Key Technical Achievements
+        - **33% reduction in network latency** (1.8ms → 1.2ms average)
+        - **28% improvement in network throughput** (2.21 Gbps → 2.84 Gbps)
+        - **Complete elimination of ARP-related failures** through systematic debugging
+        - **Advanced eBPF-based networking** with kernel-space packet processing
+        - **L7 HTTP policy enforcement** with identity-based security controls
+
+        ## 🚨 Technical Problem Resolution
+        - **Root Cause Analysis**: Calico ARP resolution bug causing significant network delays
+        - **Impact Analysis**: Comprehensive documentation of networking issues in lab environment
+        - **Systematic Debugging**: Layer-by-layer network troubleshooting methodology developed
+        - **Solution Implementation**: Complete migration to Cilium CNI eliminating all networking issues
+
+        ## 🛠️ Technical Demonstration Scope
+        - **Lab Infrastructure**: Multi-namespace Kubernetes environment with diverse workloads
+        - **Performance Analysis**: Comprehensive benchmarking across three CNI implementations
+        - **Network Policies**: 847+ policies with hierarchical enforcement architecture
+        - **ML Workloads**: Distributed training simulation, model serving, inference optimization
+        - **Migration Framework**: Systematic four-stage deployment and testing strategy
+
+        ## 📊 Detailed Coverage
+        - **Flannel Foundation**: Initial CNI limitations and scaling challenges
+        - **Calico Migration**: Advanced network policy implementation and MetalLB integration
+        - **Technical Crisis**: ARP bug discovery, impact analysis, and resolution strategies
+        - **Cilium Solution**: eBPF-based networking with Hubble observability integration
+        - **Performance Benchmarks**: Quantified improvements across ML workload patterns
+
+        This comprehensive technical demonstration provides valuable insights and hands-on experience with Kubernetes networking suitable for MLOps engineering roles.
+
+        **[📖 Read Complete Technical Analysis](/kubernetes-cni-evolution-production-mlops.html)**
+
+    # MLOps & Infrastructure Articles
+    - type: id_mlops
+      article_name: "Tracing a Request Through the Seldon Core v2 MLOps Stack"
+      article_excerpt: "A deep dive into production network traffic flow for machine learning models"
+      medium_url: "https://jeftaylo.medium.com/part-4-tracing-a-request-through-the-seldon-core-v2-mlops-stack-da4a7a3685ae"
+      date: "2025-07-13"
+      post: |
+        # Tracing a Request Through the Seldon Core v2 MLOps Stack
+
+        **📖 Published on Medium - Part 4 of Series**
+
+        A comprehensive deep dive into production network traffic flow for machine learning models, tracing every step of a request through the Seldon Core v2 MLOps stack.
 
         ## Technical Deep Dive
-        - Native M1 PyTorch installation and configuration
-        - GPU acceleration with Metal backend
-        - Memory optimization techniques
-        - Performance profiling and analysis
-        - Real-world benchmark comparisons
+        - **Request Lifecycle** - End-to-end request tracing
+        - **Network Flow Analysis** - Traffic routing and load balancing
+        - **Service Mesh Integration** - Istio and Envoy proxy interactions
+        - **Model Serving Pipeline** - Internal component communication
+        - **Performance Monitoring** - Latency and throughput analysis
 
-        This guide provides practical steps to unlock the full potential of Apple Silicon for machine learning development and training.
+        ## Architecture Components
+        - **Ingress Gateway** - External traffic entry points
+        - **Seldon Scheduler** - Model deployment orchestration
+        - **Model Servers** - Runtime inference containers
+        - **Data Plane** - Request/response data flow
+        - **Control Plane** - Configuration and monitoring
 
-        **[📖 Read Full Article on Medium](https://medium.com/@jtayl222/pytorch-m1-speedup-guide-a8b5c3d4e6f7)**
+        ## Troubleshooting Insights
+        - Network debugging techniques
+        - Performance bottleneck identification
+        - Error propagation analysis
+        - Monitoring and observability
+        - Production optimization strategies
 
-    - type: id_insights
-      article_name: "13 Essential Medium Articles for MLOps Engineers"
-      article_excerpt: "Curated collection of must-read articles for MLOps professionals"
-      medium_url: "https://medium.com/@jtayl222/13-medium-articles-mlops-engineers-c9d1e2f3a8b4"
-      date: "2025-07-02"
+        Essential reading for understanding MLOps infrastructure at the network level.
+
+        **[📖 Read Full Article on Medium](https://jeftaylo.medium.com/part-4-tracing-a-request-through-the-seldon-core-v2-mlops-stack-da4a7a3685ae)**
+
+    - type: id_mlops
+      article_name: "Building Production A/B Testing Infrastructure for ML Models"
+      article_excerpt: "Part 2 of 3: Technical implementation with Seldon Core v2 for ML model testing"
+      medium_url: "https://jeftaylo.medium.com/building-production-a-b-testing-infrastructure-for-ml-models-75c8c3b36ba6"
+      date: "2025-07-12"
       post: |
-        # 13 Essential Medium Articles for MLOps Engineers
+        # Building Production A/B Testing Infrastructure for ML Models
+
+        **📖 Published on Medium - Part 2 of 3**
+
+        Technical implementation guide for building robust A/B testing infrastructure specifically designed for ML models using Seldon Core v2.
+
+        ## Implementation Architecture
+        - **Traffic Splitting** - Intelligent request routing
+        - **Model Deployment** - Canary and blue-green strategies
+        - **Experiment Tracking** - Statistical significance monitoring
+        - **Data Collection** - Metrics and performance logging
+        - **Automated Decision Making** - Winner selection criteria
+
+        ## Technical Components
+        - **Seldon Core v2** - ML model serving platform
+        - **Kubernetes** - Container orchestration
+        - **Istio** - Service mesh for traffic management
+        - **Prometheus** - Metrics collection and monitoring
+        - **Grafana** - Visualization and alerting
+
+        ## Production Considerations
+        - **Statistical Rigor** - Proper experiment design
+        - **Performance Impact** - Minimizing latency overhead
+        - **Rollback Mechanisms** - Quick failure recovery
+        - **Compliance** - Audit trails and governance
+        - **Cost Optimization** - Resource-efficient testing
+
+        Practical guide for implementing ML-specific A/B testing at scale.
+
+        **[📖 Read Full Article on Medium](https://jeftaylo.medium.com/building-production-a-b-testing-infrastructure-for-ml-models-75c8c3b36ba6)**
+
+    - type: id_mlops
+      article_name: "A/B Testing in Production MLOps: Why Traditional Deployments Fail ML Models"
+      article_excerpt: "Part 1 of 3: The problem and solution framework for ML model testing"
+      medium_url: "https://jeftaylo.medium.com/a-b-testing-in-production-mlops-why-traditional-deployments-fail-ml-models-bc77bf74c31f"
+      date: "2025-07-09"
+      post: |
+        # A/B Testing in Production MLOps: Why Traditional Deployments Fail ML Models
+
+        **📖 Published on Medium - Part 1 of 3**
+
+        Explores why traditional software deployment strategies fail for ML models and introduces a comprehensive solution framework for production ML testing.
+
+        ## The ML Deployment Challenge
+        - **Model Drift** - Performance degradation over time
+        - **Data Distribution Shifts** - Real-world vs training data
+        - **Feature Dependencies** - Complex input relationships
+        - **Latency Requirements** - Real-time inference constraints
+        - **Statistical Validation** - Proper experiment design needs
+
+        ## Traditional Deployment Failures
+        - **Binary Success Metrics** - Inadequate for ML models
+        - **Instant Rollouts** - No gradual validation
+        - **Limited Monitoring** - Missing ML-specific metrics
+        - **Rollback Complexity** - Model state management
+        - **Resource Inefficiency** - Duplicate infrastructure
+
+        ## Solution Framework
+        - **Gradual Traffic Shifting** - Risk-controlled rollouts
+        - **ML-Specific Metrics** - Performance and business KPIs
+        - **Statistical Testing** - Proper significance analysis
+        - **Automated Monitoring** - Real-time performance tracking
+        - **Smart Rollback** - Context-aware failure recovery
+
+        Foundation article for understanding ML deployment challenges and solutions.
+
+        **[📖 Read Full Article on Medium](https://jeftaylo.medium.com/a-b-testing-in-production-mlops-why-traditional-deployments-fail-ml-models-bc77bf74c31f)**
+
+    - type: id_mlops
+      article_name: "Enterprise Secret Management in MLOps: Kubernetes Security at Scale"
+      article_excerpt: "From Sealed Secrets to production-ready MLOps platforms: implementing enterprise-grade credential management"
+      medium_url: "https://jeftaylo.medium.com/enterprise-secret-management-in-mlops-kubernetes-security-at-scale-a80875e73086"
+      date: "2025-07-03"
+      post: |
+        # Enterprise Secret Management in MLOps: Kubernetes Security at Scale
 
         **📖 Published on Medium**
 
-        A carefully curated collection of the most valuable Medium articles every MLOps engineer should read to stay current with industry best practices and emerging trends.
+        Comprehensive guide to implementing enterprise-grade credential management for MLOps platforms, covering everything from Sealed Secrets to production-ready security architectures.
 
-        ## Article Categories
-        - **Infrastructure & Platforms** - Building scalable ML infrastructure
-        - **Model Deployment** - Production deployment strategies and patterns
-        - **Monitoring & Observability** - ML system health and performance tracking
-        - **Data Management** - Data versioning, lineage, and governance
-        - **Security & Compliance** - ML security and regulatory considerations
+        ## Security Challenges in MLOps
+        - **Multi-Environment Secrets** - Dev, staging, production isolation
+        - **ML-Specific Credentials** - Model registries, data lakes, APIs
+        - **Dynamic Secret Rotation** - Automated credential lifecycle
+        - **Compliance Requirements** - SOC2, PCI-DSS, GDPR considerations
+        - **Developer Experience** - Balancing security with productivity
 
-        ## Why This Collection Matters
-        - **Industry Insights** - Learn from practitioners at leading tech companies
-        - **Best Practices** - Proven patterns for production ML systems
-        - **Emerging Trends** - Stay ahead of the curve in MLOps evolution
-        - **Community Knowledge** - Benefit from collective industry experience
-        - **Practical Guidance** - Actionable advice for real-world implementations
+        ## Implementation Strategies
+        - **Sealed Secrets** - GitOps-friendly secret encryption
+        - **External Secrets Operator** - Integration with secret managers
+        - **Vault Integration** - HashiCorp Vault for dynamic secrets
+        - **Cloud Provider Secrets** - AWS/GCP/Azure native solutions
+        - **RBAC Implementation** - Fine-grained access control
 
-        ## Target Audience
-        - MLOps engineers and platform engineers
-        - Data scientists moving to production
-        - DevOps engineers working with ML systems
-        - Engineering managers overseeing ML teams
+        ## Production Architecture
+        - **Secret Lifecycle Management** - Creation, rotation, deletion
+        - **Audit and Compliance** - Comprehensive logging and monitoring
+        - **Disaster Recovery** - Secret backup and restoration
+        - **Security Scanning** - Vulnerability detection and remediation
+        - **Zero-Trust Principles** - Least privilege access patterns
 
-        This compilation saves hours of research by highlighting the most impactful articles in the MLOps space.
+        ## Best Practices
+        - Secret rotation automation
+        - Environment-specific configurations
+        - Security scanning integration
+        - Incident response procedures
+        - Team access management
 
-        **[📖 Read Full Article on Medium](https://medium.com/@jtayl222/13-medium-articles-mlops-engineers-c9d1e2f3a8b4)**
+        Essential guide for securing MLOps platforms at enterprise scale.
+
+        **[📖 Read Full Article on Medium](https://jeftaylo.medium.com/enterprise-secret-management-in-mlops-kubernetes-security-at-scale-a80875e73086)**
+
+    - type: id_mlops
+      article_name: "~7x Speedup: PyTorch on Apple M1 Pro for MLOps"
+      article_excerpt: "Achieved ~7x speedup in PyTorch on Apple M1 Pro using MLflow. Learn MLOps optimization & debugging for deep learning"
+      medium_url: "https://jeftaylo.medium.com/7x-speedup-pytorch-on-apple-m1-pro-for-mlops-fa1c10482c65"
+      date: "2025-06-15"
+      post: |
+        # ~7x Speedup: PyTorch on Apple M1 Pro for MLOps
+
+        **📖 Published on Medium**
+
+        Achieved ~7x speedup in PyTorch on Apple M1 Pro using MLflow. Learn MLOps optimization & debugging for deep learning. Results vary by setup.
+
+        ## Key Topics Covered
+        - **Performance Optimization** - Leveraging Apple Silicon for ML workloads
+        - **MLflow Integration** - Tracking and optimizing model performance
+        - **Debugging Techniques** - Identifying and resolving performance bottlenecks
+        - **Hardware Acceleration** - Metal Performance Shaders optimization
+        - **Benchmarking** - Comprehensive performance measurement
+
+        ## Technical Highlights
+        - Native M1 PyTorch configuration
+        - GPU acceleration with Metal backend
+        - Memory optimization strategies
+        - Performance profiling techniques
+        - Real-world speedup measurements
+
+        This article provides practical insights for optimizing PyTorch performance on Apple Silicon for MLOps workflows.
+
+        **[📖 Read Full Article on Medium](https://jeftaylo.medium.com/7x-speedup-pytorch-on-apple-m1-pro-for-mlops-fa1c10482c65)**
+
+    - type: id_mlops
+      article_name: "MLflow, Argo Workflows, and Kustomize: The Production MLOps Trinity"
+      article_excerpt: "How three tools solve the hardest problems in production ML: experiment tracking, pipeline orchestration, and configuration management"
+      medium_url: "https://jeftaylo.medium.com/mlflow-argo-workflows-and-kustomize-the-production-mlops-trinity-5bdb45d93f41"
+      date: "2025-06-12"
+      post: |
+        # MLflow, Argo Workflows, and Kustomize: The Production MLOps Trinity
+
+        **📖 Published on Medium**
+
+        Explore the power of MLflow, Argo Workflows, and Kustomize for production-grade MLOps. Learn how this trinity streamlines machine learning workflows for scalable, efficient model deployment.
+
+        ## The MLOps Trinity
+        - **MLflow** - Experiment tracking and model registry
+        - **Argo Workflows** - Pipeline orchestration and automation
+        - **Kustomize** - Configuration management and deployment
+
+        ## Production Challenges Solved
+        - Experiment reproducibility
+        - Pipeline automation
+        - Configuration drift
+        - Environment consistency
+        - Deployment scalability
+
+        ## Implementation Insights
+        - Integration patterns
+        - Best practices
+        - Production architecture
+        - Real-world examples
+        - Lessons learned
+
+        This article demonstrates how these three tools work together to create a robust MLOps platform.
+
+        **[📖 Read Full Article on Medium](https://jeftaylo.medium.com/mlflow-argo-workflows-and-kustomize-the-production-mlops-trinity-5bdb45d93f41)**
+
+    - type: id_mlops
+      article_name: "Building an MLOps Homelab with Kubernetes"
+      article_excerpt: "Learn to build an MLOps homelab with Fortune 500-grade tools for scalable machine learning pipelines"
+      medium_url: "https://jeftaylo.medium.com/building-an-mlops-homelab-architecture-and-tools-for-a-fortune-500-stack-08c5d5afa058"
+      date: "2025-06-10"
+      post: |
+        # Building an MLOps Homelab with Kubernetes
+
+        **📖 Published on Medium**
+
+        Learn to build an MLOps homelab with Fortune 500-grade tools. Explore architecture and setups for scalable machine learning pipelines, perfect for hands-on experimentation.
+
+        ## Homelab Architecture
+        - **Kubernetes Cluster** - Multi-node setup
+        - **Storage Solutions** - Persistent volumes and object storage
+        - **Networking** - Service mesh and ingress
+        - **GPU Support** - Hardware acceleration
+        - **Monitoring Stack** - Prometheus and Grafana
+
+        ## Enterprise Tools Covered
+        - Kubeflow for ML workflows
+        - MLflow for experiment tracking
+        - Argo Workflows for orchestration
+        - Harbor for container registry
+        - Istio for service mesh
+
+        ## Learning Outcomes
+        - Production-grade infrastructure skills
+        - Cost-effective learning environment
+        - Real-world MLOps experience
+        - Portfolio development
+        - Interview preparation
+
+        Perfect for MLOps engineers looking to build hands-on experience with enterprise tools.
+
+        **[📖 Read Full Article on Medium](https://jeftaylo.medium.com/building-an-mlops-homelab-architecture-and-tools-for-a-fortune-500-stack-08c5d5afa058)**
+
+    - type: id_mlops
+      article_name: "From DevOps to MLOps: Why Employers Care"
+      article_excerpt: "Discover the shift from DevOps to MLOps and how I built a Fortune 500-grade MLOps stack in my spare bedroom"
+      medium_url: "https://jeftaylo.medium.com/from-devops-to-mlops-why-employers-care-and-how-i-built-a-fortune-500-stack-in-my-spare-bedroom-ce0d06dd3c61"
+      date: "2025-06-08"
+      post: |
+        # From DevOps to MLOps: Why Employers Care
+
+        **📖 Published on Medium**
+
+        Discover the shift from DevOps to MLOps and why employers value it. Learn how I built a Fortune 500-grade MLOps stack in my spare bedroom for cutting-edge ML workflows.
+
+        ## Key Differentiators
+        - **Data Versioning** - Beyond code versioning
+        - **Experiment Tracking** - Reproducibility at scale
+        - **Model Registry** - Production model management
+        - **Pipeline Orchestration** - ML-specific workflows
+        - **Monitoring** - Model drift and performance
+
+        ## Building the Stack
+        - Infrastructure planning
+        - Tool selection criteria
+        - Implementation approach
+        - Cost optimization
+        - Learning strategy
+
+        ## Career Impact
+        - Market demand analysis
+        - Skill gap identification
+        - Portfolio development
+        - Interview preparation
+        - Salary implications
+
+        Essential reading for engineers transitioning from DevOps to MLOps.
+
+        **[📖 Read Full Article on Medium](https://jeftaylo.medium.com/from-devops-to-mlops-why-employers-care-and-how-i-built-a-fortune-500-stack-in-my-spare-bedroom-ce0d06dd3c61)**
+
+    - type: id_mlops
+      article_name: "Automating MLOps with Ansible, MLflow, and Argo Workflows"
+      article_excerpt: "Learn to streamline your ML pipeline from notebook to model server for efficient, scalable deployment"
+      medium_url: "https://jeftaylo.medium.com/from-notebook-to-model-server-automating-mlops-with-ansible-mlflow-and-argo-workflows-bb54c440fc36"
+      date: "2025-06-05"
+      post: |
+        # Automating MLOps with Ansible, MLflow, and Argo Workflows
+
+        **📖 Published on Medium**
+
+        Discover how to automate MLOps with Ansible, MLflow, and Argo Workflows. Learn to streamline your machine learning pipeline from notebook to model server for efficient, scalable deployment.
+
+        ## Automation Framework
+        - **Ansible** - Infrastructure automation
+        - **MLflow** - Experiment and model tracking
+        - **Argo Workflows** - Pipeline orchestration
+        - **Integration** - Seamless tool coordination
+        - **CI/CD** - Continuous model deployment
+
+        ## Implementation Details
+        - Infrastructure as Code
+        - Automated model training
+        - Experiment tracking
+        - Model registry integration
+        - Deployment pipelines
+
+        ## Production Patterns
+        - Error handling
+        - Rollback strategies
+        - Monitoring integration
+        - Security considerations
+        - Scalability patterns
+
+        Practical guide for building automated MLOps pipelines that scale.
+
+        **[📖 Read Full Article on Medium](https://jeftaylo.medium.com/from-notebook-to-model-server-automating-mlops-with-ansible-mlflow-and-argo-workflows-bb54c440fc36)**
+
+    - type: id_mlops
+      article_name: "Scale MLOps with MLflow"
+      article_excerpt: "Learn how MLflow fuels scalable and efficient machine learning workflows for teams"
+      medium_url: "https://jeftaylo.medium.com/accelerate-your-teams-mlops-capabilities-how-mlflow-fuels-scalable-and-efficient-machine-learning-b3349b2f2404"
+      date: "2025-06-03"
+      post: |
+        # Scale MLOps with MLflow
+
+        **📖 Published on Medium**
+
+        Scale MLOps with MLflow for efficient ML workflows. Learn how to streamline model development and deployment in this comprehensive guide.
+
+        ## MLflow Capabilities
+        - **Experiment Tracking** - Centralized experiment management
+        - **Model Registry** - Version control for models
+        - **Model Serving** - Deployment infrastructure
+        - **Projects** - Reproducible ML code
+        - **Plugins** - Extensibility framework
+
+        ## Team Collaboration
+        - Shared experiment tracking
+        - Model governance
+        - Deployment workflows
+        - Access control
+        - Audit trails
+
+        ## Scaling Strategies
+        - Multi-user setup
+        - Backend storage options
+        - Performance optimization
+        - Integration patterns
+        - Best practices
+
+        Essential guide for teams adopting MLflow for production MLOps.
+
+        **[📖 Read Full Article on Medium](https://jeftaylo.medium.com/accelerate-your-teams-mlops-capabilities-how-mlflow-fuels-scalable-and-efficient-machine-learning-b3349b2f2404)**
+
+    - type: id_mlops
+      article_name: "CI/CD Pipelines for Software-Defined Vehicles (SDVs) with MLflow"
+      article_excerpt: "Explore CI/CD pipelines for modern cars incorporating AI-driven automation and ML model management"
+      medium_url: "https://jeftaylo.medium.com/ci-cd-pipelines-for-software-defined-vehicles-sdvs-incorporating-mlflow-97c2914a26bb"
+      date: "2025-05-25"
+      post: |
+        # CI/CD Pipelines for Software-Defined Vehicles (SDVs) with MLflow
+
+        **📖 Published on Medium**
+
+        Software-Defined Vehicles (SDVs) are modern cars that rely on centralized computing and software for key functions, enabling over-the-air (OTA) updates, AI-driven automation, and cloud connectivity.
+
+        ## SDV Architecture
+        - **Centralized Computing** - High-performance compute platforms
+        - **Software Stack** - Modular software architecture
+        - **OTA Updates** - Remote software deployment
+        - **AI Integration** - Autonomous driving features
+        - **Cloud Connectivity** - Vehicle-to-cloud communication
+
+        ## MLOps for Automotive
+        - Model versioning for safety
+        - A/B testing frameworks
+        - Edge deployment strategies
+        - Performance monitoring
+        - Compliance tracking
+
+        ## CI/CD Pipeline Design
+        - Simulation testing
+        - Hardware-in-the-loop
+        - Deployment strategies
+        - Rollback mechanisms
+        - Safety validation
+
+        Cutting-edge application of MLOps principles to automotive software development.
+
+        **[📖 Read Full Article on Medium](https://jeftaylo.medium.com/ci-cd-pipelines-for-software-defined-vehicles-sdvs-incorporating-mlflow-97c2914a26bb)**
+
+    # Technical Guides
+    - type: id_guides
+      article_name: "A Guide to Choosing the Right ML and DL Library"
+      article_excerpt: "Comprehensive comparison of popular ML/DL libraries including scikit-learn, Keras, PyTorch, and more"
+      medium_url: "https://jeftaylo.medium.com/a-guide-to-choosing-the-right-ml-and-dl-library-175e4ef315cf"
+      date: "2025-05-28"
+      post: |
+        # A Guide to Choosing the Right ML and DL Library
+
+        **📖 Published on Medium**
+
+        A comprehensive comparison of functionality, features, benefits, and use cases of popular machine learning and deep learning libraries.
+
+        ## Libraries Compared
+        - **scikit-learn** - Classical ML algorithms
+        - **Keras** - High-level neural networks
+        - **PyTorch** - Research-friendly deep learning
+        - **TensorFlow** - Production-scale ML
+        - **MXNet/Gluon** - Scalable deep learning
+
+        ## Comparison Criteria
+        - Ease of use
+        - Performance characteristics
+        - Community support
+        - Production readiness
+        - Use case alignment
+
+        ## Selection Framework
+        - Project requirements analysis
+        - Team expertise assessment
+        - Deployment considerations
+        - Ecosystem compatibility
+        - Long-term maintenance
+
+        Essential guide for making informed ML library decisions.
+
+        **[📖 Read Full Article on Medium](https://jeftaylo.medium.com/a-guide-to-choosing-the-right-ml-and-dl-library-175e4ef315cf)**
+
+    - type: id_guides
+      article_name: "Building Interactive Data Apps with FastAPI, Pydantic, and Streamlit"
+      article_excerpt: "Deploy data-powered web applications without complex configurations using modern Python tools"
+      medium_url: "https://jeftaylo.medium.com/building-interactive-data-apps-with-fastapi-pydantic-and-streamlit-a-real-world-example-b27c68646a5f"
+      date: "2025-05-20"
+      post: |
+        # Building Interactive Data Apps with FastAPI, Pydantic, and Streamlit
+
+        **📖 Published on Medium**
+
+        Learn to deploy data-powered web applications without spending weeks wrestling with server configurations or complicated front-end frameworks.
+
+        ## Technology Stack
+        - **FastAPI** - Modern web API framework
+        - **Pydantic** - Data validation and settings
+        - **Streamlit** - Interactive UI components
+        - **Integration** - Seamless tool coordination
+        - **Deployment** - Production strategies
+
+        ## Implementation Guide
+        - API design with FastAPI
+        - Data validation patterns
+        - Interactive UI development
+        - Real-time updates
+        - Error handling
+
+        ## Production Considerations
+        - Performance optimization
+        - Security best practices
+        - Deployment options
+        - Monitoring setup
+        - Scaling strategies
+
+        Practical guide for building production-ready data applications.
+
+        **[📖 Read Full Article on Medium](https://jeftaylo.medium.com/building-interactive-data-apps-with-fastapi-pydantic-and-streamlit-a-real-world-example-b27c68646a5f)**
+
+    # AI & LLM Development
+    - type: id_ai
+      article_name: "Adapting Your Messages Array for Any LLM API"
+      article_excerpt: "A developer's guide to handling different LLM API formats and requirements"
+      medium_url: "https://jeftaylo.medium.com/adapting-your-messages-array-for-any-llm-api-a-developers-guide-5fe5b54086fa"
+      date: "2025-05-30"
+      post: |
+        # Adapting Your Messages Array for Any LLM API
+
+        **📖 Published on Medium**
+
+        Learn how to adapt your message formatting for different LLM APIs, from OpenAI's GPT-4 to Claude and beyond.
+
+        ## API Differences
+        - **Message Formats** - Role-based vs. separate system prompts
+        - **Token Handling** - Different counting methods
+        - **Response Formats** - Streaming vs. batch
+        - **Error Handling** - API-specific patterns
+        - **Rate Limiting** - Provider variations
+
+        ## Adaptation Strategies
+        - Abstraction layers
+        - Format converters
+        - Error normalization
+        - Response parsing
+        - Fallback mechanisms
+
+        ## Implementation Patterns
+        - Factory pattern for APIs
+        - Adapter pattern usage
+        - Configuration management
+        - Testing strategies
+        - Performance optimization
+
+        Essential guide for building LLM-agnostic applications.
+
+        **[📖 Read Full Article on Medium](https://jeftaylo.medium.com/adapting-your-messages-array-for-any-llm-api-a-developers-guide-5fe5b54086fa)**
+
+    - type: id_ai
+      article_name: "Building Intelligent Search & Recommendations with Vector Databases"
+      article_excerpt: "How vector databases supercharge your NLP pipelines for semantic search at scale"
+      medium_url: "https://jeftaylo.medium.com/building-intelligent-search-recommendations-how-vector-databases-supercharge-your-nlp-pipelines-e7b12928961e"
+      date: "2025-05-18"
+      post: |
+        # Building Intelligent Search & Recommendations with Vector Databases
+
+        **📖 Published on Medium**
+
+        Learn how to retrieve the top k most semantically similar documents for any query using vector databases for scalable similarity search.
+
+        ## Vector Database Fundamentals
+        - **Embedding Storage** - Efficient vector storage
+        - **Similarity Search** - Fast nearest neighbor algorithms
+        - **Indexing Strategies** - HNSW, IVF, LSH
+        - **Scalability** - Billion-scale vector search
+        - **Integration** - API and SDK options
+
+        ## Implementation Guide
+        - Embedding generation
+        - Database selection
+        - Index optimization
+        - Query strategies
+        - Performance tuning
+
+        ## Real-World Applications
+        - Semantic search
+        - Recommendation systems
+        - Duplicate detection
+        - Clustering
+        - Anomaly detection
+
+        Comprehensive guide to implementing vector search at scale.
+
+        **[📖 Read Full Article on Medium](https://jeftaylo.medium.com/building-intelligent-search-recommendations-how-vector-databases-supercharge-your-nlp-pipelines-e7b12928961e)**
+
+    - type: id_ai
+      article_name: "Deep Dive into NLP Embeddings"
+      article_excerpt: "From Word2Vec to text-embedding-ada-002, and why you might want to mix & match with different LLMs"
+      medium_url: "https://jeftaylo.medium.com/a-deep-dive-into-nlp-embeddings-from-word2vec-to-text-embedding-ada-002-and-why-you-might-want-9f470f184271"
+      date: "2025-05-15"
+      post: |
+        # Deep Dive into NLP Embeddings
+
+        **📖 Published on Medium**
+
+        Comprehensive exploration of NLP embeddings evolution and practical strategies for mixing different embedding models.
+
+        ## Embedding Evolution
+        - **Word2Vec** - Foundation of word embeddings
+        - **GloVe** - Global vectors approach
+        - **BERT** - Contextual embeddings
+        - **Sentence Transformers** - Semantic similarity
+        - **OpenAI Embeddings** - State-of-the-art models
+
+        ## Technical Analysis
+        - Embedding dimensions
+        - Semantic properties
+        - Computational requirements
+        - Quality metrics
+        - Use case alignment
+
+        ## Hybrid Strategies
+        - Multi-model approaches
+        - Ensemble techniques
+        - Performance trade-offs
+        - Cost optimization
+        - Implementation patterns
+
+        Essential knowledge for building sophisticated NLP applications.
+
+        **[📖 Read Full Article on Medium](https://jeftaylo.medium.com/a-deep-dive-into-nlp-embeddings-from-word2vec-to-text-embedding-ada-002-and-why-you-might-want-9f470f184271)**
+
+    - type: id_ai
+      article_name: "LangGraph's StateGraph for Structured Chatbot Workflows"
+      article_excerpt: "Why structured state management is crucial for reliable and deterministic AI chatbot behavior"
+      medium_url: "https://jeftaylo.medium.com/why-you-should-use-stategraph-for-structured-chatbot-workflows-27162f79faa5"
+      date: "2025-05-12"
+      post: |
+        # LangGraph's StateGraph for Structured Chatbot Workflows
+
+        **📖 Published on Medium**
+
+        Explore why LangGraph's StateGraph is a better approach for modern AI chatbot development compared to traditional patterns.
+
+        ## StateGraph Advantages
+        - **Deterministic Behavior** - Predictable state transitions
+        - **Debugging** - Clear execution paths
+        - **Testing** - Isolated state testing
+        - **Scalability** - Complex workflow support
+        - **Maintainability** - Modular design
+
+        ## Implementation Patterns
+        - State definition strategies
+        - Transition management
+        - Error handling
+        - Conversation history
+        - Context preservation
+
+        ## Real-World Applications
+        - Customer service bots
+        - Technical support
+        - Educational assistants
+        - Process automation
+        - Interactive guides
+
+        Modern approach to building reliable AI-powered conversational systems.
+
+        **[📖 Read Full Article on Medium](https://jeftaylo.medium.com/why-you-should-use-stategraph-for-structured-chatbot-workflows-27162f79faa5)**
+
+    - type: id_ai
+      article_name: "Why You Shouldn't Use @tool in LangGraph's StateGraph Workflows"
+      article_excerpt: "Understanding LangGraph's structured approach to state management in AI workflows"
+      medium_url: "https://jeftaylo.medium.com/why-you-shouldnt-use-tool-in-langgraphs-stategraph-workflows-4efc38e4d203"
+      date: "2025-05-10"
+      post: |
+        # Why You Shouldn't Use @tool in LangGraph's StateGraph Workflows
+
+        **📖 Published on Medium**
+
+        LangGraph has introduced a more structured approach to state management in AI workflows, shifting away from previous agentic patterns.
+
+        ## Key Concepts
+        - **Structured State** - Explicit state management
+        - **Tool Integration** - Proper patterns
+        - **Workflow Design** - Best practices
+        - **Anti-patterns** - What to avoid
+        - **Migration Guide** - From @tool to StateGraph
+
+        ## Technical Deep Dive
+        - StateGraph architecture
+        - Tool invocation patterns
+        - Error handling strategies
+        - Performance implications
+        - Testing approaches
+
+        ## Best Practices
+        - State design principles
+        - Tool organization
+        - Workflow composition
+        - Debugging strategies
+        - Production patterns
+
+        Essential reading for developers using LangGraph for AI workflows.
+
+        **[📖 Read Full Article on Medium](https://jeftaylo.medium.com/why-you-shouldnt-use-tool-in-langgraphs-stategraph-workflows-4efc38e4d203)**
+
+    - type: id_ai
+      article_name: "Building a LangGraph Workflow with Tavily Search and GPT-4o"
+      article_excerpt: "Automating research and writing workflows with AI-powered tools integration"
+      medium_url: "https://jeftaylo.medium.com/building-a-langgraph-workflow-using-tavily-search-and-gpt-4o-for-ai-powered-research-07235f09a083"
+      date: "2025-05-08"
+      post: |
+        # Building a LangGraph Workflow with Tavily Search and GPT-4o
+
+        **📖 Published on Medium**
+
+        Learn how to integrate LangGraph, Tavily Search API, and GPT-4o for automated research and content generation workflows.
+
+        ## Workflow Architecture
+        - **LangGraph** - Workflow orchestration
+        - **Tavily Search** - Web research automation
+        - **GPT-4o** - Content generation
+        - **Integration** - Seamless coordination
+        - **Error Handling** - Robust implementation
+
+        ## Implementation Guide
+        - Workflow design
+        - API integration
+        - State management
+        - Result processing
+        - Quality control
+
+        ## Use Cases
+        - Research automation
+        - Content generation
+        - Report writing
+        - Data synthesis
+        - Knowledge extraction
+
+        Practical guide for building AI-powered research automation systems.
+
+        **[📖 Read Full Article on Medium](https://jeftaylo.medium.com/building-a-langgraph-workflow-using-tavily-search-and-gpt-4o-for-ai-powered-research-07235f09a083)**
+
+    # Lab Demonstrations (Written for Portfolio)
+    - type: id_mlops
+      article_name: "Fraud Detection System: MLOps Technical Demonstration"
+      article_excerpt: "From architecture decisions to A/B testing - a comprehensive MLOps case study"
+      medium_url: "/fraud-detection-mlops-journey.html"
+      date: "2025-07-24"
+      post: |
+        # Fraud Detection System: MLOps Technical Demonstration
+
+        **🏗️ Technical Demonstration - Open Source Project**
+
+        A comprehensive technical demonstration of building, deploying, and optimizing a fraud detection system using Kubernetes, Seldon Core v2, and MLflow. This project showcases MLOps engineering capabilities from architectural decisions to A/B testing implementation.
+
+        ## 🎯 Technical Achievements
+        - **+36.4% recall improvement** demonstrated with model v2
+        - **96.77% precision maintained** - stable false positive rate  
+        - **A/B testing framework** with 80/20 traffic split capability
+        - **Architecture decision analysis** - Seldon Core v2 patterns
+        - **Network routing solutions** - Istio Gateway optimization
+        - **V2 Inference Protocol** - JSON format compatibility
+        - **Systematic debugging** - NetworkPolicy troubleshooting
+        - **MLOps best practices** - Infrastructure as Code, monitoring
+
+        ## 🛠️ Technical Stack
+        - **Kubernetes** - Container orchestration platform
+        - **Seldon Core v2** - ML model serving and A/B testing
+        - **MLflow** - Experiment tracking and model registry
+        - **Istio** - Service mesh and traffic management  
+        - **Helm** - Kubernetes package management
+
+        This technical demonstration provides practical insights and hands-on experience with MLOps infrastructure suitable for engineering interviews.
+
+        **[📖 Read Complete Technical Analysis](/fraud-detection-mlops-journey.html)**
+
+    - type: id_mlops
+      article_name: "Kubernetes CNI Evolution in MLOps: From Flannel to Cilium"
+      article_excerpt: "Comprehensive technical demonstration of three CNI implementations with systematic analysis"
+      medium_url: "/kubernetes-cni-evolution-production-mlops.html"
+      date: "2025-07-24"
+      post: |
+        # Kubernetes CNI Evolution in MLOps: From Flannel to Cilium
+
+        **🔧 Deep Technical Demonstration - Lab Environment**
+
+        A comprehensive technical demonstration documenting CNI evolution across three Container Network Interface implementations: Flannel → Calico → Cilium. This hands-on project covers systematic analysis of networking challenges, performance optimization, and migration strategies for MLOps infrastructure.
+
+        ## 🎯 Key Technical Achievements
+        - **33% reduction in network latency** (1.8ms → 1.2ms average)
+        - **28% improvement in network throughput** (2.21 Gbps → 2.84 Gbps)
+        - **Complete elimination of ARP-related failures** through systematic debugging
+        - **Advanced eBPF-based networking** with kernel-space packet processing
+        - **L7 HTTP policy enforcement** with identity-based security controls
+
+        ## 🚨 Technical Problem Resolution
+        - **Root Cause Analysis**: Calico ARP resolution bug causing significant network delays
+        - **Impact Analysis**: Comprehensive documentation of networking issues in lab environment
+        - **Systematic Debugging**: Layer-by-layer network troubleshooting methodology developed
+        - **Solution Implementation**: Complete migration to Cilium CNI eliminating all networking issues
+
+        ## 🛠️ Technical Demonstration Scope
+        - **Lab Infrastructure**: Multi-namespace Kubernetes environment with diverse workloads
+        - **Performance Analysis**: Comprehensive benchmarking across three CNI implementations
+        - **Network Policies**: 847+ policies with hierarchical enforcement architecture
+        - **ML Workloads**: Distributed training simulation, model serving, inference optimization
+        - **Migration Framework**: Systematic four-stage deployment and testing strategy
+
+        ## 📊 Detailed Coverage
+        - **Flannel Foundation**: Initial CNI limitations and scaling challenges
+        - **Calico Migration**: Advanced network policy implementation and MetalLB integration
+        - **Technical Crisis**: ARP bug discovery, impact analysis, and resolution strategies
+        - **Cilium Solution**: eBPF-based networking with Hubble observability integration
+        - **Performance Benchmarks**: Quantified improvements across ML workload patterns
+
+        This comprehensive technical demonstration provides valuable insights and hands-on experience with Kubernetes networking suitable for MLOps engineering roles.
+
+        **[📖 Read Complete Technical Analysis](/kubernetes-cni-evolution-production-mlops.html)**

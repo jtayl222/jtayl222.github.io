@@ -17,7 +17,12 @@ layout: default
 <div class="multipurpose-container project-heading-container" {{about_container_style}}>
   <h1 style="color:white;">{{ site.data.owner[lng].brand }}</h1>
   <p style="color:white;">MLOps Engineer specializing in production-ready machine learning infrastructure and applications</p>
-  <p style="color:white;">🛡️ SECURITY CLEARED | 🎓 CARNEGIE MELLON | ☁️ AWS CERTIFIED | 🚀 AI/ML EXPERT</p>
+  <div style="margin-top: 20px;">
+    <span style="background-color: #dc3545; color: white; padding: 10px 20px; border-radius: 25px; font-weight: bold; margin: 5px; display: inline-block; border: 2px solid white;">🛡️ SECURITY CLEARED</span>
+    <span style="background-color: #28a745; color: white; padding: 10px 20px; border-radius: 25px; font-weight: bold; margin: 5px; display: inline-block; border: 2px solid white;">🎓 CARNEGIE MELLON</span>
+    <span style="background-color: #007bff; color: white; padding: 10px 20px; border-radius: 25px; font-weight: bold; margin: 5px; display: inline-block; border: 2px solid white;">☁️ AWS CERTIFIED</span>
+    <span style="background-color: #6f42c1; color: white; padding: 10px 20px; border-radius: 25px; font-weight: bold; margin: 5px; display: inline-block; border: 2px solid white;">🚀 AI/ML EXPERT</span>
+  </div>
 </div>
 
 <div class="multipurpose-container">
