@@ -197,6 +197,10 @@ certifications:
   read_more_text: Read more
   read_less_text: Read less
 
+resume:
+  title: Resume
+  button_name: Resume
+
 # for privacy-policy layout
 privacy-policy:
   title: &privacy_policy_title Privacy policy

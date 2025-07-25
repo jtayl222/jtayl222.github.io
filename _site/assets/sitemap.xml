@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
+xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+xmlns:xhtml="http://www.w3.org/1999/xhtml"
+xmlns:image="https://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>http://0.0.0.0:4000/posts/2025-07-02-welcome-to-jekyll</loc>
+  </url>
+  <url>
+    <loc>http://0.0.0.0:4000/posts/2025-07-02-pytorch-m1-speedup</loc>
+  </url>
+  <url>
+    <loc>http://0.0.0.0:4000/posts/2025-07-02-Automating-MLOps-Scalable-ML-Pipelines</loc>
+  </url>
+  <url>
+    <loc>http://0.0.0.0:4000/posts/2025-07-02-13-medium-articles</loc>
+  </url>
+  <url>
+    <loc>http://0.0.0.0:4000/404.html</loc>
+  </url>
+  <url>
+    <loc>http://0.0.0.0:4000/tabs/about.html</loc>
+  </url>
+  <url>
+    <loc>http://0.0.0.0:4000/tabs/certifications.html</loc>
+  </url>
+  <url>
+    <loc>http://0.0.0.0:4000/fraud-ab-testing-part-1.html</loc>
+  </url>
+  <url>
+    <loc>http://0.0.0.0:4000/fraud-ab-testing-part-2.html</loc>
+  </url>
+  <url>
+    <loc>http://0.0.0.0:4000/fraud-detection-mlops-journey.html</loc>
+  </url>
+  <url>
+    <loc>http://0.0.0.0:4000/</loc>
+  </url>
+  <url>
+    <loc>http://0.0.0.0:4000/kubernetes-cni-evolution-production-mlops.html</loc>
+  </url>
+  <url>
+    <loc>http://0.0.0.0:4000/mlflow-model-registry-story.html</loc>
+  </url>
+  <url>
+    <loc>http://0.0.0.0:4000/tabs/platform-demo.html</loc>
+  </url>
+  <url>
+    <loc>http://0.0.0.0:4000/tabs/projects.html</loc>
+  </url>
+  <url>
+    <loc>http://0.0.0.0:4000/tabs/publications.html</loc>
+  </url>
+  <url>
+    <loc>http://0.0.0.0:4000/tabs/repositories.html</loc>
+  </url>
+  <url>
+    <loc>http://0.0.0.0:4000/tabs/resume/</loc>
+  </url>
+  <url>
+    <loc>http://0.0.0.0:4000/tabs/skills.html</loc>
+  </url>
+</urlset>
+

@@ -1,0 +1,18 @@
+# Resume Page Data
+###########################################################
+page_data:
+  main:
+    header: "Resume"
+    info: "Professional experience and qualifications"
+    text_color: "white"
+    img: "/assets/img/projects/projects-heading.jpg"
+    back_color: "#1e3a8a"
+    download_pdf: "/assets/files/Jeff_Taylor_July_24.pdf"
+    download_text: "Download PDF Resume"
+
+  content: |
+    # Jeff Taylor - Resume
+    
+    Please download the PDF version using the button above for the complete resume.
+    
+    This page will be updated with detailed content soon.

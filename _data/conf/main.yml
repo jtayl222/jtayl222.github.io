@@ -200,6 +200,8 @@ side_and_top_nav_buttons:
     icon: "fa fa-file-text-o"
   - certifications:
     icon: "fa fa-certificate"
+  - resume:
+    icon: "fa fa-file-text"
   - links:
     icon: "fa fa-link"
   - about:
