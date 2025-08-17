@@ -4,234 +4,237 @@
 ###########################################################
 page_data:
   main:
-    header: "🏆 Professional Certifications & Credentials"
-    info: "🎓 CONTINUOUSLY LEARNING | ☁️ CLOUD-CERTIFIED | 🧠 AI/ML EXPERT | 🛡️ SECURITY-CLEARED"
+    header: "Professional Certifications & Credentials"
+    info: "CONTINUOUSLY LEARNING | CLOUD-CERTIFIED | AI/ML EXPERT"
     text_color: "white"
     # if you don't want to use background image, comment it. back_color will be activated.
     img: "/assets/img/projects/projects-heading.jpg"
     back_color: "#1e3a8a"
-    credly_profile: "https://www.credly.com/users/jeffrey-taylor.1234567"
-    credly_text: "🔗 View All Badges on Credly"
 
   category:
-    - title: "Latest 2024-2025"
-      type: id_latest
+    - title: "Cloud Certifications (AWS, Azure, Udacity)"
+      type: id_cloud
       color: "#10b981"
-    - title: "Deep Learning AI"
+    - title: "Deep Learning Specialization"
       type: id_deeplearning
       color: "#3b82f6"
-    - title: "Enterprise MLOps"
-      type: id_enterprise
+    - title: "Data Science"
+      type: id_datascience
       color: "#8b5cf6"
+    - title: "Machine Learning"
+      type: id_ml
+      color: "#ef4444"
+    - title: "Genomic Data Science"
+      type: id_genomics
+      color: "#f59e0b"
 
   list:
-    # Latest 2024-2025
-    - type: id_latest
-      cert_name: "Microsoft Azure AI Engineer"
-      cert_excerpt: "Advanced AI solution development on Azure platform"
-      date: "2025-01-15"
-      post: |
-        # 🆕 Microsoft Azure AI Engineer (AI-102)
-
-        **Issued: January 2025**
-
-        ## Certification Overview
-        Advanced certification for developing, deploying, and maintaining AI solutions on the Microsoft Azure platform. Demonstrates expertise in Azure Cognitive Services, Azure Machine Learning, and responsible AI practices.
-
-        ## Key Competencies
-        - **Azure Cognitive Services** - Computer Vision, Speech, Language Understanding
-        - **Azure Machine Learning** - Model training, deployment, and management
-        - **MLOps on Azure** - CI/CD pipelines for ML models
-        - **Responsible AI** - Fairness, reliability, safety, privacy, inclusiveness
-        - **Knowledge Mining** - Azure Cognitive Search integration
-
-        ## Practical Applications
-        - Design and implement AI solutions for enterprise clients
-        - Deploy and monitor ML models at scale on Azure
-        - Implement responsible AI practices in production systems
-        - Integrate cognitive services into business applications
-
-        **Credential ID**: Microsoft Certified Professional
-
-    - type: id_latest
-      cert_name: "AWS AI Practitioner Early Adopter"
-      cert_excerpt: "Cutting-edge AWS AI/ML services implementation"
-      date: "2024-09-15"
-      post: |
-        # ☁️ AWS AI Practitioner Early Adopter
-
-        **Issued: September 2024**
-
-        ## Early Access Program
-        Exclusive early adopter certification for AWS AI services, demonstrating expertise with the latest AWS artificial intelligence and machine learning capabilities before general availability.
-
-        ## Advanced AWS AI Services
-        - **Amazon Bedrock** - Foundation models and generative AI
-        - **Amazon SageMaker** - Advanced ML model development and deployment
-        - **AWS AI Services** - Rekognition, Comprehend, Textract, Polly
-        - **MLOps on AWS** - End-to-end ML lifecycle management
-        - **AI Ethics & Governance** - Responsible AI implementation
-
-        ## Cutting-Edge Implementations
-        - Early access to unreleased AWS AI features
-        - Beta testing of new machine learning services
-        - Implementation of generative AI solutions
-        - Advanced model optimization techniques
-
-        **Status**: AWS Certified AI Practitioner - Early Adopter
-
-    - type: id_latest
-      cert_name: "Udacity AI Programming with Python"
-      cert_excerpt: "Advanced Python programming for AI applications"
-      date: "2024-11-20"
-      post: |
-        # 🐍 AI Programming with Python Nanodegree
-
-        **Completed: November 2024**
-
-        ## Program Overview
-        Comprehensive nanodegree program focused on Python programming fundamentals for artificial intelligence and machine learning applications, with hands-on projects and real-world implementations.
-
-        ## Core Curriculum
-        - **Python Fundamentals** - Advanced Python programming concepts
-        - **NumPy & Pandas** - Data manipulation and analysis
-        - **Matplotlib & Seaborn** - Data visualization and plotting
-        - **Neural Networks** - Deep learning implementation from scratch
-        - **PyTorch Framework** - Modern deep learning development
-
-        ## Capstone Project
-        Built and deployed a convolutional neural network (CNN) image classifier using PyTorch, demonstrating:
-        - Image preprocessing and data augmentation
-        - CNN architecture design and implementation
-        - Model training, validation, and optimization
-        - Transfer learning with pre-trained models
-
-        **Repository**: [CNN Image Classification Project](https://github.com/jtayl222/cnn-image-classification)
-
-    # Deep Learning AI
+    # Deep Learning Specialization (Coursera)
     - type: id_deeplearning
-      cert_name: "DeepLearning.AI Complete Specialization"
-      cert_excerpt: "Comprehensive deep learning specialization - 6 courses completed"
-      date: "2024-08-30"
+      cert_name: "Deep Learning Specialization"
+      cert_excerpt: "Complete 5-course specialization by DeepLearning.AI"
+      thumbnail: "/assets/files/thumbnails/0 - Deep Learning Specialization.png"
+      certificate: "/assets/files/images/0 - Deep Learning Specialization.png"
+      pdf: "/assets/files/pdfs/0 - Deep Learning Specialization.pdf"
       post: |
-        # 🧠 DeepLearning.AI Complete Specialization
+        Comprehensive specialization covering neural networks, deep learning, and advanced AI techniques.
 
-        **Completed: August 2024**
-
-        ## Specialization Overview
-        Comprehensive 6-course specialization covering the complete spectrum of deep learning, from fundamentals to advanced applications, taught by Andrew Ng and leading AI researchers.
-
-        ## Course Breakdown
-
-        ### ✅ Neural Networks and Deep Learning
-        - **Fundamentals** - Logistic regression, neural network basics
-        - **Deep Networks** - Forward/backward propagation, parameter optimization
-        - **Implementation** - Built neural networks from scratch in Python
-
-        ### ✅ Improving Deep Neural Networks
-        - **Hyperparameter Tuning** - Learning rate, batch size, layer optimization
-        - **Regularization** - Dropout, L2 regularization, batch normalization
-        - **Optimization** - Adam, RMSprop, momentum algorithms
-
-        ### ✅ Structuring Machine Learning Projects
-        - **ML Strategy** - Bias/variance tradeoffs, error analysis
-        - **End-to-End ML Projects** - Data collection to production deployment
-        - **MLOps Best Practices** - Versioning, testing, monitoring
-
-        ### ✅ Convolutional Neural Networks
-        - **CNN Architectures** - LeNet, AlexNet, VGG, ResNet
-        - **Computer Vision** - Object detection, face recognition
-        - **Transfer Learning** - Pre-trained model fine-tuning
-
-        ### ✅ Sequence Models
-        - **RNNs & LSTMs** - Sequential data processing
-        - **Attention Mechanisms** - Transformer architecture fundamentals
-        - **NLP Applications** - Language modeling, machine translation
-
-        ### ✅ Generative AI with Large Language Models
-        - **LLM Fundamentals** - Transformer architecture deep dive
-        - **Fine-tuning Strategies** - PEFT, LoRA, instruction tuning
-        - **LLM Applications** - Text generation, summarization, Q&A systems
-
-        ## Practical Applications
-        Applied learning through hands-on projects implementing:
-        - Image classification systems for production use
-        - Natural language processing pipelines
-        - Generative AI applications with modern LLMs
-        - End-to-end ML project lifecycle management
-
-        **Credential**: DeepLearning.AI Specialization Certificate
-
-    # Enterprise MLOps
-    - type: id_enterprise
-      cert_name: "Red Hat Certified Specialist"
-      cert_excerpt: "Business Rules and Process Design"
-      date: "2024-06-15"
+    - type: id_deeplearning
+      cert_name: "Neural Networks and Deep Learning"
+      cert_excerpt: "Fundamentals of deep learning and neural networks"
+      thumbnail: "/assets/files/thumbnails/1 - Neural Networks and Deep Learning.png"
+      certificate: "/assets/files/images/1 - Neural Networks and Deep Learning.png"
+      pdf: "/assets/files/pdfs/1 - Neural Networks and Deep Learning.pdf"
       post: |
-        # 🎯 Red Hat Certified Specialist
+        Foundation course covering neural network architectures and deep learning fundamentals.
 
-        **Business Rules and Process Design**  
-        **Issued: June 2024**
-
-        ## Certification Focus
-        Advanced certification in enterprise business process automation and rule engine development, with emphasis on production-ready implementations for large-scale organizations.
-
-        ## Technical Expertise
-        - **Drools Rule Engine** - Complex business rule implementation
-        - **jBPM Workflow** - Business process management and automation
-        - **Decision Tables** - Rule modeling and optimization
-        - **Process Automation** - End-to-end workflow orchestration
-        - **Enterprise Integration** - Rule engine integration patterns
-
-        ## Production Applications
-        - **Financial Rules** - Risk assessment and compliance automation
-        - **MLOps Workflows** - Model governance and deployment rules
-        - **Business Logic** - Complex decision-making automation
-        - **Process Optimization** - Workflow efficiency improvements
-
-        ## Enterprise Value
-        Enables implementation of sophisticated business logic and process automation in enterprise MLOps platforms, providing governance and compliance capabilities for production ML systems.
-
-        **Credential ID**: Red Hat Certified Specialist
-
-    - type: id_enterprise
-      cert_name: "MLOps Production Lifecycle"
-      cert_excerpt: "Production ML system lifecycle management"
-      date: "2024-05-20"
+    - type: id_deeplearning
+      cert_name: "Improving Deep Neural Networks"
+      cert_excerpt: "Hyperparameter tuning, regularization and optimization"
+      thumbnail: "/assets/files/thumbnails/2 - Improving Deep Neural Networks.png"
+      certificate: "/assets/files/images/2 - Improving Deep Neural Networks.png"
+      pdf: "/assets/files/pdfs/2 - Improving Deep Neural Networks.pdf"
       post: |
-        # ⚙️ MLOps Production Lifecycle Certification
+        Advanced techniques for optimizing and improving deep neural network performance.
 
-        **DeepLearning.AI Professional Certificate**  
-        **Issued: May 2024**
+    - type: id_deeplearning
+      cert_name: "Structuring Machine Learning Projects"
+      cert_excerpt: "ML strategy and project management"
+      thumbnail: "/assets/files/thumbnails/3 - Structuring Machine Learning Projects.png"
+      certificate: "/assets/files/images/3 - Structuring Machine Learning Projects.png"
+      pdf: "/assets/files/pdfs/3 - Structuring Machine Learning Projects.pdf"
+      post: |
+        Best practices for structuring and managing machine learning projects.
 
-        ## Program Overview
-        Comprehensive certification focused on production machine learning system lifecycle management, covering the complete journey from model development to production deployment and monitoring.
+    - type: id_deeplearning
+      cert_name: "Convolutional Neural Networks"
+      cert_excerpt: "Computer vision and CNN architectures"
+      thumbnail: "/assets/files/thumbnails/4 - Convolutional Neural Networks.png"
+      certificate: "/assets/files/images/4 - Convolutional Neural Networks.png"
+      pdf: "/assets/files/pdfs/4 - Convolutional Neural Networks.pdf"
+      post: |
+        Specialized course on convolutional neural networks for computer vision applications.
 
-        ## Core Competencies
+    - type: id_deeplearning
+      cert_name: "Sequence Models"
+      cert_excerpt: "RNNs, LSTMs, and NLP applications"
+      thumbnail: "/assets/files/thumbnails/5 - Sequence Models.png"
+      certificate: "/assets/files/images/5 - Sequence Models.png"
+      pdf: "/assets/files/pdfs/5 - Sequence Models.pdf"
+      post: |
+        Advanced course covering sequence models for natural language processing.
 
-        ### Production ML Systems
-        - **Model Deployment** - Containerization, orchestration, scaling
-        - **Monitoring & Observability** - Model performance, data drift detection
-        - **CI/CD for ML** - Automated testing, validation, deployment pipelines
-        - **Model Governance** - Version control, approval workflows, compliance
+    # Cloud & Professional Certifications
+    - type: id_cloud
+      cert_name: "AWS Certified AI Practitioner"
+      cert_excerpt: "AWS AI/ML services and solutions"
+      thumbnail: "/assets/files/thumbnails/AWS Certified AI Practitioner certificate.png"
+      certificate: "/assets/files/images/AWS Certified AI Practitioner certificate.png"
+      pdf: "/assets/files/pdfs/AWS Certified AI Practitioner certificate.pdf"
+      post: |
+        AWS certification demonstrating expertise in AI and machine learning services on AWS cloud platform.
 
-        ### MLOps Infrastructure
-        - **Platform Engineering** - Kubernetes-based ML platforms
-        - **Data Pipeline Management** - ETL/ELT for ML workloads
-        - **Feature Stores** - Centralized feature management and serving
-        - **Model Registries** - Centralized model lifecycle management
+    - type: id_cloud
+      cert_name: "Microsoft Certified: Azure AI Engineer"
+      cert_excerpt: "Azure AI solutions and cognitive services"
+      thumbnail: "/assets/files/thumbnails/Microsoft Certified - Azure AI Engineer.png"
+      certificate: "/assets/files/images/Microsoft Certified - Azure AI Engineer.png"
+      post: |
+        Microsoft certification for designing and implementing AI solutions on Azure platform.
 
-        ### Production Challenges
-        - **Model Drift Detection** - Data and concept drift monitoring
-        - **A/B Testing** - Safe model rollout strategies
-        - **Rollback Mechanisms** - Production incident response
-        - **Performance Optimization** - Latency, throughput, resource efficiency
+    - type: id_datascience
+      cert_name: "Red Hat Certified Professional"
+      cert_excerpt: "Enterprise Linux and OpenShift expertise"
+      thumbnail: "/assets/files/thumbnails/Red Hat Certified Professional.png"
+      certificate: "/assets/files/images/Red Hat Certified Professional.png"
+      post: |
+        Red Hat certification demonstrating proficiency in enterprise Linux systems and container platforms.
 
-        ## Real-World Applications
-        Applied certification knowledge in building and operating:
-        - **ml-platform** - Complete MLOps infrastructure on Kubernetes
-        - **Fraud Detection System** - Production A/B testing implementation
-        - **Financial ML Models** - Enterprise-grade model serving
-        - **Monitoring Stack** - Comprehensive ML system observability
+    - type: id_cloud
+      cert_name: "AI Programming with Python"
+      cert_excerpt: "Udacity Nanodegree Program"
+      thumbnail: "/assets/files/thumbnails/AI_Programming_with_Python_Udacity.png"
+      certificate: "/assets/files/images/AI_Programming_with_Python_Udacity.png"
+      pdf: "/assets/files/pdfs/AI_Programming_with_Python_Udacity.pdf"
+      post: |
+        Comprehensive nanodegree covering Python programming for AI and machine learning applications.
 
-        **Certificate**: MLOps Production Lifecycle Professional
+    # Data Science Certifications
+    - type: id_datascience
+      cert_name: "Berkeley: Big Data with Apache Spark"
+      cert_excerpt: "Distributed computing and big data analytics"
+      thumbnail: "/assets/files/thumbnails/Berkeley - Big Data with Apache Spark.png"
+      certificate: "/assets/files/images/Berkeley - Big Data with Apache Spark.png"
+      pdf: "/assets/files/pdfs/Berkeley - Big Data with Apache Spark.pdf"
+      post: |
+        UC Berkeley certification in big data processing using Apache Spark framework.
+
+    - type: id_datascience
+      cert_name: "Berkeley: Scalable Machine Learning"
+      cert_excerpt: "ML at scale with distributed systems"
+      thumbnail: "/assets/files/thumbnails/Berkeley - Scalable Machine Learning.png"
+      certificate: "/assets/files/images/Berkeley - Scalable Machine Learning.png"
+      pdf: "/assets/files/pdfs/Berkeley - Scalable Machine Learning.pdf"
+      post: |
+        Advanced techniques for implementing machine learning at scale using distributed computing.
+
+    - type: id_datascience
+      cert_name: "Duke: Data Analysis and Statistics"
+      cert_excerpt: "Statistical methods for data science"
+      thumbnail: "/assets/files/thumbnails/Duke - Data Analysis and Statistics.png"
+      certificate: "/assets/files/images/Duke - Data Analysis and Statistics.png"
+      pdf: "/assets/files/pdfs/Duke - Data Analysis and Statistics.pdf"
+      post: |
+        Duke University certification in statistical analysis and data science methodologies.
+
+    - type: id_datascience
+      cert_name: "Stanford: Statistical Learning"
+      cert_excerpt: "Advanced statistical methods for ML"
+      thumbnail: "/assets/files/thumbnails/Standford Online - Statistical Learning.png"
+      certificate: "/assets/files/images/Standford Online - Statistical Learning.png"
+      pdf: "/assets/files/pdfs/Standford Online - Statistical Learning.pdf"
+      post: |
+        Stanford certification covering statistical learning theory and applications.
+
+    - type: id_datascience
+      cert_name: "MITx: Computer Science using Python"
+      cert_excerpt: "Computational thinking and data structures"
+      thumbnail: "/assets/files/thumbnails/MITx - Computer Science using Python.png"
+      certificate: "/assets/files/images/MITx - Computer Science using Python.png"
+      pdf: "/assets/files/pdfs/MITx - Computer Science using Python.pdf"
+      post: |
+        MIT certification in computer science fundamentals using Python programming.
+
+    # Machine Learning Certifications
+    - type: id_ml
+      cert_name: "Generative AI with Large Language Models"
+      cert_excerpt: "LLMs, transformers, and generative AI"
+      thumbnail: "/assets/files/thumbnails/Generative AI with Large Language Models.png"
+      certificate: "/assets/files/images/Generative AI with Large Language Models.png"
+      pdf: "/assets/files/pdfs/Generative AI with Large Language Models.pdf"
+      post: |
+        Specialized certification in generative AI and large language model technologies.
+
+    - type: id_ml
+      cert_name: "Machine Learning in Production"
+      cert_excerpt: "MLOps and production ML systems"
+      thumbnail: "/assets/files/thumbnails/Machine Learning in Production.png"
+      certificate: "/assets/files/images/Machine Learning in Production.png"
+      pdf: "/assets/files/pdfs/Machine Learning in Production.pdf"
+      post: |
+        Certification focused on deploying and managing ML systems in production environments.
+
+    - type: id_ml
+      cert_name: "ML Data Lifecycle in Production"
+      cert_excerpt: "Data pipelines and feature engineering"
+      thumbnail: "/assets/files/thumbnails/Machine Learning Data Lifecycle in Production.png"
+      certificate: "/assets/files/images/Machine Learning Data Lifecycle in Production.png"
+      pdf: "/assets/files/pdfs/Machine Learning Data Lifecycle in Production.pdf"
+      post: |
+        Specialized certification in managing data lifecycles for production ML systems.
+
+    # Genomic Data Science Certifications
+    - type: id_genomics
+      cert_name: "Introduction to Genomic Technologies"
+      cert_excerpt: "Johns Hopkins genomics fundamentals"
+      thumbnail: "/assets/files/thumbnails/Johns Hopkins - Introduction to Genomic Technologies.png"
+      certificate: "/assets/files/images/Johns Hopkins - Introduction to Genomic Technologies.png"
+      pdf: "/assets/files/pdfs/Johns Hopkins - Introduction to Genomic Technologies.pdf"
+      post: |
+        Foundation course in genomic technologies and bioinformatics.
+
+    - type: id_genomics
+      cert_name: "Python for Genomic Data Science"
+      cert_excerpt: "Bioinformatics programming with Python"
+      thumbnail: "/assets/files/thumbnails/Johns Hopkins - Python for Genomic Data Science.png"
+      certificate: "/assets/files/images/Johns Hopkins - Python for Genomic Data Science.png"
+      pdf: "/assets/files/pdfs/Johns Hopkins - Python for Genomic Data Science.pdf"
+      post: |
+        Python programming for genomic data analysis and bioinformatics applications.
+
+    - type: id_genomics
+      cert_name: "Algorithms for DNA Sequencing"
+      cert_excerpt: "Computational methods for sequencing"
+      thumbnail: "/assets/files/thumbnails/Johns Hopkins - Algorithms for DNA Sequencing.png"
+      certificate: "/assets/files/images/Johns Hopkins - Algorithms for DNA Sequencing.png"
+      pdf: "/assets/files/pdfs/Johns Hopkins - Algorithms for DNA Sequencing.pdf"
+      post: |
+        Advanced algorithms for DNA sequence analysis and alignment.
+
+    - type: id_genomics
+      cert_name: "Command Line Tools for Genomic Data"
+      cert_excerpt: "Unix tools for bioinformatics"
+      thumbnail: "/assets/files/thumbnails/Johns Hopkins - Command Line Tools for Genomic Data Science.png"
+      certificate: "/assets/files/images/Johns Hopkins - Command Line Tools for Genomic Data Science.png"
+      pdf: "/assets/files/pdfs/Johns Hopkins - Command Line Tools for Genomic Data Science.pdf"
+      post: |
+        Command-line tools and workflows for genomic data processing.
+
+    - type: id_genomics
+      cert_name: "Genomic Data Science with Galaxy"
+      cert_excerpt: "Galaxy platform for genomics research"
+      thumbnail: "/assets/files/thumbnails/Johns Hopkins - Genomic Data Science with Galaxy.png"
+      certificate: "/assets/files/images/Johns Hopkins - Genomic Data Science with Galaxy.png"
+      pdf: "/assets/files/pdfs/Johns Hopkins - Genomic Data Science with Galaxy.pdf"
+      post: |
+        Using Galaxy platform for genomic data analysis and visualization.
