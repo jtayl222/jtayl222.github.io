@@ -7,7 +7,7 @@ page_data:
     text_color: "white"
     img: "/assets/img/projects/projects-heading.jpg"
     back_color: "#1e3a8a"
-    download_pdf: "/assets/files/Jeff_Taylor_July_24.pdf"
+    download_pdf: "/assets/files/resume/Jeff_Taylor_July_24.pdf"
     download_text: "Download PDF Resume"
 
   content: |
