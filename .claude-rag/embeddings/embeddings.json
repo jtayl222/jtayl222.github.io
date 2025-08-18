@@ -1,0 +1,112 @@
+{
+  "assets/files/pdfs/Machine Learning in Production.pdf": {
+    "text_hash": "0ea44383e9d12e3f7967ab02db90ba37",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-16T17:22:09.809440"
+  },
+  "assets/files/pdfs/2 - Improving Deep Neural Networks.pdf": {
+    "text_hash": "3ec1777cbe7a610112eedf16e65dcb36",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-16T17:22:10.260068"
+  },
+  "assets/files/pdfs/MITx - Computer Science using Python.pdf": {
+    "text_hash": "e7ac33784ae7e18799e7a09528984da3",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-16T17:22:10.309121"
+  },
+  "assets/files/pdfs/Duke - Data Analysis and Statistics.pdf": {
+    "text_hash": "e2608f6dcb48872b3d1561de029cb32c",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-16T17:22:10.375637"
+  },
+  "assets/files/pdfs/AWS Certified AI Practitioner certificate.pdf": {
+    "text_hash": "24eb71259f748204b4950f7d923596b7",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-16T17:22:10.394448"
+  },
+  "assets/files/pdfs/AI_Programming_with_Python_Udacity.pdf": {
+    "text_hash": "cfbbc2290d6c9916517f4e500581d437",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-16T17:22:10.458678"
+  },
+  "assets/files/pdfs/4 - Convolutional Neural Networks.pdf": {
+    "text_hash": "ba33b7be07c37d682876a844193dc2fc",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-16T17:22:10.828205"
+  },
+  "assets/files/pdfs/Johns Hopkins - Genomic Data Science with Galaxy.pdf": {
+    "text_hash": "de2e5f9ae82f9a7b07dca9de66cd7e82",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-16T17:22:12.065329"
+  },
+  "assets/files/pdfs/Machine Learning Data Lifecycle in Production.pdf": {
+    "text_hash": "82d60965f294878d5b38c2f233f8dc4a",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-16T17:22:12.422782"
+  },
+  "assets/files/pdfs/Johns Hopkins - Command Line Tools for Genomic Data Science.pdf": {
+    "text_hash": "b8842f2f7b21eb0688814dbbfea60bf3",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-16T17:22:12.919829"
+  },
+  "assets/files/pdfs/3 - Structuring Machine Learning Projects.pdf": {
+    "text_hash": "4bc7d15e57d1f325e387e5d07655a445",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-16T17:22:13.279227"
+  },
+  "assets/files/pdfs/Standford Online - Statistical Learning.pdf": {
+    "text_hash": "d607beaa6620d73ebb170875eefb120b",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-16T17:22:13.355258"
+  },
+  "assets/files/pdfs/0 - Deep Learning Specialization.pdf": {
+    "text_hash": "f33eade60c6021b0ac88fdbb79ce8a03",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-16T17:22:13.756378"
+  },
+  "assets/files/pdfs/1 - Neural Networks and Deep Learning.pdf": {
+    "text_hash": "a67d6b6bebd68865de2b36de59ca7ea5",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-16T17:22:14.109744"
+  },
+  "assets/files/pdfs/Johns Hopkins - Algorithms for DNA Sequencing.pdf": {
+    "text_hash": "f52b12e34b42dc9d9f6ae3998fa4c3bb",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-16T17:22:14.505533"
+  },
+  "assets/files/pdfs/Berkeley - Scalable Machine Learning.pdf": {
+    "text_hash": "403264f4878a42383c6073cd4547238e",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-16T17:22:14.608363"
+  },
+  "assets/files/pdfs/5 - Sequence Models.pdf": {
+    "text_hash": "f75de461818fff5dd1a7b3fe794fe56f",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-16T17:22:14.963723"
+  },
+  "assets/files/pdfs/Generative AI with Large Language Models.pdf": {
+    "text_hash": "bf6a4b2db50c200fa23e8df16d856ebd",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-16T17:22:15.322270"
+  },
+  "assets/files/pdfs/Berkeley - Big Data with Apache Spark.pdf": {
+    "text_hash": "78c5359c3441379fd2dce764c7b3f760",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-16T17:22:15.424539"
+  },
+  "assets/files/pdfs/Jeff_Taylor_July_24.pdf": {
+    "text_hash": "7c5480cabba5a1f5613c4dcf1992bf03",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-16T17:22:15.720839"
+  },
+  "assets/files/pdfs/Johns Hopkins - Python for Genomic Data Science.pdf": {
+    "text_hash": "97d94cfd6c5f34c4c508a7b1cb41a38d",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-16T17:22:16.956149"
+  },
+  "assets/files/pdfs/Johns Hopkins - Introduction to Genomic Technologies.pdf": {
+    "text_hash": "5939a80cbf2593ec2956cb35d6d6665c",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-16T17:22:18.187104"
+  }
+}

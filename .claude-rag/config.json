@@ -1,0 +1,67 @@
+{
+  "repo_type": "documentation",
+  "keywords": [
+    "documentation",
+    "docs",
+    "guide",
+    "tutorial",
+    "reference",
+    "readme",
+    "wiki",
+    "knowledge",
+    "manual"
+  ],
+  "file_patterns": [
+    "*.md",
+    "*.rst",
+    "*.txt",
+    "*.html",
+    "*.pdf",
+    "docs/**/*.md",
+    "wiki/**/*.md",
+    "docs/**/*.pdf"
+  ],
+  "exclude_paths": [
+    ".git",
+    ".svn",
+    ".hg",
+    "node_modules",
+    "bower_components",
+    "jspm_packages",
+    "_site/",
+    ".jekyll-cache/",
+    "_build/",
+    ".sphinx-build/",
+    ".docusaurus/",
+    "public/",
+    ".next/",
+    ".nuxt/",
+    "build/",
+    "dist/",
+    "out/",
+    "target/",
+    ".cache/",
+    ".mypy_cache",
+    "tmp/",
+    "temp/",
+    "*.tmp",
+    "*.log",
+    ".vscode",
+    ".idea",
+    "*.sublime-*",
+    ".DS_Store",
+    "Thumbs.db",
+    ".claude-rag"
+  ],
+  "extraction_focus": [
+    "documentation_structure",
+    "cross_references",
+    "tutorials"
+  ],
+  "semantic_search": {
+    "enabled": true,
+    "model": "all-MiniLM-L6-v2",
+    "similarity_threshold": 0.3,
+    "max_results": 10
+  }
+}

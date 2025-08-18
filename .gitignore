@@ -3,3 +3,8 @@ _site
 .jekyll-cache
 .jekyll-metadata
 vendor
+
+# Claude RAG generated files
+.claude-rag/index.json
+.claude-rag/cache.json
+.claude-rag/*.tmp
