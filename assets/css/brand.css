@@ -1,0 +1,49 @@
+/* Light mode */
+:root {
+  --bg: #FFFFFF;
+  --surface: #F8FAFC;
+  --text: #0F172A;
+  --muted: #64748B;
+
+  --primary: #1D4ED8;
+  --primary-hover: #1E3A8A;
+  --primary-contrast: #FFFFFF;
+
+  --accent: #14B8A6;          /* use as fills, not text */
+  --chip-text: #0B1220;
+}
+
+/* Dark mode (theme already supports switching) */
+[data-theme="dark"] {
+  --bg: #0B1220;
+  --surface: #111827;
+  --text: #E5E7EB;
+  --muted: #94A3B8;
+
+  --primary: #60A5FA;
+  --primary-hover: #3B82F6;
+  --primary-contrast: #0B1220;
+
+  --accent: #22D3EE;
+  --chip-text: #0B1220;
+}
+
+/* Apply tokens */
+body { background: var(--bg); color: var(--text); }
+a, .post a { color: var(--primary); }
+a:hover { color: var(--primary-hover); }
+
+.navbar, .site-header { background: var(--bg); border-bottom: 1px solid var(--surface); }
+.btn-primary,
+.button.primary { background: var(--primary); color: var(--primary-contrast); border-color: var(--primary); }
+.btn-primary:hover { background: var(--primary-hover); border-color: var(--primary-hover); }
+
+.badge, .label, .tag-chip {
+  background: var(--accent); color: var(--chip-text); border: none;
+}
+
+/* Cards/sections */
+.card, .post, .project, .cert-item { background: var(--surface); color: var(--text); }
+
+/* Optional: subtle brand stripe under nav */
+.site-header::after { content:""; display:block; height:4px; background: linear-gradient(90deg, var(--primary), var(--accent)); }
