@@ -4,8 +4,8 @@
 ###########################################################
 page_data:
   main:
-    header: "🚀 Live MLOps Platform - Built From Scratch"
-    info: "🏗️ CUSTOM-BUILT | 🖥️ ON-PREMISES | ⚡ ANSIBLE AUTOMATED | 📖 FULLY DOCUMENTED | 🔄 RAPIDLY DEPLOYABLE"
+    header: "🚀 Multi-Platform MLOps Infrastructure"
+    info: "☸️ K3S • KUBEADM • EKS | 🏗️ CUSTOM-BUILT | ⚡ ANSIBLE AUTOMATED | 📖 FULLY DOCUMENTED | 🔄 RAPIDLY DEPLOYABLE"
     text_color: "white"
     # if you don't want to use background image, comment it. back_color will be activated.
     img: "/assets/img/projects/projects-heading.jpg"
@@ -39,40 +39,52 @@ page_data:
   list:
     # Foundation
     - type: id_foundation
-      component_name: "⚙️ K3s Kubernetes Distribution"
-      component_excerpt: "🐳 Lightweight Kubernetes | 🏗️ Custom cluster setup | ⚡ Production-ready"
-      ansible_role_url: "https://github.com/jtayl222/ml-platform/tree/main/infrastructure/cluster/roles/foundation/k3s"
+      component_name: "☸️ Multi-Platform Kubernetes Support"
+      component_excerpt: "🐳 K3s | 🏗️ Kubeadm | ☁️ EKS | 🚀 Platform detection & optimization"
+      ansible_role_url: "https://github.com/jtayl222/ml-platform"
       post: |
-        # ⚙️ K3s Kubernetes Distribution
+        # ☸️ Multi-Platform Kubernetes Support
 
-        **✅ STATUS: RUNNING (15 days uptime)**
+        **✅ STATUS: PRODUCTION-READY ACROSS PLATFORMS**
         
-        ## 🛠️ **FOUNDATION LAYER** - Custom K3s deployment from scratch
+        ## 🛠️ **FOUNDATION LAYER** - Enterprise-grade MLOps across Kubernetes distributions
         
-        **🏗️ CUSTOM K3S DEPLOYMENT:**
-        - ✨ **Lightweight Kubernetes** - Optimized for edge and IoT
-        - 🔧 **Custom control plane** - Hand-configured master nodes
-        - 📖 **Full automation** - Ansible-driven deployment
-        - ⚡ **High availability** - Multi-master setup capability
-        - 🖥️ **Bare-metal optimized** - Perfect for on-premises
+        **☸️ SUPPORTED PLATFORMS:**
+        
+        ### 🐳 **K3s** - Edge & Homelab
+        - ✨ **Lightweight Kubernetes** - Single binary, minimal resources
+        - 🏠 **Perfect for homelab** - Optimal for edge and IoT deployments
+        - ⚡ **Fast startup** - Ready in minutes
+        - 🔧 **Built-in components** - Traefik, CoreDNS, local storage
+        
+        ### 🏗️ **Kubeadm** - On-Premises Enterprise
+        - 🏢 **Production-grade** - High availability control plane
+        - 🔒 **Full control** - Complete cluster customization
+        - 📊 **Scalability** - Enterprise workload support
+        - 🛡️ **Security-first** - Hardened configurations
+        
+        ### ☁️ **Amazon EKS** - Cloud-Native
+        - 🌐 **Managed service** - AWS-managed control plane
+        - 📈 **Auto-scaling** - Dynamic resource management
+        - 🔗 **AWS integration** - Native cloud services integration
+        - 💰 **Cost optimization** - Pay-as-you-scale model
 
-        ## Cluster Architecture
+        ## 🚀 **UNIFIED DEPLOYMENT** - Single command across platforms
         ```bash
-        # K3s cluster components
-        ✅ k3s-server           # Control plane
-        ✅ k3s-agent            # Worker nodes  
-        ✅ containerd           # Container runtime
-        ✅ CoreDNS              # Cluster DNS
-        ✅ Traefik              # Default ingress
+        # Automatic platform detection & deployment
+        ansible-playbook -i inventory/k3s.ini site.yml     # K3s deployment
+        ansible-playbook -i inventory/kubeadm.ini site.yml # Kubeadm deployment
+        ansible-playbook -i inventory/eks.ini site.yml     # EKS deployment
         ```
 
-        ## 🚀 **ANSIBLE AUTOMATION** - Infrastructure as Code
-        - **Idempotent deployment** - Safe to run repeatedly
-        - **Node management** - Control plane and worker setup
-        - **Configuration drift prevention** - Declarative state management
-        - **Scaling capability** - Add/remove nodes programmatically
+        ## 🔍 **PLATFORM OPTIMIZATION** - Tailored configurations
+        - **Automatic detection** - Platform-specific optimizations
+        - **Istio configurations** - Platform-aware service mesh setup
+        - **Storage classes** - Platform-native storage integration
+        - **Load balancers** - MetalLB (on-prem) vs AWS ALB (EKS)
+        - **Monitoring** - Platform-specific metrics collection
 
-        **[🔗 View K3s Ansible Role](https://github.com/jtayl222/ml-platform/tree/main/infrastructure/cluster/roles/foundation/k3s)**
+        **[🔗 View Complete Multi-Platform Documentation](https://github.com/jtayl222/ml-platform)**
 
     - type: id_foundation
       component_name: "🌐 Cilium Container Network Interface"
@@ -188,14 +200,14 @@ page_data:
 
         **✅ STATUS: RUNNING (15 days uptime)**
         
-        ## 🛠️ **BUILT FROM SCRATCH** - No managed services, pure custom engineering
+        ## 🛠️ **ENTERPRISE-GRADE MLOPS** - Multi-platform production infrastructure
         
-        **🏗️ CUSTOM DEVELOPMENT HIGHLIGHTS:**
-        - ✨ **Zero managed services** - Every component hand-configured
-        - 🔧 **Custom Ansible playbooks** - Complete infrastructure automation
-        - 📖 **Fully documented** - Every deployment step reproducible
-        - ⚡ **Rapid rebuild** - Tear down and rebuild in minutes with Ansible
-        - 🖥️ **On-premises deployment** - Running on dedicated hardware
+        **🏗️ MULTI-PLATFORM DEVELOPMENT HIGHLIGHTS:**
+        - ☸️ **Three Kubernetes platforms** - K3s, Kubeadm, and EKS support
+        - 🔧 **Unified deployment** - Single Ansible codebase across platforms
+        - 📖 **Platform-optimized** - Tailored configurations for each environment
+        - ⚡ **Rapid deployment** - One command deploys complete MLOps stack
+        - 🌐 **Cloud & on-premises** - Hybrid deployment capability
 
         ## Active Infrastructure
         ```bash
@@ -212,18 +224,20 @@ page_data:
         ✅ ingress-nginx        # Ingress controller
         ```
 
-        ## 🚀 **ANSIBLE AUTOMATION** - Complete Infrastructure as Code
-        - **One-command deployment** - `ansible-playbook site.yml`
-        - **Idempotent operations** - Safe to run repeatedly
-        - **Environment consistency** - Identical deployments every time
-        - **Disaster recovery ready** - Complete rebuild capability
+        ## 🚀 **ANSIBLE AUTOMATION** - Multi-Platform Infrastructure as Code
+        - **Platform detection** - Automatic optimization per Kubernetes distribution
+        - **Unified deployment** - Same playbook works across K3s, Kubeadm, EKS
+        - **Idempotent operations** - Safe to run repeatedly on any platform
+        - **Environment consistency** - Identical MLOps stack across platforms
+        - **Disaster recovery ready** - Complete rebuild capability anywhere
 
-        ## Platform Capabilities
-        - **Multi-tenant isolation** with namespace-based separation
-        - **Service mesh** with Istio for advanced networking
-        - **Automatic TLS** certificate management
-        - **Load balancing** with MetalLB for bare-metal
-        - **Container networking** with Cilium CNI
+        ## Multi-Platform Capabilities
+        - **Kubernetes distribution flexibility** - Deploy on K3s, Kubeadm, or EKS
+        - **Platform-aware configurations** - Optimized for each environment
+        - **Service mesh** with platform-specific Istio configurations
+        - **Storage integration** - Native storage classes for each platform
+        - **Load balancing** - MetalLB (on-prem) or cloud-native solutions
+        - **Monitoring** - Platform-optimized observability stack
 
         **[🔗 View Complete Source & Documentation](https://github.com/jtayl222/ml-platform)**
 
