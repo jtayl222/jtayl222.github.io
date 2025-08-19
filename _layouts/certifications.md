@@ -44,13 +44,22 @@ layout: default
     box-shadow: 0 8px 15px rgba(0,0,0,0.2);
   }
   
-  .cert-thumbnail {
+  .cert-thumbnail-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 250px;
+    background-color: white;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .cert-thumbnail {
+    max-width: 100%;
+    max-height: 100%;
     object-fit: contain;
-    object-position: center;
     display: block;
-    background-color: #f8f8f8;
   }
   
   .cert-info {
@@ -192,7 +201,9 @@ layout: default
     {% for cert in cert_data.list -%}
       {%- if cert.type != category.type %}{% continue %}{% endif -%}
       <div class="cert-item" onclick="openCertModal('{{ cert.certificate }}', '{{ cert.cert_name }}', '{{ cert.pdf | default: cert.certificate }}')">
-        <img src="{{ cert.thumbnail }}" alt="{{ cert.cert_name }}" class="cert-thumbnail" loading="lazy">
+        <div class="cert-thumbnail-wrapper">
+          <img src="{{ cert.thumbnail }}" alt="{{ cert.cert_name }}" class="cert-thumbnail" loading="lazy">
+        </div>
         <div class="cert-info">
           <p class="cert-title">{{ cert.cert_name }}</p>
         </div>
