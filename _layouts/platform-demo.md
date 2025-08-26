@@ -54,18 +54,22 @@ layout: default
             <p class="category">#{{ category.title }}</p>
           </div>
           <hr>
+          {% if category.type != 'id_architecture' %}
           <a href="javascript:void(0);" class="read-more-less" role="button" rel="nofollow">
             <div class="read-more"><i class="fa fa-angle-double-down fa-fw" aria-hidden="true"></i>{{ site.data.lang[lng].platform-demo.read_more_text }}</div>
             <div class="read-less"><i class="fa fa-angle-double-up fa-fw" aria-hidden="true"></i>{{ site.data.lang[lng].platform-demo.read_less_text }}</div>
           </a>
+          {% endif %}
         </div>
       </div>
       <div class="row">
-        <div class="markdown-style">
+        <div class="markdown-style"{% if category.type == 'id_architecture' %} style="display: block;"{% endif %}>
           {{ list.post | markdownify }}
+          {% if category.type != 'id_architecture' %}
           <a href="javascript:void(0);" class="read-more-less" role="button" rel="nofollow">
             <i class="fa fa-angle-double-up fa-fw" aria-hidden="true"></i>{{ site.data.lang[lng].platform-demo.read_less_text }}
           </a>
+          {% endif %}
         </div>
       </div>
     </div>

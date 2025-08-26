@@ -4,8 +4,8 @@
 ###########################################################
 page_data:
   main:
-    header: "🚀 Multi-Platform MLOps Infrastructure"
-    info: "☸️ K3S • KUBEADM • EKS | 🏗️ CUSTOM-BUILT | ⚡ ANSIBLE AUTOMATED | 📖 FULLY DOCUMENTED | 🔄 RAPIDLY DEPLOYABLE"
+    header: "🎯 Production MLOps Platform"
+    info: "☸️ SUPPORTS K3S • KUBEADM • EKS | 🏗️ CUSTOM-BUILT | ⚡ ANSIBLE AUTOMATED | 📖 FULLY DOCUMENTED | 🔄 RAPIDLY DEPLOYABLE"
     text_color: "white"
     # if you don't want to use background image, comment it. back_color will be activated.
     img: "/assets/img/projects/projects-heading.jpg"
@@ -14,6 +14,9 @@ page_data:
     github_text: "🔗 View Complete Source & Documentation"
 
   category:
+    - title: "Architecture"
+      type: id_architecture
+      color: "#1565C0"
     - title: "Foundation"
       type: id_foundation
       color: "#607D8B"
@@ -37,6 +40,75 @@ page_data:
       color: "#9C27B0"
 
   list:
+    # Architecture Overview
+    - type: id_architecture
+      component_name: "🎯 Production MLOps Platform Architecture"
+      component_excerpt: "🏗️ Multi-layered infrastructure | ☸️ K3s • Kubeadm • EKS support | 🔄 Complete MLOps lifecycle"
+      ansible_role_url: "https://github.com/jtayl222/ml-platform/tree/ml-platform-restructure"
+      post: |
+        # 🎯 Production MLOps Platform Architecture
+
+        **✅ STATUS: PRODUCTION-READY ACROSS PLATFORMS**
+        
+        ## 🏗️ **COMPREHENSIVE MLOPS INFRASTRUCTURE** - Enterprise-grade multi-platform support
+        
+        ```
+        🎯 Production MLOps Platform (Supports K3s, Kubeadm, EKS)
+        ├── Infrastructure Layer
+        │   ├── Kubernetes Cluster (auto-detected or specified)
+        │   ├── Multi-Platform Support (K3s, Kubeadm, EKS)
+        │   ├── Persistent Storage (NFS/EBS/EFS) 
+        │   ├── Sealed Secrets (GitOps-ready credentials)
+        │   ├── Istio Service Mesh v1.27.x (Helm-based)
+        │   ├── Kiali + Jaeger (full observability stack)
+        │   └── Harbor Registry (enterprise container registry) 
+        ├── MLOps Layer  
+        │   ├── MLflow (experiment tracking + model registry)
+        │   ├── Seldon Core (production model serving)
+        │   ├── KServe (Kubernetes-native model serving) 
+        │   ├── Kubeflow Pipelines (ML workflow orchestration)
+        │   └── JupyterHub (collaborative data science)
+        ├── DevOps Layer
+        │   ├── Argo CD (GitOps continuous deployment)
+        │   ├── Argo Workflows (pipeline automation)
+        │   └── Kubernetes Dashboard (cluster management)
+        ├── Monitoring Layer
+        │   ├── Prometheus (metrics collection)
+        │   ├── Grafana (observability dashboards)
+        │   ├── Kiali (service mesh observability)
+        │   ├── Jaeger (distributed tracing)
+        │   └── AlertManager (intelligent alerting)
+        └── Storage Layer
+            ├── MinIO (S3-compatible object storage)
+            ├── Harbor (container registry with security scanning)
+            └── NFS (shared filesystem storage)
+        ```
+
+        ## 🚀 **KEY PLATFORM CAPABILITIES**
+        
+        **☸️ MULTI-PLATFORM KUBERNETES SUPPORT:**
+        - **K3s** - Edge & homelab deployments with lightweight footprint
+        - **Kubeadm** - On-premises enterprise with full control
+        - **EKS** - Cloud-native AWS managed service integration
+        - **Unified deployment** - Single Ansible codebase across all platforms
+        
+        **🔄 COMPLETE MLOPS LIFECYCLE:**
+        - **Data ingestion** - Real-time streaming with Apache Kafka
+        - **Experiment tracking** - MLflow with artifact storage
+        - **Model training** - JupyterHub with GPU acceleration
+        - **Pipeline orchestration** - Argo Workflows with DAG execution
+        - **Model serving** - Seldon Core & KServe for production inference
+        - **Monitoring & observability** - Prometheus, Grafana, Jaeger stack
+        
+        **⚡ DEPLOYMENT ADVANTAGES:**
+        - **Rapid deployment** - Complete stack in ~30 minutes
+        - **Platform detection** - Automatic optimization per Kubernetes distribution
+        - **GitOps ready** - Sealed Secrets and Argo CD integration
+        - **Production-grade** - High availability and security hardened
+        - **Modular design** - Deploy only what you need
+
+        **[🔗 View Complete Multi-Platform Documentation](https://github.com/jtayl222/ml-platform/tree/ml-platform-restructure)**
+
     # Foundation
     - type: id_foundation
       component_name: "☸️ Multi-Platform Kubernetes Support"

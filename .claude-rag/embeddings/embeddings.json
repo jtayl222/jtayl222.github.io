@@ -1,112 +1,652 @@
 {
-  "assets/files/pdfs/Machine Learning in Production.pdf": {
-    "text_hash": "0ea44383e9d12e3f7967ab02db90ba37",
-    "model_name": "all-MiniLM-L6-v2",
-    "computed_at": "2025-08-16T17:22:09.809440"
-  },
   "assets/files/pdfs/2 - Improving Deep Neural Networks.pdf": {
     "text_hash": "3ec1777cbe7a610112eedf16e65dcb36",
     "model_name": "all-MiniLM-L6-v2",
-    "computed_at": "2025-08-16T17:22:10.260068"
+    "computed_at": "2025-08-18T21:02:16.991411"
   },
-  "assets/files/pdfs/MITx - Computer Science using Python.pdf": {
-    "text_hash": "e7ac33784ae7e18799e7a09528984da3",
+  "_includes/default/header/meta-hreflang.html": {
+    "text_hash": "9ba0fc6f03ecd8298fb04068e6903fb7",
     "model_name": "all-MiniLM-L6-v2",
-    "computed_at": "2025-08-16T17:22:10.309121"
+    "computed_at": "2025-08-18T21:02:17.008905"
   },
-  "assets/files/pdfs/Duke - Data Analysis and Statistics.pdf": {
-    "text_hash": "e2608f6dcb48872b3d1561de029cb32c",
+  "assets/js/lozad.min.js": {
+    "text_hash": "0f856c2800426884c2acdd3e1819f3f7",
     "model_name": "all-MiniLM-L6-v2",
-    "computed_at": "2025-08-16T17:22:10.375637"
+    "computed_at": "2025-08-18T21:02:17.027133"
   },
-  "assets/files/pdfs/AWS Certified AI Practitioner certificate.pdf": {
-    "text_hash": "24eb71259f748204b4950f7d923596b7",
+  "_includes/post_common/pager-prev-next-buttons.html": {
+    "text_hash": "792c9f2856b3347eff3759da1def2d33",
     "model_name": "all-MiniLM-L6-v2",
-    "computed_at": "2025-08-16T17:22:10.394448"
+    "computed_at": "2025-08-18T21:02:17.037217"
   },
-  "assets/files/pdfs/AI_Programming_with_Python_Udacity.pdf": {
-    "text_hash": "cfbbc2290d6c9916517f4e500581d437",
+  "assets/js/_js/default/show-tooltip.js": {
+    "text_hash": "6c6e93d318dfbffcf5a8e42df3666695",
     "model_name": "all-MiniLM-L6-v2",
-    "computed_at": "2025-08-16T17:22:10.458678"
+    "computed_at": "2025-08-18T21:02:17.046600"
   },
-  "assets/files/pdfs/4 - Convolutional Neural Networks.pdf": {
-    "text_hash": "ba33b7be07c37d682876a844193dc2fc",
+  "_includes/default/nav/cookie-settings-button.html": {
+    "text_hash": "eb9d6edd20c5cf2125b4b6edf34f9c82",
     "model_name": "all-MiniLM-L6-v2",
-    "computed_at": "2025-08-16T17:22:10.828205"
+    "computed_at": "2025-08-18T21:02:17.057387"
   },
-  "assets/files/pdfs/Johns Hopkins - Genomic Data Science with Galaxy.pdf": {
-    "text_hash": "de2e5f9ae82f9a7b07dca9de66cd7e82",
+  "_includes/default/nav/color-scheme-switch.html": {
+    "text_hash": "74dd25e27409de85e4a3271d82c9d3b0",
     "model_name": "all-MiniLM-L6-v2",
-    "computed_at": "2025-08-16T17:22:12.065329"
-  },
-  "assets/files/pdfs/Machine Learning Data Lifecycle in Production.pdf": {
-    "text_hash": "82d60965f294878d5b38c2f233f8dc4a",
-    "model_name": "all-MiniLM-L6-v2",
-    "computed_at": "2025-08-16T17:22:12.422782"
+    "computed_at": "2025-08-18T21:02:17.067682"
   },
   "assets/files/pdfs/Johns Hopkins - Command Line Tools for Genomic Data Science.pdf": {
     "text_hash": "b8842f2f7b21eb0688814dbbfea60bf3",
     "model_name": "all-MiniLM-L6-v2",
-    "computed_at": "2025-08-16T17:22:12.919829"
+    "computed_at": "2025-08-18T21:02:17.435273"
+  },
+  "assets/js/_js/default/scroll-to-top.js": {
+    "text_hash": "390b747c7fabfc775ec5bce1eae6fa45",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:17.444161"
+  },
+  "tabs/platform-demo.md": {
+    "text_hash": "028f5248803601ae9bcf6f9a3a6c79bd",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:17.453213"
+  },
+  "_includes/default/nav/navigation-side-nav.html": {
+    "text_hash": "39bd27a3fdba7f6c4ce739b830c45485",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:17.461990"
+  },
+  "404.html": {
+    "text_hash": "e0f17fdc322b1a6e74aeecef577c0351",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:17.488378"
+  },
+  "assets/files/resume/Jeff_Taylor_July_24.pdf": {
+    "text_hash": "7c5480cabba5a1f5613c4dcf1992bf03",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:17.653372"
+  },
+  "_includes/multi_lng/lang-offer-msg-box.html": {
+    "text_hash": "c8975527e107cf505f18b0f837515c2c",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:17.663228"
+  },
+  "CLAUDE.md": {
+    "text_hash": "c1eb1bca7a62b45cbb49864351919ee6",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:17.671280"
+  },
+  "_includes/post_common/pager-page-number-links.html": {
+    "text_hash": "2408c1adc29e9fc214c4891a92be2f78",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:17.682024"
+  },
+  "_includes/default/search.html": {
+    "text_hash": "421e6cbf414bb98ee7d8d7dd2ddd5671",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:17.690015"
+  },
+  "assets/js/_js/post/copy-to-clipboard.js": {
+    "text_hash": "3ffd82a9d4d5eed4310a5b83c91be1c9",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:17.697364"
+  },
+  "_data/lang/zh.yml": {
+    "text_hash": "1620b6e8ea85f0306518b0dca1b6b271",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:17.708035"
+  },
+  "assets/js/_js/default/tooltip-init.js": {
+    "text_hash": "e3d245a2fb8c0b9ca52c4e4e384a4d75",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:17.716073"
+  },
+  "assets/js/_js/post/table-of-contents-init.js": {
+    "text_hash": "fd6ef053e71d4d09b114344df2d0e79b",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:17.724360"
+  },
+  "assets/files/pdfs/Duke - Data Analysis and Statistics.pdf": {
+    "text_hash": "e2608f6dcb48872b3d1561de029cb32c",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:17.779298"
+  },
+  "assets/js/jquery-3.6.0.min.js": {
+    "text_hash": "8fb8fee4fcc3cc86ff6c724154c49c42",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:17.804615"
+  },
+  "_data/conf/posts.yml": {
+    "text_hash": "c0fdc7ced4448cc36b8801dd65f2b13e",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:17.814196"
+  },
+  "_includes/default/header/header.html": {
+    "text_hash": "8a6bba81ec5fcc99e7379e63aee2391e",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:17.823093"
   },
   "assets/files/pdfs/3 - Structuring Machine Learning Projects.pdf": {
     "text_hash": "4bc7d15e57d1f325e387e5d07655a445",
     "model_name": "all-MiniLM-L6-v2",
-    "computed_at": "2025-08-16T17:22:13.279227"
+    "computed_at": "2025-08-18T21:02:18.268867"
   },
-  "assets/files/pdfs/Standford Online - Statistical Learning.pdf": {
-    "text_hash": "d607beaa6620d73ebb170875eefb120b",
+  "_data/const/share.yml": {
+    "text_hash": "3186a8ac13b6af6d23190505f759a510",
     "model_name": "all-MiniLM-L6-v2",
-    "computed_at": "2025-08-16T17:22:13.355258"
+    "computed_at": "2025-08-18T21:02:18.277939"
   },
-  "assets/files/pdfs/0 - Deep Learning Specialization.pdf": {
-    "text_hash": "f33eade60c6021b0ac88fdbb79ce8a03",
+  "_data/content/skills/en.yml": {
+    "text_hash": "457afcfb8970ebe25332015dcb1b0312",
     "model_name": "all-MiniLM-L6-v2",
-    "computed_at": "2025-08-16T17:22:13.756378"
+    "computed_at": "2025-08-18T21:02:18.290331"
   },
-  "assets/files/pdfs/1 - Neural Networks and Deep Learning.pdf": {
-    "text_hash": "a67d6b6bebd68865de2b36de59ca7ea5",
+  "_data/conf/others.yml": {
+    "text_hash": "62aa1ff4d22f97f1c4ee291052812cb5",
     "model_name": "all-MiniLM-L6-v2",
-    "computed_at": "2025-08-16T17:22:14.109744"
+    "computed_at": "2025-08-18T21:02:18.301018"
   },
-  "assets/files/pdfs/Johns Hopkins - Algorithms for DNA Sequencing.pdf": {
-    "text_hash": "f52b12e34b42dc9d9f6ae3998fa4c3bb",
+  "tabs/resume.md": {
+    "text_hash": "b0573366fd0648fb4240faeba98f92d9",
     "model_name": "all-MiniLM-L6-v2",
-    "computed_at": "2025-08-16T17:22:14.505533"
+    "computed_at": "2025-08-18T21:02:18.327734"
   },
-  "assets/files/pdfs/Berkeley - Scalable Machine Learning.pdf": {
-    "text_hash": "403264f4878a42383c6073cd4547238e",
+  "_includes/default/disqus-scripts.html": {
+    "text_hash": "38c928d5d4247d8f2b578924dc20991d",
     "model_name": "all-MiniLM-L6-v2",
-    "computed_at": "2025-08-16T17:22:14.608363"
+    "computed_at": "2025-08-18T21:02:18.344478"
+  },
+  "_data/lang/fr.yml": {
+    "text_hash": "095a213b82621ec654a6a027789c9296",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:18.356158"
+  },
+  "assets/js/_js/default/cookie-consent.js": {
+    "text_hash": "bad504f8176ac9dad81caf3c4a946fc8",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:18.367679"
+  },
+  "assets/js/_js/default/nav/side-nav-toggle.js": {
+    "text_hash": "ee0849c18db0741b1becca86143d6360",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:18.378313"
+  },
+  "assets/js/_js/home/heading-fade-in.js": {
+    "text_hash": "7bfc609ca89cbdffd6c26b032a6d10d7",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:18.512228"
+  },
+  "_includes/post_common/share.html": {
+    "text_hash": "a6405fe4a02a5fd45ed991fce6ee56c5",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:18.523223"
+  },
+  "index.md": {
+    "text_hash": "4683aee8e3c3e7d44b5bce0da660000b",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:18.534208"
+  },
+  "_data/lang/pt.yml": {
+    "text_hash": "d7e32426967cbf269899f0e375b4bf5b",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:18.545590"
+  },
+  "_includes/post-list/post-thumbnail-html.html": {
+    "text_hash": "57e4bf88cca6de5a3d1ba535c3f53b44",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:18.554723"
+  },
+  "tabs/certifications.md": {
+    "text_hash": "918d44d5048b4b0e1d6cf232406ff70e",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:18.562935"
+  },
+  "_data/owner/en.yml": {
+    "text_hash": "2289061af3786909691baa5368b9d083",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:18.572593"
+  },
+  "_includes/post/comments.html": {
+    "text_hash": "7b796a077cb49f401e58801abe27bd30",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:18.580816"
+  },
+  "assets/js/_js/post-list/post-query.js": {
+    "text_hash": "a85a4acaefcd4349b9a86a830ff515ad",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:18.593309"
+  },
+  "_includes/default/google-contact-form-iframe.html": {
+    "text_hash": "374e20db0891a34486a8f45dc7725bd9",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:18.601181"
+  },
+  "_includes/default/nav/navigation-buttons.html": {
+    "text_hash": "f70d099f7fa2c8e3cad53f7d1f8cdb6c",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:18.610296"
   },
   "assets/files/pdfs/5 - Sequence Models.pdf": {
     "text_hash": "f75de461818fff5dd1a7b3fe794fe56f",
     "model_name": "all-MiniLM-L6-v2",
-    "computed_at": "2025-08-16T17:22:14.963723"
+    "computed_at": "2025-08-18T21:02:18.944298"
   },
-  "assets/files/pdfs/Generative AI with Large Language Models.pdf": {
-    "text_hash": "bf6a4b2db50c200fa23e8df16d856ebd",
+  "fraud-detection-mlops-journey.md": {
+    "text_hash": "8e62a5b5c144a0f9c6738e4921eedeb6",
     "model_name": "all-MiniLM-L6-v2",
-    "computed_at": "2025-08-16T17:22:15.322270"
+    "computed_at": "2025-08-18T21:02:18.956501"
   },
-  "assets/files/pdfs/Berkeley - Big Data with Apache Spark.pdf": {
-    "text_hash": "78c5359c3441379fd2dce764c7b3f760",
+  "_includes/default/cookie-consent-settings.html": {
+    "text_hash": "a7c7022876d6460f2ab8aa6c511a686d",
     "model_name": "all-MiniLM-L6-v2",
-    "computed_at": "2025-08-16T17:22:15.424539"
+    "computed_at": "2025-08-18T21:02:18.965736"
   },
-  "assets/files/pdfs/Jeff_Taylor_July_24.pdf": {
-    "text_hash": "7c5480cabba5a1f5613c4dcf1992bf03",
+  "assets/js/_js/contact-form/google-contact-form-iframe.js": {
+    "text_hash": "d3da4a057f842379aee40800dd687858",
     "model_name": "all-MiniLM-L6-v2",
-    "computed_at": "2025-08-16T17:22:15.720839"
+    "computed_at": "2025-08-18T21:02:18.975250"
   },
-  "assets/files/pdfs/Johns Hopkins - Python for Genomic Data Science.pdf": {
-    "text_hash": "97d94cfd6c5f34c4c508a7b1cb41a38d",
+  "_data/lang/es.yml": {
+    "text_hash": "79949bdbcd9b5daf3a195ad5e0565969",
     "model_name": "all-MiniLM-L6-v2",
-    "computed_at": "2025-08-16T17:22:16.956149"
+    "computed_at": "2025-08-18T21:02:18.984586"
+  },
+  "assets/js/_js/default/set-email.js": {
+    "text_hash": "dc43c61821af1e143a1cf8a6249d6aa1",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:19.065051"
+  },
+  "_includes/default/sliding-msg-box.html": {
+    "text_hash": "e9b250fc678701cf0aec4398e9072897",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:19.080162"
+  },
+  "assets/js/jquery.magnific-popup.min.js": {
+    "text_hash": "ba6cf724c8bb1cf5b084e79ff230626e",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:19.092299"
   },
   "assets/files/pdfs/Johns Hopkins - Introduction to Genomic Technologies.pdf": {
     "text_hash": "5939a80cbf2593ec2956cb35d6d6665c",
     "model_name": "all-MiniLM-L6-v2",
-    "computed_at": "2025-08-16T17:22:18.187104"
+    "computed_at": "2025-08-18T21:02:20.260583"
+  },
+  "tabs/repositories.md": {
+    "text_hash": "bb29cf0f04ee4ef9d892c5144a565810",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:20.269610"
+  },
+  "_data/content/certifications/en.yml": {
+    "text_hash": "425bafaf10396872a62522fb161d4b42",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:20.279228"
+  },
+  "assets/files/pdfs/AI_Programming_with_Python_Udacity.pdf": {
+    "text_hash": "cfbbc2290d6c9916517f4e500581d437",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:20.340238"
+  },
+  "assets/files/pdfs/Machine Learning in Production.pdf": {
+    "text_hash": "0ea44383e9d12e3f7967ab02db90ba37",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:20.674746"
+  },
+  "mlflow-model-registry-story.md": {
+    "text_hash": "d9acea68684d7fc6aeaff285f54ab55a",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:20.686018"
+  },
+  "assets/files/pdfs/Machine Learning Data Lifecycle in Production.pdf": {
+    "text_hash": "82d60965f294878d5b38c2f233f8dc4a",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:21.022707"
+  },
+  "_includes/default/header/meta-mobile-app.html": {
+    "text_hash": "13ace44db70d94231f78f57da7f2a753",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:21.036508"
+  },
+  "_data/content/resume/en.yml": {
+    "text_hash": "ca24123c79df084c968d8ef5f89fd72f",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:21.062693"
+  },
+  "_includes/default/scripts-include.html": {
+    "text_hash": "11637e2f1112ef53b35d8cad1ed17fe5",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:21.074833"
+  },
+  "_includes/default/header/meta-twitter.html": {
+    "text_hash": "11c72b99ccae661b56cdd4565ab9badb",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:21.084166"
+  },
+  "assets/js/bootstrap-toc.min.js": {
+    "text_hash": "284da6d93fd4d46e8932123d49f6b340",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:21.093188"
+  },
+  "assets/js/_js/projects/read-more-less.js": {
+    "text_hash": "fb1ca550e6cb549f5ca850ed0a32e695",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:21.100516"
+  },
+  "_includes/default/nav/navigation-top-nav.html": {
+    "text_hash": "c20f4736dd874b963e46e2b11a67bf49",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:21.109489"
+  },
+  "assets/js/_js/default/check-storage-availability.js": {
+    "text_hash": "48247d036a4876bc7ca4e6f519c46d12",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:21.116728"
+  },
+  "_includes/default/search-scripts.html": {
+    "text_hash": "aa81cba1c060bc60141f8b6ccc1c1520",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:21.125273"
+  },
+  "_includes/default/cookie-consent-bar.html": {
+    "text_hash": "23c53dd30bc1870b2a81e42417b719fb",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:21.133726"
+  },
+  "_includes/default/nav/lang-switch.html": {
+    "text_hash": "99c7834a101e05457f6bdfe5b8246983",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:21.143091"
+  },
+  "_posts/2025-07-02-13-medium-articles.md": {
+    "text_hash": "3527ea5cb0774f193ece7db7a8480b05",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:21.152201"
+  },
+  "_data/conf/main.yml": {
+    "text_hash": "66b0b543b6eaf408af14ccb800d4f4d8",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:21.162306"
+  },
+  "assets/js/_js/post_common/pager-page-numbers.js": {
+    "text_hash": "09ea28ee8448fc107f8b702e8d46681b",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:21.171495"
+  },
+  "_data/lang/tr.yml": {
+    "text_hash": "3c62201c201342313292138048c2281d",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:21.183038"
+  },
+  "_includes/default/footer.html": {
+    "text_hash": "98df1a4cdefa14de16ddf473f8065212",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:21.192685"
+  },
+  "_data/content/platform-demo/en.yml": {
+    "text_hash": "6ba85021823e642b796e9a9946c537f6",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:21.204088"
+  },
+  "_includes/post-list/tab-links.html": {
+    "text_hash": "cb91e7b34ed27a20f78e2af7c495584a",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:21.212353"
+  },
+  "assets/js/_js/post-list/upside-down-tabs-slide.js": {
+    "text_hash": "a1b0b40da98442e65d77c8a7c138a031",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:21.221689"
+  },
+  "assets/files/pdfs/Generative AI with Large Language Models.pdf": {
+    "text_hash": "bf6a4b2db50c200fa23e8df16d856ebd",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:21.561886"
+  },
+  "assets/js/simple-jekyll-search-1.9.2.min.js": {
+    "text_hash": "5b3e456c1ff3e949069b936f0057d132",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:21.573539"
+  },
+  "_includes/post_common/post-main.html": {
+    "text_hash": "15ac09c9a0b0717223146d0702f030d1",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:21.580792"
+  },
+  "_data/content/repositories/en.yml": {
+    "text_hash": "063ac0b80516077e0a5710477a80bcb5",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:21.590742"
+  },
+  "_config.yml": {
+    "text_hash": "73bef1e84e6ea8cdda25ae204cc227e6",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:21.600261"
+  },
+  "_posts/2025-07-02-pytorch-m1-speedup.md": {
+    "text_hash": "6a137ba6659eeef55b8d7c334ea355b2",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:21.609831"
+  },
+  "assets/files/pdfs/0 - Deep Learning Specialization.pdf": {
+    "text_hash": "f33eade60c6021b0ac88fdbb79ce8a03",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:21.983068"
+  },
+  "_includes/default/nav/contact-links.html": {
+    "text_hash": "d6ab879f72ccb1816d5a2d7dbc9b1291",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:21.991799"
+  },
+  "_data/lang/ko.yml": {
+    "text_hash": "c7a37ea8d3ca1ab49dcd3887e69c8e3a",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:22.002117"
+  },
+  "assets/files/pdfs/Johns Hopkins - Genomic Data Science with Galaxy.pdf": {
+    "text_hash": "de2e5f9ae82f9a7b07dca9de66cd7e82",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:23.207767"
+  },
+  "_data/content/projects/en.yml": {
+    "text_hash": "94d26796cc4a1bc5c79ebfde76d1b42c",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:23.225335"
+  },
+  "_includes/post-list/upside-down-tabs.html": {
+    "text_hash": "5d0deb8f6ff3fe668a0a545dd76608b1",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:23.237940"
+  },
+  "assets/files/pdfs/AWS Certified AI Practitioner certificate.pdf": {
+    "text_hash": "24eb71259f748204b4950f7d923596b7",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:23.253049"
+  },
+  "tabs/skills.md": {
+    "text_hash": "afd2fbc1ac29731879d350fa6cfc4151",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:23.261161"
+  },
+  "kubernetes-cni-evolution-production-mlops.md": {
+    "text_hash": "4922242cdee5c9eb8f051c2b60de65c0",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:23.273862"
+  },
+  "_includes/default/google-consent-init.html": {
+    "text_hash": "58a18ec05616f208c18a0b0eb44b00d3",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:23.281445"
+  },
+  "assets/js/_js/post/movable-panels.js": {
+    "text_hash": "39696bd4e5002847f9b83069bbd725ef",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:23.290633"
+  },
+  "_includes/post/table-of-contents.html": {
+    "text_hash": "ea4a77af8f3359128922271ae52a8c88",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:23.305386"
+  },
+  "assets/files/pdfs/MITx - Computer Science using Python.pdf": {
+    "text_hash": "e7ac33784ae7e18799e7a09528984da3",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:23.344241"
+  },
+  "assets/js/_js/links/open-url-in-new-page.js": {
+    "text_hash": "ea91b3284dda22cd1f9e4f3dd5c18bcc",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:23.371866"
+  },
+  "assets/js/_js/default/nav/color-scheme-switch.js": {
+    "text_hash": "1f9fa77cc2c1ea11567193de80d427e7",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:23.384215"
+  },
+  "_includes/default/header/meta-open-graph.html": {
+    "text_hash": "fbdc9979d413b21a205e46fe13185ce7",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:23.399829"
+  },
+  "fraud-ab-testing-part-1.md": {
+    "text_hash": "fa0939eb98ae21aad5664d24f638070a",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:23.417562"
+  },
+  "_includes/default/google-analytics.html": {
+    "text_hash": "3079131d2295950d93ca095787263d17",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:23.431535"
+  },
+  "_includes/default/giscus-scripts.html": {
+    "text_hash": "2886579e4089a3ace249f9d0d61ee4b3",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:23.448977"
+  },
+  "_includes/post_common/pager-page-numbers.html": {
+    "text_hash": "8ac1f8c88b414f0eac74a3640146974c",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:23.463847"
+  },
+  "assets/files/pdfs/Standford Online - Statistical Learning.pdf": {
+    "text_hash": "d607beaa6620d73ebb170875eefb120b",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:23.536306"
+  },
+  "assets/js/main.js": {
+    "text_hash": "99a0ae0ec3a87fe4382fb172c7fa63b6",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:23.546681"
+  },
+  "_includes/default/nav/navigation-side-nav-bottom-buttons.html": {
+    "text_hash": "2bc4de4899df9521582864a778c24b6d",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:23.554263"
+  },
+  "assets/files/pdfs/4 - Convolutional Neural Networks.pdf": {
+    "text_hash": "ba33b7be07c37d682876a844193dc2fc",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:23.894162"
+  },
+  "assets/files/pdfs/Johns Hopkins - Python for Genomic Data Science.pdf": {
+    "text_hash": "97d94cfd6c5f34c4c508a7b1cb41a38d",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:25.308586"
+  },
+  "_posts/2025-07-02-Automating-MLOps-Scalable-ML-Pipelines.md": {
+    "text_hash": "9d3d80c21ae8f244fed272a17404316f",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:25.326722"
+  },
+  "_includes/default/header/google-font-load.html": {
+    "text_hash": "f92800f01b931c23bf46e20383830983",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:25.335644"
+  },
+  "assets/js/color-scheme-attr-init.js": {
+    "text_hash": "e79772a137b4c9d24eca767c1fa391e4",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:25.345107"
+  },
+  "assets/js/_js/default/sliding-msg-box.js": {
+    "text_hash": "ea500deeeaa2eabc12ed915f5887feb0",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:25.356377"
+  },
+  "_data/lang/en.yml": {
+    "text_hash": "80d3caa95683dc9dd9eb735124d7cd79",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:25.368796"
+  },
+  "assets/files/pdfs/1 - Neural Networks and Deep Learning.pdf": {
+    "text_hash": "a67d6b6bebd68865de2b36de59ca7ea5",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:25.698873"
+  },
+  "_data/const/contact.yml": {
+    "text_hash": "cf408f8e234d797dd4b79c5f8ec34b36",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:25.711738"
+  },
+  "_includes/default/header/meta-schema-markup.html": {
+    "text_hash": "f311884b069dc643b446c07517abf643",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:25.721376"
+  },
+  "tabs/projects.md": {
+    "text_hash": "d161be1eecff2cb293c0169cd3d5feb6",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:25.729477"
+  },
+  "assets/files/pdfs/Johns Hopkins - Algorithms for DNA Sequencing.pdf": {
+    "text_hash": "f52b12e34b42dc9d9f6ae3998fa4c3bb",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:26.094802"
+  },
+  "assets/js/bootstrap.min.js": {
+    "text_hash": "5869c96cc8f19086aee625d670d741f9",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:26.109283"
+  },
+  "assets/manifest.json": {
+    "text_hash": "be4391a59ef922a183a46e8ff97fc865",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:26.132511"
+  },
+  ".claude/settings.local.json": {
+    "text_hash": "45824ed87553439a32c215323ec0b631",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:26.272521"
+  },
+  "assets/js/_js/default/lang-offer-msg-box.js": {
+    "text_hash": "1e040cf368769b10fb89892f1e690062",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:26.283383"
+  },
+  "_data/lang/ja.yml": {
+    "text_hash": "dc2d6a399f81af21ffeccdabbeb14a2c",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:26.295118"
+  },
+  "assets/files/pdfs/Berkeley - Scalable Machine Learning.pdf": {
+    "text_hash": "403264f4878a42383c6073cd4547238e",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:26.394570"
+  },
+  "fraud-ab-testing-part-2.md": {
+    "text_hash": "5ca3e1c6b5fdeb97e29d9ae57edd5c52",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:26.405343"
+  },
+  "_includes/default/css-include.html": {
+    "text_hash": "dc0385e2d1a8f9cfc14c89dcf2d9a082",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:26.413227"
+  },
+  "_includes/post_common/post-info-html.html": {
+    "text_hash": "eca6aa7a3de16cac61bbcec2f3961caa",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:26.421008"
+  },
+  "assets/files/pdfs/Berkeley - Big Data with Apache Spark.pdf": {
+    "text_hash": "78c5359c3441379fd2dce764c7b3f760",
+    "model_name": "all-MiniLM-L6-v2",
+    "computed_at": "2025-08-18T21:02:26.516175"
   }
 }

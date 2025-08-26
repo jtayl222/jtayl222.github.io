@@ -8,3 +8,6 @@ vendor
 .claude-rag/index.json
 .claude-rag/cache.json
 .claude-rag/*.tmp
+.claude-rag/config.json
+.claude-rag/embeddings/
+.claude-rag/*.log
