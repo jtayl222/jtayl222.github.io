@@ -1,0 +1,619 @@
+# you can move this content to front matter of [language]/tabs/ml-lifecycle.md
+###########################################################
+#                ML Life Cycle Page Data
+###########################################################
+page_data:
+  main:
+    header: "🔄 End-to-End ML Life Cycle"
+    info: "🚀 DATA → TRAIN → DEPLOY → MONITOR | 📊 COMPLETE MLOPS PIPELINE | ⚡ PRODUCTION-GRADE IMPLEMENTATION"
+    text_color: "white"
+    img: "/assets/img/projects/projects-heading.jpg"
+    back_color: "#1a1a2e"
+    github_link: "https://github.com/jtayl222/ml-platform"
+    github_text: "🔗 View MLOps Platform Repository"
+
+  category:
+    - title: "Overview"
+      type: id_overview
+      color: "#1565C0"
+    - title: "Data Ingestion"
+      type: id_data
+      color: "#00897B"
+    - title: "Model Training"
+      type: id_training
+      color: "#FF6F00"
+    - title: "CI/CD Pipeline"
+      type: id_cicd
+      color: "#5E35B1"
+    - title: "Model Serving"
+      type: id_serving
+      color: "#E53935"
+    - title: "Monitoring"
+      type: id_monitoring
+      color: "#546E7A"
+
+  lifecycle_stages:
+    # Overview - Always visible
+    - type: id_overview
+      stage_name: "🎯 Complete MLOps Life Cycle Implementation"
+      stage_excerpt: "Production-grade end-to-end machine learning operations"
+      content: |
+        # 🎯 MLOps Life Cycle Architecture
+
+        **✅ DEMONSTRATED ACROSS MULTIPLE PLATFORMS: K3s, Kubeadm, EKS**
+        
+        ## 🏗️ **END-TO-END ML PIPELINE** - From Data to Production
+        
+        ```
+        🔄 ML Life Cycle Flow
+        ┌──────────────────────────────────────────────────────────┐
+        │  1. DATA INGESTION & VERSIONING                          │
+        │     ├── Apache Kafka (streaming)                         │
+        │     ├── MinIO (object storage)                          │
+        │     └── DVC (data versioning)                           │
+        ├──────────────────────────────────────────────────────────┤
+        │  2. MODEL TRAINING & EXPERIMENTATION                     │
+        │     ├── JupyterHub (development)                        │
+        │     ├── MLflow (tracking & registry)                    │
+        │     └── Kubeflow Pipelines (orchestration)              │
+        ├──────────────────────────────────────────────────────────┤
+        │  3. CI/CD FOR MACHINE LEARNING                          │
+        │     ├── Argo Workflows (pipeline automation)            │
+        │     ├── Argo CD (GitOps deployment)                     │
+        │     └── Harbor (container registry)                     │
+        ├──────────────────────────────────────────────────────────┤
+        │  4. MODEL SERVING & DEPLOYMENT                          │
+        │     ├── Seldon Core (production serving)                │
+        │     ├── KServe (serverless inference)                   │
+        │     └── Istio (A/B testing & canary)                    │
+        ├──────────────────────────────────────────────────────────┤
+        │  5. MONITORING & OBSERVABILITY                          │
+        │     ├── Prometheus & Grafana (metrics)                  │
+        │     ├── Jaeger (distributed tracing)                    │
+        │     └── Kiali (service mesh visualization)              │
+        └──────────────────────────────────────────────────────────┘
+        ```
+
+        ## 🚀 **KEY ACHIEVEMENTS**
+        - **Complete automation** - Entire pipeline automated with Ansible
+        - **Multi-platform support** - Deployed across K3s, Kubeadm, and EKS
+        - **Production patterns** - Implemented enterprise MLOps best practices
+        - **Full observability** - End-to-end monitoring and tracing
+        - **GitOps ready** - Declarative infrastructure and deployments
+
+        **[📖 View Complete Platform Demo](https://jtayl222.github.io/tabs/platform-demo.html)**
+
+    # Data Ingestion & Versioning
+    - type: id_data
+      stage_name: "📊 Data Ingestion & Versioning"
+      stage_excerpt: "Reproducible data pipelines with streaming and batch processing"
+      technologies: ["Apache Kafka", "MinIO", "NFS", "DVC", "Airflow", "S3"]
+      content: |
+        # 📊 Data Ingestion & Versioning Implementation
+
+        **✅ STATUS: PRODUCTION-READY DATA PIPELINE**
+
+        ## 🔄 **STREAMING & BATCH PROCESSING** - Multi-source data ingestion
+        
+        ### Real-Time Data Streaming
+        **Apache Kafka Implementation:**
+        - **High-throughput ingestion** - Processing millions of events per second
+        - **Topic management** - Organized data streams for different ML models
+        - **Consumer groups** - Parallel processing for model feature engineering
+        - **Event-driven triggers** - Automatic model retraining on data events
+
+        ```yaml
+        # Kafka deployment configuration
+        kafka:
+          replicas: 3
+          topics:
+            - fraud-detection-events
+            - model-features
+            - prediction-results
+          retention: 7 days
+        ```
+
+        ### Object Storage & Versioning
+        **MinIO S3-Compatible Storage:**
+        - **Dataset versioning** - Immutable data snapshots for reproducibility
+        - **Model artifact storage** - Centralized model binary management
+        - **Feature store backend** - Historical feature storage for training
+        - **Multi-tenancy** - Isolated buckets for different ML projects
+
+        ### Data Pipeline Orchestration
+        **Implemented Patterns:**
+        - **ETL pipelines** - Automated data transformation workflows
+        - **Data validation** - Schema enforcement and quality checks
+        - **Incremental processing** - Efficient handling of new data
+        - **Audit logging** - Complete data lineage tracking
+
+        ## 🛠️ **TECHNICAL IMPLEMENTATION**
+        
+        ### Infrastructure Components
+        ```bash
+        # Active data infrastructure
+        ✅ Kafka cluster (3 brokers)
+        ✅ MinIO distributed mode
+        ✅ NFS persistent volumes
+        ✅ Sealed Secrets for credentials
+        ```
+
+        ### Key Capabilities Demonstrated
+        - **Data versioning** - Reproducible ML experiments with exact datasets
+        - **Stream processing** - Real-time feature engineering
+        - **Batch processing** - Large-scale historical data processing
+        - **Data governance** - Access control and audit trails
+
+        ## 📈 **BUSINESS VALUE**
+        - **Reproducibility** - Exact recreation of any model training run
+        - **Scalability** - Handle enterprise-scale data volumes
+        - **Reliability** - Fault-tolerant data ingestion
+        - **Compliance** - Data lineage and audit requirements
+      links:
+        - text: "Apache Kafka Deployment Configuration"
+          url: "https://github.com/jtayl222/ml-platform/tree/main/infrastructure/cluster/roles/platform/kafka"
+        - text: "MinIO Object Storage Setup"
+          url: "https://github.com/jtayl222/ml-platform/tree/main/infrastructure/cluster/roles/storage/minio"
+        - text: "Platform Demo - Storage Layer"
+          url: "https://jtayl222.github.io/tabs/platform-demo.html#id_storage"
+
+    # Model Training & Experimentation
+    - type: id_training
+      stage_name: "🧠 Model Training & Experimentation"
+      stage_excerpt: "Reproducible ML experiments with comprehensive tracking"
+      technologies: ["MLflow", "JupyterHub", "Kubeflow", "PyTorch", "TensorFlow", "Scikit-learn"]
+      content: |
+        # 🧠 Model Training & Experimentation
+
+        **✅ STATUS: COMPLETE ML DEVELOPMENT ENVIRONMENT**
+
+        ## 📊 **EXPERIMENT TRACKING** - MLflow-powered ML lifecycle
+        
+        ### MLflow Implementation
+        **Comprehensive Tracking System:**
+        - **Experiment management** - Organized runs with parameters and metrics
+        - **Model registry** - Versioned models with staging/production promotion
+        - **Artifact storage** - MinIO-backed storage for models and datasets
+        - **Collaboration** - Team-wide experiment visibility and comparison
+
+        ```python
+        # Example MLflow integration
+        import mlflow
+        import mlflow.sklearn
+
+        with mlflow.start_run():
+            # Log parameters
+            mlflow.log_param("learning_rate", 0.01)
+            mlflow.log_param("batch_size", 128)
+            
+            # Train model
+            model = train_fraud_detection_model()
+            
+            # Log metrics
+            mlflow.log_metric("accuracy", 0.95)
+            mlflow.log_metric("f1_score", 0.92)
+            
+            # Register model
+            mlflow.sklearn.log_model(
+                model, 
+                "fraud_detector",
+                registered_model_name="FraudDetectionModel"
+            )
+        ```
+
+        ### JupyterHub Development Environment
+        **Collaborative Data Science Platform:**
+        - **Multi-user support** - Isolated environments for data scientists
+        - **GPU acceleration** - CUDA-enabled notebooks for deep learning
+        - **Persistent storage** - User workspaces with NFS backing
+        - **Custom kernels** - Pre-configured Python, R, and Scala environments
+
+        ### Training Pipeline Orchestration
+        **Kubeflow Pipelines Integration:**
+        - **DAG-based workflows** - Complex training pipeline management
+        - **Hyperparameter tuning** - Automated parameter optimization
+        - **Distributed training** - Multi-node model training support
+        - **Pipeline versioning** - Reproducible training workflows
+
+        ## 🔧 **TECHNICAL ARCHITECTURE**
+        
+        ### Training Infrastructure
+        ```bash
+        # ML training components
+        ✅ MLflow server + PostgreSQL backend
+        ✅ JupyterHub with OAuth integration
+        ✅ Kubeflow Pipelines
+        ✅ GPU node pool (when available)
+        ✅ Distributed storage (MinIO + NFS)
+        ```
+
+        ### Implemented ML Workflows
+        1. **Fraud Detection Model**
+           - Binary classification using XGBoost
+           - Feature engineering pipeline
+           - Cross-validation and hyperparameter tuning
+           - A/B testing deployment strategy
+
+        2. **Financial Risk Model**
+           - PyTorch deep learning implementation
+           - Time-series prediction
+           - Model ensemble techniques
+           - Progressive model updates
+
+        ## 📈 **DEMONSTRATED CAPABILITIES**
+        - **Reproducibility** - Exact recreation of any experiment
+        - **Scalability** - From notebook to distributed training
+        - **Collaboration** - Team-based ML development
+        - **Automation** - Scheduled and triggered training pipelines
+      links:
+        - text: "MLflow Deployment Guide"
+          url: "https://github.com/jtayl222/ml-platform/tree/main/infrastructure/cluster/roles/mlops/mlflow"
+        - text: "JupyterHub Configuration"
+          url: "https://github.com/jtayl222/ml-platform/tree/main/infrastructure/cluster/roles/platform/jupyterhub"
+        - text: "Financial MLOps PyTorch Implementation"
+          url: "https://github.com/jtayl222/financial-mlops-pytorch"
+
+    # CI/CD for Machine Learning
+    - type: id_cicd
+      stage_name: "🔄 CI/CD for Machine Learning"
+      stage_excerpt: "Automated ML pipelines with GitOps deployment"
+      technologies: ["Argo Workflows", "Argo CD", "GitHub Actions", "Harbor", "Tekton", "Jenkins"]
+      content: |
+        # 🔄 CI/CD for Machine Learning
+
+        **✅ STATUS: FULLY AUTOMATED ML PIPELINES**
+
+        ## 🚀 **GITOPS-DRIVEN DEPLOYMENT** - Infrastructure as Code
+        
+        ### Argo Workflows Implementation
+        **ML Pipeline Automation:**
+        - **DAG execution** - Complex dependency management
+        - **Event-driven triggers** - Automated on data/code changes
+        - **Artifact passing** - Seamless data flow between steps
+        - **Parallel processing** - Concurrent model training
+
+        ```yaml
+        # Example Argo Workflow for ML Pipeline
+        apiVersion: argoproj.io/v1alpha1
+        kind: Workflow
+        metadata:
+          name: ml-training-pipeline
+        spec:
+          templates:
+          - name: main
+            dag:
+              tasks:
+              - name: data-validation
+                template: validate-data
+              - name: feature-engineering
+                template: engineer-features
+                dependencies: [data-validation]
+              - name: model-training
+                template: train-model
+                dependencies: [feature-engineering]
+              - name: model-evaluation
+                template: evaluate-model
+                dependencies: [model-training]
+              - name: deploy-model
+                template: deploy-to-production
+                dependencies: [model-evaluation]
+                when: "{{tasks.model-evaluation.outputs.result}} > 0.90"
+        ```
+
+        ### Argo CD GitOps Deployment
+        **Declarative Continuous Deployment:**
+        - **Git as source of truth** - All configurations in version control
+        - **Automated sync** - Cluster state matches Git repository
+        - **Rollback capability** - Easy reversion to previous versions
+        - **Multi-environment** - Dev, staging, and production deployments
+
+        ### Container Registry with Harbor
+        **Secure Image Management:**
+        - **Vulnerability scanning** - Automated security analysis
+        - **Image signing** - Cryptographic verification
+        - **Replication** - Multi-region image distribution
+        - **RBAC** - Fine-grained access control
+
+        ## 🔧 **AUTOMATION ARCHITECTURE**
+        
+        ### CI/CD Components
+        ```bash
+        # Active CI/CD infrastructure
+        ✅ Argo Workflows controller
+        ✅ Argo CD application manager
+        ✅ Harbor registry with Trivy scanning
+        ✅ Sealed Secrets for credentials
+        ✅ Webhook event sources
+        ```
+
+        ### Implemented Pipelines
+        1. **Model Training Pipeline**
+           - Triggered on new data arrival
+           - Automated feature engineering
+           - Hyperparameter optimization
+           - Model validation gates
+           - Automatic promotion to staging
+
+        2. **Model Deployment Pipeline**
+           - Container image building
+           - Security vulnerability scanning
+           - Progressive rollout strategy
+           - Automated rollback on failures
+           - Production monitoring setup
+
+        ## 📊 **MLOPS BEST PRACTICES**
+        - **Version everything** - Code, data, models, and configs
+        - **Automate testing** - Unit, integration, and model tests
+        - **Progressive delivery** - Canary and blue-green deployments
+        - **Observability first** - Metrics and logging from day one
+
+        ## 🎯 **BUSINESS IMPACT**
+        - **Faster iteration** - Models deployed in hours, not weeks
+        - **Reduced risk** - Automated testing and rollback
+        - **Compliance** - Complete audit trail of changes
+        - **Cost efficiency** - Automated resource management
+      links:
+        - text: "Argo Workflows Configuration"
+          url: "https://github.com/jtayl222/ml-platform/tree/main/infrastructure/cluster/roles/platform/argo_workflows"
+        - text: "Argo CD GitOps Setup"
+          url: "https://github.com/jtayl222/ml-platform/tree/main/infrastructure/cluster/roles/platform/argo_cd"
+        - text: "Harbor Registry Deployment"
+          url: "https://github.com/jtayl222/ml-platform/tree/main/infrastructure/cluster/roles/platform/harbor"
+
+    # Model Serving & Deployment
+    - type: id_serving
+      stage_name: "🚀 Model Serving & Deployment"
+      stage_excerpt: "Production-grade model serving at scale"
+      technologies: ["Seldon Core", "KServe", "Docker", "Kubernetes", "FastAPI", "Istio", "Streamlit"]
+      content: |
+        # 🚀 Model Serving & Deployment
+
+        **✅ STATUS: PRODUCTION MODEL SERVING ACTIVE**
+
+        ## 🎯 **MULTI-FRAMEWORK SERVING** - Flexible deployment strategies
+        
+        ### Seldon Core Implementation
+        **Production Model Serving:**
+        - **Multi-model deployment** - Serving multiple models simultaneously
+        - **A/B testing** - Traffic splitting for safe rollouts
+        - **Canary deployments** - Gradual rollout with metrics monitoring
+        - **Auto-scaling** - Dynamic scaling based on load
+
+        ```yaml
+        # Seldon Deployment Configuration
+        apiVersion: machinelearning.seldon.io/v1
+        kind: SeldonDeployment
+        metadata:
+          name: fraud-detector
+        spec:
+          predictors:
+          - name: stable
+            replicas: 3
+            traffic: 80
+            componentSpecs:
+            - spec:
+                containers:
+                - name: classifier
+                  image: harbor.ml-platform/fraud-detector:v1.2
+          - name: canary
+            replicas: 1
+            traffic: 20
+            componentSpecs:
+            - spec:
+                containers:
+                - name: classifier
+                  image: harbor.ml-platform/fraud-detector:v1.3
+        ```
+
+        ### KServe Serverless Inference
+        **Scale-to-Zero Architecture:**
+        - **Automatic scaling** - From zero to thousands of replicas
+        - **GPU inference** - Efficient deep learning model serving
+        - **Standard protocols** - REST and gRPC endpoints
+        - **Model explainability** - Built-in explanation servers
+
+        ### Service Mesh Integration
+        **Istio-Powered Traffic Management:**
+        - **Intelligent routing** - Header-based and weighted routing
+        - **Circuit breaking** - Automatic failure handling
+        - **Distributed tracing** - End-to-end request tracking
+        - **mTLS security** - Encrypted service communication
+
+        ## 🔧 **DEPLOYMENT ARCHITECTURE**
+        
+        ### Serving Infrastructure
+        ```bash
+        # Model serving components
+        ✅ Seldon Core controller
+        ✅ KServe with Knative
+        ✅ Istio service mesh
+        ✅ Ambassador API gateway
+        ✅ Model inference servers
+        ```
+
+        ### Deployment Strategies Implemented
+        1. **Blue-Green Deployment**
+           - Zero-downtime model updates
+           - Instant rollback capability
+           - Full traffic switch
+
+        2. **Canary Deployment**
+           - Progressive traffic shifting
+           - Metrics-based promotion
+           - Automated rollback on errors
+
+        3. **Shadow Deployment**
+           - Production traffic mirroring
+           - Risk-free model testing
+           - Performance comparison
+
+        ## 📊 **PRODUCTION FEATURES**
+        
+        ### Model Serving Capabilities
+        - **Multi-framework support** - TensorFlow, PyTorch, Scikit-learn, XGBoost
+        - **Batch prediction** - Offline scoring for large datasets
+        - **Online prediction** - Real-time inference with <100ms latency
+        - **Model versioning** - Multiple versions served simultaneously
+
+        ### Interactive Applications
+        **FastAPI + Streamlit Integration:**
+        ```python
+        # FastAPI model endpoint
+        @app.post("/predict")
+        async def predict(features: FraudFeatures):
+            prediction = model.predict(features.dict())
+            return {
+                "prediction": prediction,
+                "confidence": confidence_score,
+                "model_version": "v1.3"
+            }
+        ```
+
+        ## 🎯 **DEMONSTRATED OUTCOMES**
+        - **High availability** - 99.9% uptime with redundancy
+        - **Low latency** - P99 < 100ms for inference
+        - **Scalability** - Tested up to 10K requests/second
+        - **Cost optimization** - Serverless scaling reduces idle costs
+      links:
+        - text: "Seldon Core Deployment Guide"
+          url: "https://github.com/jtayl222/ml-platform/tree/main/infrastructure/cluster/roles/platform/seldon"
+        - text: "KServe Configuration"
+          url: "https://github.com/jtayl222/ml-platform/tree/main/infrastructure/cluster/roles/mlops/kserve"
+        - text: "Building Interactive Data Apps Article"
+          url: "https://medium.com/@jtayl222/building-interactive-data-apps-with-streamlit-and-fastapi"
+
+    # Monitoring & Observability
+    - type: id_monitoring
+      stage_name: "📊 Monitoring & Observability"
+      stage_excerpt: "Ensuring models remain performant in production"
+      technologies: ["Prometheus", "Grafana", "Jaeger", "Kiali", "WhyLabs", "ELK Stack"]
+      content: |
+        # 📊 Monitoring & Observability
+
+        **✅ STATUS: FULL OBSERVABILITY STACK OPERATIONAL**
+
+        ## 🔍 **COMPREHENSIVE MONITORING** - Infrastructure to ML metrics
+        
+        ### Metrics Collection with Prometheus
+        **Multi-Layer Monitoring:**
+        - **Infrastructure metrics** - CPU, memory, disk, network
+        - **Application metrics** - Request rates, latencies, errors
+        - **ML-specific metrics** - Prediction counts, model latency, accuracy
+        - **Custom metrics** - Business KPIs and domain-specific metrics
+
+        ```yaml
+        # Prometheus ServiceMonitor for ML metrics
+        apiVersion: monitoring.coreos.com/v1
+        kind: ServiceMonitor
+        metadata:
+          name: ml-model-metrics
+        spec:
+          selector:
+            matchLabels:
+              app: fraud-detector
+          endpoints:
+          - port: metrics
+            interval: 30s
+            path: /metrics
+        ```
+
+        ### Visualization with Grafana
+        **Custom ML Dashboards:**
+        - **Model performance dashboard** - Real-time accuracy and drift
+        - **Infrastructure dashboard** - Resource utilization and scaling
+        - **Business metrics dashboard** - Revenue impact and user metrics
+        - **Alert dashboard** - Critical issues and anomalies
+
+        ### Distributed Tracing with Jaeger
+        **End-to-End Request Tracking:**
+        - **Latency analysis** - Identify bottlenecks in inference pipeline
+        - **Error tracking** - Pinpoint failures in distributed system
+        - **Dependency mapping** - Visualize service interactions
+        - **Performance optimization** - Data-driven optimization decisions
+
+        ### Service Mesh Observability with Kiali
+        **Visual Service Architecture:**
+        - **Traffic flow visualization** - Real-time service communication
+        - **Health monitoring** - Service status and error rates
+        - **Configuration validation** - Istio configuration verification
+        - **Security posture** - mTLS coverage and policy enforcement
+
+        ## 🔧 **MONITORING ARCHITECTURE**
+        
+        ### Observability Stack
+        ```bash
+        # Active monitoring components
+        ✅ Prometheus + AlertManager
+        ✅ Grafana with 15+ dashboards
+        ✅ Jaeger distributed tracing
+        ✅ Kiali service mesh console
+        ✅ ELK stack for log aggregation
+        ```
+
+        ### ML-Specific Monitoring
+        1. **Model Drift Detection**
+           ```python
+           # Example drift monitoring
+           def monitor_drift(predictions, features):
+               # Statistical drift detection
+               psi = calculate_psi(current_dist, baseline_dist)
+               if psi > threshold:
+                   alert("Model drift detected")
+               
+               # Feature drift monitoring
+               for feature in features:
+                   if detect_feature_drift(feature):
+                       log_drift_event(feature)
+           ```
+
+        2. **Performance Monitoring**
+           - Prediction latency percentiles (P50, P95, P99)
+           - Throughput and request rates
+           - Error rates and types
+           - Resource utilization per model
+
+        3. **Data Quality Monitoring**
+           - Missing value rates
+           - Schema violations
+           - Outlier detection
+           - Data freshness checks
+
+        ## 📈 **ALERTING & INCIDENT RESPONSE**
+        
+        ### Alert Configuration
+        ```yaml
+        # AlertManager rules
+        groups:
+        - name: ml_alerts
+          rules:
+          - alert: ModelLatencyHigh
+            expr: histogram_quantile(0.99, model_latency_seconds) > 0.5
+            annotations:
+              summary: "Model latency P99 > 500ms"
+              
+          - alert: ModelAccuracyDegraded
+            expr: model_accuracy < 0.85
+            annotations:
+              summary: "Model accuracy below threshold"
+        ```
+
+        ### Incident Response Workflow
+        1. **Detection** - Automated alerting on anomalies
+        2. **Triage** - Severity classification and routing
+        3. **Investigation** - Distributed tracing and log analysis
+        4. **Resolution** - Automated rollback or manual intervention
+        5. **Post-mortem** - Root cause analysis and prevention
+
+        ## 🎯 **BUSINESS VALUE**
+        - **Proactive detection** - Issues identified before user impact
+        - **Reduced MTTR** - Mean time to recovery < 15 minutes
+        - **SLA compliance** - 99.9% availability achieved
+        - **Cost optimization** - Resource waste identification
+        - **Continuous improvement** - Data-driven optimization
+      links:
+        - text: "Prometheus Stack Configuration"
+          url: "https://github.com/jtayl222/ml-platform/tree/main/infrastructure/cluster/roles/monitoring/prometheus_stack"
+        - text: "Grafana Dashboard Examples"
+          url: "https://github.com/jtayl222/ml-platform/tree/main/infrastructure/cluster/roles/monitoring/grafana"
+        - text: "Platform Demo - Monitoring Layer"
+          url: "https://jtayl222.github.io/tabs/platform-demo.html#id_monitoring"

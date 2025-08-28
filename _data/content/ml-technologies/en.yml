@@ -1,0 +1,123 @@
+# you can move this content to front matter of [language]/tabs/ml-technologies.md
+###########################################################
+#                ML Technologies Page Data
+###########################################################
+page_data:
+  main:
+    header: "🛠️ ML Technologies Stack"
+    info: "⚡ COMPLETE TECHNOLOGY INVENTORY | 📊 27 ACTIVE NAMESPACES | 🚀 PRODUCTION-READY COMPONENTS"
+    text_color: "white"
+    img: "/assets/img/projects/projects-heading.jpg"
+    back_color: "#1a1a2e"
+    namespace_count: "📊 27 Active Kubernetes Namespaces"
+
+  content: |
+    # 🛠️ Complete MLOps Technology Stack
+
+    **Production deployment across 27 Kubernetes namespaces with complete ML lifecycle coverage**
+
+    ---
+
+    ## 🏗️ Infrastructure Foundation
+
+    - **Kubernetes (K3s/Kubeadm/EKS)**: Multi-platform container orchestration enabling scalable ML workload deployment across edge, on-premises, and cloud environments
+    - **Cilium CNI**: eBPF-powered networking providing secure, high-performance container networking with advanced observability for ML services ([Ansible](https://github.com/jtayl222/ml-platform/tree/main/infrastructure/cluster/roles/foundation/cilium))
+    - **MetalLB**: Bare-metal load balancer enabling external access to ML services in on-premises Kubernetes deployments ([Ansible](https://github.com/jtayl222/ml-platform/tree/main/infrastructure/cluster/roles/foundation/metallb))
+    - **Cert-Manager**: Automated TLS certificate management securing all ML service endpoints with automatic renewal ([Ansible](https://github.com/jtayl222/ml-platform/tree/main/infrastructure/cluster/roles/security/certs))
+    - **NGINX Ingress Controller**: HTTP/HTTPS routing and SSL termination for ML model serving endpoints and web interfaces ([Ansible](https://github.com/jtayl222/ml-platform/tree/main/infrastructure/cluster/roles/platform/ingress))
+    - **Sealed Secrets**: GitOps-safe secret management enabling secure storage of ML credentials and API keys in version control ([Ansible](https://github.com/jtayl222/ml-platform/tree/main/infrastructure/cluster/roles/foundation/sealed_secrets))
+    - **NFS Server**: Shared persistent storage providing collaborative data access for distributed ML training and notebooks ([Ansible](https://github.com/jtayl222/ml-platform/tree/main/infrastructure/cluster/roles/foundation/nfs_server))
+
+    ---
+
+    ## 📊 Data Ingestion & Storage
+
+    - **Apache Kafka**: High-throughput event streaming platform enabling real-time data ingestion for ML feature generation and model triggers ([Ansible](https://github.com/jtayl222/ml-platform/tree/main/infrastructure/cluster/roles/foundation/kafka))
+    - **MinIO**: S3-compatible object storage providing scalable storage for ML datasets, model artifacts, and experiment tracking ([Ansible](https://github.com/jtayl222/ml-platform/tree/main/infrastructure/cluster/roles/storage/minio))
+    - **Persistent Volume Claims (PVC)**: Kubernetes-native storage abstraction enabling stateful ML workloads with data persistence
+    - **DVC (Data Version Control)**: Git-like versioning for ML datasets ensuring reproducible experiments and data lineage tracking
+
+    ---
+
+    ## 🧠 Model Development & Training
+
+    - **JupyterHub**: Multi-user notebook environment providing collaborative ML development with GPU support and persistent workspaces ([Ansible](https://github.com/jtayl222/ml-platform/tree/main/infrastructure/cluster/roles/platform/jupyterhub))
+    - **MLflow**: End-to-end ML lifecycle platform enabling experiment tracking, model registry, and deployment management ([Ansible](https://github.com/jtayl222/ml-platform/tree/main/infrastructure/cluster/roles/mlops/mlflow))
+    - **Kubeflow Pipelines**: ML workflow orchestration enabling reproducible, scalable training pipelines with DAG visualization ([Ansible](https://github.com/jtayl222/ml-platform/tree/main/infrastructure/cluster/roles/mlops/kubeflow))
+    - **PyTorch**: Deep learning framework powering neural network development for financial risk modeling and predictions
+    - **TensorFlow**: Production ML framework supporting diverse model architectures from research to deployment
+    - **Scikit-learn**: Classical ML library providing robust algorithms for fraud detection and financial modeling
+    - **XGBoost**: Gradient boosting framework delivering high-performance models for structured data and financial predictions
+
+    ---
+
+    ## 🔄 CI/CD & Automation
+
+    - **Argo Workflows**: Kubernetes-native workflow engine orchestrating complex ML pipelines from data processing to model deployment ([Ansible](https://github.com/jtayl222/ml-platform/tree/main/infrastructure/cluster/roles/platform/argo_workflows))
+    - **Argo Events**: Event-driven automation triggering ML workflows based on data arrival, code changes, or schedules ([Ansible](https://github.com/jtayl222/ml-platform/tree/main/infrastructure/cluster/roles/platform/argo_events))
+    - **Argo CD**: GitOps continuous deployment ensuring declarative, version-controlled ML infrastructure and model deployments ([Ansible](https://github.com/jtayl222/ml-platform/tree/main/infrastructure/cluster/roles/platform/argo_cd))
+    - **Harbor**: Enterprise container registry providing secure image storage with vulnerability scanning for ML containers ([Ansible](https://github.com/jtayl222/ml-platform/tree/main/infrastructure/cluster/roles/platform/harbor))
+    - **GitHub Actions**: CI/CD automation enabling model testing, container building, and deployment triggers
+    - **Ansible**: Infrastructure automation provisioning complete MLOps stack across multiple Kubernetes platforms
+
+    ---
+
+    ## 🚀 Model Serving & Inference
+
+    - **Seldon Core**: Production ML serving platform enabling A/B testing, canary deployments, and multi-model serving ([Ansible](https://github.com/jtayl222/ml-platform/tree/main/infrastructure/cluster/roles/platform/seldon))
+    - **KServe**: Serverless ML inference providing auto-scaling, GPU acceleration, and standard prediction protocols ([Ansible](https://github.com/jtayl222/ml-platform/tree/main/infrastructure/cluster/roles/mlops/kserve))
+    - **Knative Serving**: Serverless compute platform powering scale-to-zero ML inference and event-driven serving
+    - **Istio Service Mesh**: Traffic management and security enabling sophisticated ML deployment patterns and observability ([Ansible](https://github.com/jtayl222/ml-platform/tree/main/infrastructure/cluster/roles/platform/istio))
+    - **Istio Gateway**: Ingress/egress control managing external access to ML services with load balancing and TLS
+    - **FastAPI**: High-performance API framework creating REST endpoints for model serving and feature processing
+    - **Streamlit**: Interactive ML app framework building data visualization and model demonstration interfaces
+
+    ---
+
+    ## 📈 Monitoring & Observability
+
+    - **Prometheus**: Metrics collection system gathering infrastructure, application, and ML-specific performance metrics ([Ansible](https://github.com/jtayl222/ml-platform/tree/main/infrastructure/cluster/roles/monitoring/prometheus_stack))
+    - **Grafana**: Visualization platform creating comprehensive dashboards for ML model performance and system health ([Ansible](https://github.com/jtayl222/ml-platform/tree/main/infrastructure/cluster/roles/monitoring/prometheus_stack))
+    - **AlertManager**: Intelligent alerting system notifying teams of model drift, performance degradation, or system issues ([Ansible](https://github.com/jtayl222/ml-platform/tree/main/infrastructure/cluster/roles/monitoring/prometheus_stack))
+    - **Jaeger**: Distributed tracing platform providing end-to-end request tracking across ML inference pipelines
+    - **Kiali**: Service mesh observability console visualizing ML service communication patterns and health
+    - **Kubernetes Dashboard**: Cluster management UI providing real-time visibility into ML workload status and resources ([Ansible](https://github.com/jtayl222/ml-platform/tree/main/infrastructure/cluster/roles/platform/dashboard))
+    - **ELK Stack (Elasticsearch, Logstash, Kibana)**: Log aggregation and analysis enabling ML debugging and audit trails
+
+    ---
+
+    ## 🔐 Security & Governance
+
+    - **RBAC (Role-Based Access Control)**: Fine-grained permission management controlling access to ML resources and data
+    - **Network Policies**: Microsegmentation rules isolating ML workloads and enforcing zero-trust networking
+    - **Pod Security Policies**: Container security enforcement preventing privilege escalation in ML workloads
+    - **OPA (Open Policy Agent)**: Policy-as-code engine enforcing ML governance and compliance requirements
+    - **Trivy**: Container vulnerability scanning integrated with Harbor ensuring secure ML container deployments
+    - **mTLS (mutual TLS)**: End-to-end encryption securing all service-to-service communication in ML pipelines
+
+    ---
+
+    ## 🎯 ML-Specific Applications
+
+    - **Fraud Detection System**: Production ML application detecting financial fraud using ensemble models and real-time inference
+    - **Financial Risk Modeling**: PyTorch-based risk assessment system providing credit scoring and portfolio optimization
+    - **Iris Demo**: Classic ML demonstration showcasing end-to-end pipeline from training to serving
+    - **Financial MLOps PyTorch**: Complete MLOps implementation demonstrating production patterns for financial ML models
+    - **A/B Testing Framework**: Custom implementation enabling safe model rollouts with statistical significance testing
+
+    ---
+
+    ## 🌐 Supporting Services
+
+    - **Docker**: Container runtime packaging ML models and dependencies for consistent deployment across environments
+    - **Helm**: Kubernetes package manager simplifying deployment of complex ML applications with version management
+    - **Git**: Version control system tracking code, configurations, and infrastructure-as-code for reproducibility
+    - **PostgreSQL**: Relational database storing MLflow metadata, model registry, and application state
+    - **Redis**: In-memory cache accelerating ML feature serving and model prediction caching
+    - **NATS**: Cloud-native messaging system enabling event-driven ML architectures and microservice communication
+
+    ---
+
+    **🚀 Total Technology Count: 60+ integrated components providing complete MLOps lifecycle coverage**
+
+    **[📖 View Complete Platform Architecture](https://jtayl222.github.io/tabs/platform-demo.html)** | **[🔄 View ML Life Cycle](https://jtayl222.github.io/tabs/ml-lifecycle.html)**

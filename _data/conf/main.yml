@@ -194,6 +194,10 @@ side_and_top_nav_buttons:
   - projects:
     icon: "fa fa-cog"
   - platform-demo:
+  - ml-lifecycle:
+    icon: "fa fa-refresh"
+  - ml-technologies:
+    icon: "fa fa-wrench"
   - skills:
     icon: "fa fa-code"
   - publications:

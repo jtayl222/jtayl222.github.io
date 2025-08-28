@@ -179,6 +179,16 @@ platform-demo:
   read_more_text: Read more
   read_less_text: Read less
 
+ml-lifecycle:
+  title: ML Life Cycle
+  button_name: ML Life Cycle
+  read_more_text: Read more
+  read_less_text: Read less
+
+ml-technologies:
+  title: ML Technologies
+  button_name: ML Technologies
+
 skills:
   title: Skills
   button_name: Skills
