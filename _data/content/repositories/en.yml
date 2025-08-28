@@ -158,15 +158,15 @@ page_data:
         **[🔗 View Repository](https://github.com/jtayl222/churn-prediction-sagemaker)**
 
     - type: id_cloud_ml
-      repo_name: "iris-mlops-demo"
+      repo_name: "mlops-platform-demo"
       repo_excerpt: "Production-ready MLOps workflows from training to secure deployment"
       img: ":project1_thumb.jpg"
-      img_title: "Iris MLOps"
+      img_title: "MLOps Platform"
       date: "2025-07-20"
       post: |
-        # Iris MLOps Demo
+        # MLOps Platform Demo
 
-        **🌸 Production-Ready ML Workflows**
+        **🚀 Production-Ready MLOps Platform Demo**
 
         Comprehensive repository showcasing production-ready MLOps platform built on Kubernetes, demonstrating automated machine learning workflows from training and validation to secure container builds and deployment.
 
@@ -180,7 +180,7 @@ page_data:
         ## Technologies
         `Kubernetes` `Docker` `MLflow` `Prometheus` `Grafana` `Python` `Scikit-learn`
 
-        **[🔗 View Repository](https://github.com/jtayl222/iris-mlops-demo)**
+        **[🔗 View Repository](https://github.com/jtayl222/mlops-platform-demo)**
 
     # Learning & Demos
     - type: id_demos

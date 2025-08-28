@@ -131,7 +131,7 @@ page_data:
     - type: id_cloud
       project_name: "Production ML Workflows"
       project_excerpt: "Production-Ready MLOps Demonstration"
-      github_url: "https://github.com/jtayl222/iris-mlops-demo"
+      github_url: "https://github.com/jtayl222/mlops-platform-demo"
       date: "2025-07-20"
       post: |
         # Production ML Workflows
@@ -145,7 +145,7 @@ page_data:
         - Deployment
         - Monitoring
 
-        **[View Source →](https://github.com/jtayl222/iris-mlops-demo)**
+        **[View Source →](https://github.com/jtayl222/mlops-platform-demo)**
 
     - type: id_cloud
       project_name: "CNN Image Classification"
