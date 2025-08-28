@@ -161,21 +161,9 @@ links:
   info_text: Info
 
 # for projects layout
-projects:
-  title: Projects
-  button_name: Projects
-  read_more_text: Read more
-  read_less_text: Read less
-
-repositories:
-  title: Repositories
-  button_name: Repositories
-  read_more_text: Read more
-  read_less_text: Read less
-
 platform-demo:
-  title: My Kubernetes Platform
-  button_name: My Kubernetes Platform
+  title: MLOps Platform
+  button_name: MLOps Platform
   read_more_text: Read more
   read_less_text: Read less
 
@@ -188,12 +176,6 @@ ml-lifecycle:
 ml-technologies:
   title: ML Technologies
   button_name: ML Technologies
-
-skills:
-  title: Skills
-  button_name: Skills
-  read_more_text: Read more
-  read_less_text: Read less
 
 publications:
   title: Publications

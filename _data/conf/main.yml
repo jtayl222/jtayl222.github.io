@@ -187,25 +187,20 @@ side_nav_close_limit: 767px
 side_and_top_nav_buttons:
   - home:
     icon: "fa fa-home"
-  - post-list:
-    icon: "fa fa-pencil-square-o"
-  - archives:
-    icon: "fa fa-archive"
-  - projects:
-    icon: "fa fa-cog"
   - platform-demo:
+    icon: "fa fa-rocket"
   - ml-lifecycle:
     icon: "fa fa-refresh"
   - ml-technologies:
     icon: "fa fa-wrench"
-  - skills:
-    icon: "fa fa-code"
   - publications:
     icon: "fa fa-file-text-o"
   - certifications:
     icon: "fa fa-certificate"
   - resume:
     icon: "fa fa-file-text"
+  - post-list:
+    icon: "fa fa-pencil-square-o"
   - links:
     icon: "fa fa-link"
   - about:

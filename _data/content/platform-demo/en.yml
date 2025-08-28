@@ -4,8 +4,8 @@
 ###########################################################
 page_data:
   main:
-    header: "🎯 Production MLOps Platform"
-    info: "☸️ SUPPORTS K3S • KUBEADM • EKS | 🏗️ CUSTOM-BUILT | ⚡ ANSIBLE AUTOMATED | 📖 FULLY DOCUMENTED | 🔄 RAPIDLY DEPLOYABLE"
+    header: "🚀 Production MLOps Platform"
+    info: "☸️ MULTI-PLATFORM KUBERNETES | 🏗️ 27 ACTIVE NAMESPACES | ⚡ ANSIBLE AUTOMATED | 📖 COMPLETE DOCUMENTATION | 🔄 5-DOMAIN EXPERTISE"
     text_color: "white"
     # if you don't want to use background image, comment it. back_color will be activated.
     img: "/assets/img/projects/projects-heading.jpg"
