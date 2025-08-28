@@ -33,7 +33,7 @@ page_data:
     ## 📊 Data Ingestion & Storage
 
     - **Apache Kafka**: High-throughput event streaming platform enabling real-time data ingestion for ML feature generation and model triggers ([Ansible](https://github.com/jtayl222/ml-platform/tree/main/infrastructure/cluster/roles/foundation/kafka))
-    - **MinIO**: S3-compatible object storage providing scalable storage for ML datasets, model artifacts, and experiment tracking ([Ansible](https://github.com/jtayl222/ml-platform/tree/main/infrastructure/cluster/roles/storage/minio))
+    - **MinIO**: S3-compatible object storage providing scalable storage for ML datasets, model artifacts, and experiment tracking ([Ansible](https://github.com/jtayl222/ml-platform/tree/main/infrastructure/cluster/roles/storage/minio)) ([Customer Churn example](https://github.com/jtayl222/churn-prediction-argo-workflows))
     - **Persistent Volume Claims (PVC)**: Kubernetes-native storage abstraction enabling stateful ML workloads with data persistence
     - **DVC (Data Version Control)**: Git-like versioning for ML datasets ensuring reproducible experiments and data lineage tracking
 
@@ -41,43 +41,43 @@ page_data:
 
     ## 🧠 Model Development & Training
 
-    - **JupyterHub**: Multi-user notebook environment providing collaborative ML development with GPU support and persistent workspaces ([Ansible](https://github.com/jtayl222/ml-platform/tree/main/infrastructure/cluster/roles/platform/jupyterhub))
-    - **MLflow**: End-to-end ML lifecycle platform enabling experiment tracking, model registry, and deployment management ([Ansible](https://github.com/jtayl222/ml-platform/tree/main/infrastructure/cluster/roles/mlops/mlflow))
+    - **JupyterHub**: Multi-user notebook environment providing collaborative ML development with GPU support and persistent workspaces ([Ansible](https://github.com/jtayl222/ml-platform/tree/main/infrastructure/cluster/roles/platform/jupyterhub)) ([CNN example](https://github.com/jtayl222/cnn-image-classification))
+    - **MLflow**: End-to-end ML lifecycle platform enabling experiment tracking, model registry, and deployment management ([Ansible](https://github.com/jtayl222/ml-platform/tree/main/infrastructure/cluster/roles/mlops/mlflow)) ([Financial usage](https://github.com/jtayl222/financial-mlops-pytorch)) ([CNN Vision usage](https://github.com/jtayl222/cnn-image-classification)) ([Customer Churn example](https://github.com/jtayl222/churn-prediction-argo-workflows))
     - **Kubeflow Pipelines**: ML workflow orchestration enabling reproducible, scalable training pipelines with DAG visualization ([Ansible](https://github.com/jtayl222/ml-platform/tree/main/infrastructure/cluster/roles/mlops/kubeflow))
-    - **PyTorch**: Deep learning framework powering neural network development for financial risk modeling and predictions
-    - **TensorFlow**: Production ML framework supporting diverse model architectures from research to deployment
-    - **Scikit-learn**: Classical ML library providing robust algorithms for fraud detection and financial modeling
-    - **XGBoost**: Gradient boosting framework delivering high-performance models for structured data and financial predictions
+    - **PyTorch**: Deep learning framework powering neural network development for financial risk modeling and predictions ([Financial example](https://github.com/jtayl222/financial-mlops-pytorch)) ([CNN Vision example](https://github.com/jtayl222/cnn-image-classification))
+    - **TensorFlow**: Production ML framework supporting diverse model architectures from research to deployment ([CNN example](https://github.com/jtayl222/cnn-image-classification)) ([Fraud example](https://github.com/jtayl222/fraud-model-rollout-demo))
+    - **Scikit-learn**: Classical ML library providing robust algorithms for fraud detection and financial modeling ([Financial usage](https://github.com/jtayl222/financial-mlops-pytorch))
+    - **XGBoost**: Gradient boosting framework delivering high-performance models for structured data and financial predictions ([Financial usage](https://github.com/jtayl222/financial-mlops-pytorch)) ([Customer Churn example](https://github.com/jtayl222/churn-prediction-argo-workflows))
 
     ---
 
     ## 🔄 CI/CD & Automation
 
-    - **Argo Workflows**: Kubernetes-native workflow engine orchestrating complex ML pipelines from data processing to model deployment ([Ansible](https://github.com/jtayl222/ml-platform/tree/main/infrastructure/cluster/roles/platform/argo_workflows))
+    - **Argo Workflows**: Kubernetes-native workflow engine orchestrating complex ML pipelines from data processing to model deployment ([Ansible](https://github.com/jtayl222/ml-platform/tree/main/infrastructure/cluster/roles/platform/argo_workflows)) ([Financial usage](https://github.com/jtayl222/financial-mlops-pytorch)) ([Customer Churn example](https://github.com/jtayl222/churn-prediction-argo-workflows))
     - **Argo Events**: Event-driven automation triggering ML workflows based on data arrival, code changes, or schedules ([Ansible](https://github.com/jtayl222/ml-platform/tree/main/infrastructure/cluster/roles/platform/argo_events))
-    - **Argo CD**: GitOps continuous deployment ensuring declarative, version-controlled ML infrastructure and model deployments ([Ansible](https://github.com/jtayl222/ml-platform/tree/main/infrastructure/cluster/roles/platform/argo_cd))
+    - **Argo CD**: GitOps continuous deployment ensuring declarative, version-controlled ML infrastructure and model deployments ([Ansible](https://github.com/jtayl222/ml-platform/tree/main/infrastructure/cluster/roles/platform/argo_cd)) ([Financial usage](https://github.com/jtayl222/financial-mlops-pytorch))
     - **Harbor**: Enterprise container registry providing secure image storage with vulnerability scanning for ML containers ([Ansible](https://github.com/jtayl222/ml-platform/tree/main/infrastructure/cluster/roles/platform/harbor))
-    - **GitHub Actions**: CI/CD automation enabling model testing, container building, and deployment triggers
-    - **Ansible**: Infrastructure automation provisioning complete MLOps stack across multiple Kubernetes platforms
+    - **GitHub Actions**: CI/CD automation enabling model testing, container building, and deployment triggers ([workflows](https://github.com/jtayl222/ml-platform/tree/main/.github/workflows)) ([Fraud example](https://github.com/jtayl222/fraud-model-rollout-demo))
+    - **Ansible**: Infrastructure automation provisioning complete MLOps stack across multiple Kubernetes platforms ([project](https://github.com/jtayl222/ml-platform))
 
     ---
 
     ## 🚀 Model Serving & Inference
 
-    - **Seldon Core**: Production ML serving platform enabling A/B testing, canary deployments, and multi-model serving ([Ansible](https://github.com/jtayl222/ml-platform/tree/main/infrastructure/cluster/roles/platform/seldon))
+    - **Seldon Core**: Production ML serving platform enabling A/B testing, canary deployments, and multi-model serving ([Ansible](https://github.com/jtayl222/ml-platform/tree/main/infrastructure/cluster/roles/platform/seldon)) ([Financial usage](https://github.com/jtayl222/financial-mlops-pytorch)) ([Fraud example](https://github.com/jtayl222/fraud-model-rollout-demo)) ([Customer Churn example](https://github.com/jtayl222/churn-prediction-argo-workflows))
     - **KServe**: Serverless ML inference providing auto-scaling, GPU acceleration, and standard prediction protocols ([Ansible](https://github.com/jtayl222/ml-platform/tree/main/infrastructure/cluster/roles/mlops/kserve))
     - **Knative Serving**: Serverless compute platform powering scale-to-zero ML inference and event-driven serving
     - **Istio Service Mesh**: Traffic management and security enabling sophisticated ML deployment patterns and observability ([Ansible](https://github.com/jtayl222/ml-platform/tree/main/infrastructure/cluster/roles/platform/istio))
     - **Istio Gateway**: Ingress/egress control managing external access to ML services with load balancing and TLS
-    - **FastAPI**: High-performance API framework creating REST endpoints for model serving and feature processing
-    - **Streamlit**: Interactive ML app framework building data visualization and model demonstration interfaces
+    - **FastAPI**: High-performance API framework creating REST endpoints for model serving and feature processing ([Interactive app example](https://github.com/jtayl222/fastapi_streamlit_example))
+    - **Streamlit**: Interactive ML app framework building data visualization and model demonstration interfaces ([Interactive app example](https://github.com/jtayl222/fastapi_streamlit_example))
 
     ---
 
     ## 📈 Monitoring & Observability
 
-    - **Prometheus**: Metrics collection system gathering infrastructure, application, and ML-specific performance metrics ([Ansible](https://github.com/jtayl222/ml-platform/tree/main/infrastructure/cluster/roles/monitoring/prometheus_stack))
-    - **Grafana**: Visualization platform creating comprehensive dashboards for ML model performance and system health ([Ansible](https://github.com/jtayl222/ml-platform/tree/main/infrastructure/cluster/roles/monitoring/prometheus_stack))
+    - **Prometheus**: Metrics collection system gathering infrastructure, application, and ML-specific performance metrics ([Ansible](https://github.com/jtayl222/ml-platform/tree/main/infrastructure/cluster/roles/monitoring/prometheus_stack)) ([Financial usage](https://github.com/jtayl222/financial-mlops-pytorch)) ([Fraud example](https://github.com/jtayl222/fraud-model-rollout-demo))
+    - **Grafana**: Visualization platform creating comprehensive dashboards for ML model performance and system health ([Ansible](https://github.com/jtayl222/ml-platform/tree/main/infrastructure/cluster/roles/monitoring/prometheus_stack)) ([Financial usage](https://github.com/jtayl222/financial-mlops-pytorch)) ([Fraud example](https://github.com/jtayl222/fraud-model-rollout-demo))
     - **AlertManager**: Intelligent alerting system notifying teams of model drift, performance degradation, or system issues ([Ansible](https://github.com/jtayl222/ml-platform/tree/main/infrastructure/cluster/roles/monitoring/prometheus_stack))
     - **Jaeger**: Distributed tracing platform providing end-to-end request tracking across ML inference pipelines
     - **Kiali**: Service mesh observability console visualizing ML service communication patterns and health
@@ -109,7 +109,7 @@ page_data:
 
     ## 🌐 Supporting Services
 
-    - **Docker**: Container runtime packaging ML models and dependencies for consistent deployment across environments
+    - **Docker**: Container runtime packaging ML models and dependencies for consistent deployment across environments ([examples](https://github.com/jtayl222/ml-platform)) ([Financial usage](https://github.com/jtayl222/financial-mlops-pytorch)) ([CNN example](https://github.com/jtayl222/cnn-image-classification))
     - **Helm**: Kubernetes package manager simplifying deployment of complex ML applications with version management
     - **Git**: Version control system tracking code, configurations, and infrastructure-as-code for reproducibility
     - **PostgreSQL**: Relational database storing MLflow metadata, model registry, and application state
