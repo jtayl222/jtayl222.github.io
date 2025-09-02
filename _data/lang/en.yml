@@ -177,6 +177,10 @@ ml-technologies:
   title: ML Technologies
   button_name: ML Technologies
 
+new:
+  title: New
+  button_name: New
+
 publications:
   title: Publications
   button_name: Publications

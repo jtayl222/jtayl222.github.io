@@ -193,6 +193,7 @@ side_and_top_nav_buttons:
     icon: "fa fa-refresh"
   - ml-technologies:
     icon: "fa fa-wrench"
+  
   - publications:
     icon: "fa fa-file-text-o"
   - certifications:

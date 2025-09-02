@@ -267,3 +267,5 @@
 {% if projects_page_exist %}
   @import "projects/project-container";
 {% endif %}
+
+@import "new/resume";

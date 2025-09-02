@@ -1,0 +1,149 @@
+
+.resume-container {
+  font-family: sans-serif;
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+}
+
+.resume-header {
+  text-align: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 20px;
+}
+
+.resume-header h1 {
+  font-size: 2.5em;
+  margin-bottom: 0;
+}
+
+.resume-header .contact-info {
+  margin-top: 10px;
+}
+
+.resume-header .contact-info a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #007bff;
+}
+
+.resume-body {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.resume-column {
+  padding: 0 15px;
+}
+
+.resume-column-left {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.resume-column-right {
+  flex: 2;
+  padding-left: 20px;
+}
+
+@media (max-width: 768px) {
+  .resume-body {
+    flex-direction: column;
+  }
+  .resume-column-left {
+    border-right: none;
+    padding-right: 15px;
+  }
+  .resume-column-right {
+    padding-left: 15px;
+  }
+}
+
+.resume-section {
+  margin-bottom: 20px;
+}
+
+.resume-section h2 {
+  font-size: 1.5em;
+  color: #333;
+  border-bottom: 2px solid #333;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+.resume-section h3 {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+.resume-section .date {
+  font-style: italic;
+  color: #666;
+}
+
+.resume-section ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.resume-section ul li {
+  margin-bottom: 10px;
+}
+
+.project-heading-container {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center horizontally */
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; /* Take full width of parent */
+}
+
+.header-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+}
+
+.header-contacts {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.header-contacts ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header-contacts ul li, .header-contacts ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.download-resume-button-container {
+  margin-bottom: 10px; /* Adjust as needed for spacing */
+}
+
+.download-resume-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff; /* Blue oval */
+  color: white;
+  text-decoration: none;
+  border-radius: 25px; /* Oval shape */
+  border: 2px solid white; /* White edge */
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.download-resume-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}

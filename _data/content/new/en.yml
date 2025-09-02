@@ -1,0 +1,97 @@
+# you can move this content to front matter of [language]/tabs/new.md
+###########################################################
+#                Jeffrey Taylor Resume Page Data
+###########################################################
+page_data:
+  main:
+    header: "Jeffrey Taylor"
+    title: "AI & DevOps Engineer"
+    text_color: "white"
+    img: "/assets/img/projects/projects-heading.jpg"
+    back_color: "#1a1a2e"
+    contacts:
+      - label: "Email"
+        value: "Jeff.Taylor22@gmail.com"
+        url: "mailto:Jeff.Taylor22@gmail.com"
+      - label: "Personal Site"
+        value: "https://jtayl222.github.io"
+        url: "https://jtayl222.github.io"
+      - label: "GitHub"
+        value: "https://github.com/jtayl222"
+        url: "https://github.com/jtayl222"
+      - label: "LinkedIn"
+        value: "https://linkedin.com/in/jefftaylor22"
+        url: "https://linkedin.com/in/jefftaylor22"
+      - label: "Location"
+        value: "Open to Relocation"
+      - label: "Clearance"
+        value: "Active DoD Secret"
+
+  left_column: |
+    ## CERTIFICATIONS
+
+    - AWS Certified AI Practitioner
+    - Microsoft Certified: Azure AI Engineer
+    - Udacity AI Programming with Python
+    - Coursera Deep Learning Specialization
+    - Udemy Generative AI Agent Development
+
+    ## KEY SKILLS
+
+    - **Programming**: Python, Java
+    - **Infrastructure & DevOps**: Kubernetes (K3s, OpenShift), Docker, Helm, Argo Workflows, Argo CD, Jenkins/GitHub Actions, Ansible, Terraform
+    - **MLOps**: MLflow, Seldon Core, KServe, MinIO, Harbor, Prometheus/Grafana, GitOps, OpenTelemetry
+    - **Cloud & Platforms**: AWS, Azure, GCP (foundational), MetalLB
+    - **Data & AI**: PyTorch, TensorFlow, LangChain/LangGraph, FastAPI, Streamlit, PostgreSQL
+    - **Security & Compliance**: DevSecOps, SBOMs, TLS, Air Gapped Deployments
+
+  right_column: |
+    ## PROFESSIONAL SUMMARY
+
+    Results-driven AI & DevOps Engineer with hands-on expertise in MLOps. Proven experience building end-to-end ML pipelines, deploying full-stack ML platforms with MLflow, MinIO, Argo Workflows, and Kubernetes using Ansible. Strong background in real-time systems, DevSecOps, and infrastructure automation. Passionate about reproducibility, observability, and scalable model serving in air-gapped and cloud-native environments. Adept at leading cross-functional teams in agile environments, leveraging microservices architecture, REST APIs, and gRPC to deliver real-time solutions, as demonstrated in the US Air Force MEDUSA system and DoD's MARS AI-assisted database. Proven technical leader with a track record of mentoring engineers, optimizing system performance, and driving innovation in fast-paced, hyper-growth settings.
+
+    ## PROFESSIONAL EXPERIENCE
+
+    **Self Employed MLOps Researcher & Consultant (2/2023 – Present)**
+    - Design and operate a 5 node K3s homelab that prototypes enterprise MLOps patterns (centralized scheduler, scoped operator, A/B testing).
+    - Open sourced k3s homelab, ml platform, and financial mlops pytorch repositories, demonstrating automated pipelines with MLflow, Argo Workflows, Seldon Core v2, and Harbor.
+    - Contributed bug fix & feature PR #6582 to Seldon Core v2, improving model scheduling resiliency across namespaces.
+    - Published 15+ Medium articles and launched personal tech site jtayl222.github.io to document best practices.
+
+    **Principal Software Engineer, Leidos (1/2023 – 1/2025)**
+    - Enhanced the MEDUSA command-and-control system, a Java-based microservices architecture built with Spring Boot and gRPC, enabling real-time data processing and integrating sensor data with actionable user interfaces for U.S. Air Force drone threat mitigation.
+    - Collaborated on replacing a JavaFX GUI with a REST API built on TypeScript and Node.js, supporting the evolution of a real-time command-and-control system.
+    - Architected and optimized Gradle-based build scripts and Jenkins CI/CD pipelines, leveraging Docker on AWS to ensure resilient, scalable deployments in an air-gapped environment; reduced build failures by refining automation scripts.
+    - Implemented infrastructure as code and automated tasks with Bash and Python scripts, streamlining log analysis and improving operational efficiency for a distributed, high-availability system.
+    - Research machine learning capabilities, developing a Bayesian network classification system for RADAR signal data, enhancing threat identification accuracy.
+    - Mentored team members in test-driven development and DevOps best practices within an Agile (SAFe) framework, fostering iterative delivery and elevating code quality through peer reviews.
+    - To enable communication with sensors and emitters, used JAXB to marshal Java objects into XML and unmarshal XML into Java objects.
+    - Used tools including OpenTelemetry, PostgreSQL, SQLite, JPA and SQL instrument and monitor the application.
+
+    **Senior Consultant, Red Hat's Intelligent Application Practice (8/2018 – 1/2023)**
+    - Delivered expert-level DevOps and application development solutions as an embedded consultant at customer sites (e.g., Peraton, Citibank, Verizon), with a focus on Java-based microservices and Red Hat OpenShift Kubernetes clusters in 100% Linux environments.
+    - Developed and deployed an AI-assisted expert system for the MARS project (DoD) at Peraton using Java and DRL rules, enhancing data ingestion and transaction analysis within a secure, cloud-native architecture.
+    - Designed and implemented CI/CD pipelines using Git, Maven, and OpenShift, automating scalable microservice deployments and crafting Kubernetes YAML configurations for mission-critical applications.
+    - Created Python and bash scripts to streamline workflows, analyze logs, and optimize system performance, improving operational efficiency across distributed systems.
+    - Acted as onsite OpenShift technical lead, troubleshooting cluster issues, advising on system design, and mentoring teams of up to four engineers on automation best practices within agile frameworks.
+    - Leveraged Red Hat Process Automation Manager and Decision Manager to build robust expert systems, ensuring high reliability and customer satisfaction for DoD, banking, and telecom clients.
+
+    **Principal Software Engineer, Oracle Corporation (1/2010 – 9/2017)**
+    - Researched big data solutions on SPARC, including Oracle Big Data SQL and Hadoop clusters.
+    - Created demos for Oracle R Enterprise integration with Hadoop and tuned Oracle Financial Services Analytical Applications.
+    - Provided performance consulting for third-party software vendors, e.g., IBM WebSphere on SPARC servers.
+
+    **Staff Engineer, Sun Microsystems, Inc. (12/2001 – 1/2010)**
+    - Acted as a Solaris server/storage consultant to ISVs, focusing on performance optimization.
+    - Ported enterprise C, C++, and Java applications to SPARC, pinpointing and resolving bottlenecks.
+    - Specialist in multithreading and GUIs for mechanical engineering applications implemented using XWindows and OpenGL.
+    - Advised on best practices for large-scale deployments and recommended system-level architectures.
+
+    ## EDUCATION
+
+    **Carnegie Mellon University**
+    B.S. Applied Math (Computer Science Option)
+
+  footer_links: |
+    **[Download PDF Resume](/assets/files/resume/Jeff_Taylor_July_24.pdf)** | **[View GitHub Profile](https://github.com/jtayl222)** | **[Connect on LinkedIn](https://linkedin.com/in/jefftaylor22)**
+
